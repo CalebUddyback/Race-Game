@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Pre Menu.unity
+    guid: 36a79c7458e9a5548af6bd384022515f
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 7db32509ba4dae64a8a0165728e4f36a
+  - enabled: 1
+    path: Assets/Scenes/RacerSelect_1.unity
+    guid: 02e87aca08d4c2f4a98bab85770c451a
+  - enabled: 1
+    path: Assets/Scenes/RacerSelect_8.unity
+    guid: 0246e4cd04715c243b8bb11d66ba8128
+  - enabled: 1
+    path: Assets/Scenes/100m.unity
+    guid: 6a3072c0026043b408e6a7b73b3cadf8
+  - enabled: 1
+    path: Assets/Scenes/Coaching.unity
+    guid: 194669d09d8e348438ae98999d5fe0d8
+  m_configObjects: {}

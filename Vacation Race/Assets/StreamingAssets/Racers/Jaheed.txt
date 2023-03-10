@@ -1,0 +1,40 @@
+Name:
+Jaheed
+AvailablePoints:
+1
+Start:
+0
+Acceleration:
+0
+Top Speed:
+2
+Stamina:
+2
+Skin Color:
+0.4528302
+0.2884426
+0.1174795
+Eye Color:
+0
+0
+0
+Shirt Color:
+0.7921569
+0.7921569
+0.7921569
+Pants Color:
+0.09433961
+0.09433961
+0.09433961
+Shoe Color:
+0.1792453
+0.1792453
+0.1792453
+Head Addon:
+2
+Head Addon Color:
+0
+0
+0
+Face Addon:
+1

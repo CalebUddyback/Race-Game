@@ -1,0 +1,40 @@
+Name:
+Phil
+AvailablePoints:
+1
+Start:
+0
+Acceleration:
+0
+Top Speed:
+0
+Stamina:
+0
+Skin Color:
+0.7254902
+0.5254902
+0.3411765
+Eye Color:
+0
+0
+0
+Shirt Color:
+1
+0.4196078
+0
+Pants Color:
+0.07922429
+0.2735849
+0.0761392
+Shoe Color:
+0.8396226
+0.6848655
+0.130696
+Head Addon:
+0
+Head Addon Color:
+0
+0
+0
+Face Addon:
+0
