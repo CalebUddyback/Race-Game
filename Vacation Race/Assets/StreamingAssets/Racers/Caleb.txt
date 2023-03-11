@@ -1,0 +1,40 @@
+Name:
+Caleb
+AvailablePoints:
+1
+Start:
+0
+Acceleration:
+0
+Top Speed:
+2
+Stamina:
+2
+Skin Color:
+0.6320754
+0.4660552
+0.3130562
+Eye Color:
+0
+0
+0
+Shirt Color:
+0.1792453
+0.1792453
+0.1792453
+Pants Color:
+0.09433961
+0.09433961
+0.09433961
+Shoe Color:
+0.7921569
+0.7921569
+0.7921569
+Head Addon:
+1
+Head Addon Color:
+0
+0
+0
+Face Addon:
+0

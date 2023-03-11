@@ -5,9 +5,8 @@ using UnityEngine.UI;
 using System.IO;
 using System.Linq;
 
-public class SelectionManager : MonoBehaviour
+public class ReadForRacers : MonoBehaviour
 {
-    public GameObject racerListPrefab;
     public GameObject racerButtonPrefab;
 
     public int MAX_RACERS = 8;
@@ -21,48 +20,40 @@ public class SelectionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RacerList racerList;
-
-        if (GameObject.Find("RacerList"))
+        if (!File.Exists(Application.streamingAssetsPath + "/RacerList.txt"))
         {
-            racerList = GameObject.Find("RacerList").GetComponent<RacerList>();
-
-            if (racerList.maxRacers != MAX_RACERS)
-            {
-                racerList.racers.Clear();
-            }
+            File.Create(Application.streamingAssetsPath + "/RacerList.txt");
+            //delay needs to be added here
         }
         else
         {
-            racerList = Instantiate(racerListPrefab, null).GetComponent<RacerList>();
-            racerList.gameObject.name = "RacerList";
-            racerList.maxRacers = MAX_RACERS;
+            string readFromFile = Application.streamingAssetsPath + "/RacerList.txt";
+
+            selectedList = File.ReadAllLines(readFromFile).ToList();
+
+            UpdateUI();
         }
 
-        selectedList = racerList.racers;
-
-        UpdateUI();
-
-        string[] filePaths = Directory.GetFiles(Application.streamingAssetsPath + "/Racers/", "*.txt");         // Put all racers into string array
+        string[] filePaths = Directory.GetFiles(Application.streamingAssetsPath + "/Racers/", "*.txt");
 
         for (int i = 0; i < selectedList.Count(); i++)
         {
-            if (!File.Exists(Application.streamingAssetsPath + "/Racers/" + selectedList[i] + ".txt"))          // Make sure Racer file exists
+            if (!File.Exists(Application.streamingAssetsPath + "/Racers/" + selectedList[i] + ".txt"))
             {
                 UpdateList(selectedList[i]);
                 i--;
             }
         }
 
-        foreach (string file in filePaths)
-        {
-            Button button = Instantiate(racerButtonPrefab, transform).GetComponent<Button>();       // create button
+        foreach(string file in filePaths)
+        {           
+            Button button = Instantiate(racerButtonPrefab, transform).GetComponent<Button>();
 
-            List<string> fileLines = File.ReadAllLines(file).ToList();                              // store race file lines in list    
+            List<string> fileLines = File.ReadAllLines(file).ToList();
 
-            button.transform.GetChild(0).GetComponent<Text>().text = fileLines[1];                  // set button text to racer name
+            button.transform.GetChild(0).GetComponent<Text>().text = fileLines[1];
 
-            if (selectedList.Contains(fileLines[1]))                                                // if racer already in selected list
+            if (selectedList.Contains(fileLines[1]))
             {
                 button.GetComponent<RacerSelect>().UpdateColor(true);
                 button.GetComponent<RacerSelect>().selected = true;
@@ -79,6 +70,7 @@ public class SelectionManager : MonoBehaviour
             {
                 selectedList.Add(racerName);
 
+                UpdateFile();
                 UpdateUI();
 
                 Debug.Log("Added");
@@ -94,10 +86,27 @@ public class SelectionManager : MonoBehaviour
         {
             selectedList.Remove(racerName);
 
+            UpdateFile();
             UpdateUI();
 
             Debug.Log("Removed");
             return true;
+        }
+    }
+
+    private void UpdateFile()
+    {
+        string txtDocumentName = Application.streamingAssetsPath + "/RacerList.txt";
+
+        if (selectedList.Count > 0)
+            File.WriteAllText(txtDocumentName, selectedList[0] + "\n");
+        else
+            File.WriteAllText(txtDocumentName, "");
+
+
+        for(int i = 1; i < selectedList.Count; i++)
+        {
+            File.AppendAllText(txtDocumentName, selectedList[i] + "\n");
         }
     }
 

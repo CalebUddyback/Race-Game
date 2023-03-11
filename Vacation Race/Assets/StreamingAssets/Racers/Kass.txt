@@ -1,0 +1,40 @@
+Name:
+Kass
+AvailablePoints:
+1
+Start:
+0
+Acceleration:
+0
+Top Speed:
+0
+Stamina:
+0
+Skin Color:
+0.9725491
+0.7529413
+0.5647059
+Eye Color:
+0.3921569
+0.454902
+0.6431373
+Shirt Color:
+0.1372549
+0.3882353
+0.5803922
+Pants Color:
+0.09433961
+0.09433961
+0.09433961
+Shoe Color:
+0.7921569
+0.7921569
+0.7921569
+Head Addon:
+5
+Head Addon Color:
+0
+0
+0
+Face Addon:
+0

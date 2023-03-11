@@ -502,6 +502,7 @@ GameObject:
   - component: {fileID: 599778510}
   - component: {fileID: 599778511}
   - component: {fileID: 599778509}
+  - component: {fileID: 599778512}
   - component: {fileID: 599778513}
   m_Layer: 5
   m_Name: Grid
@@ -576,6 +577,25 @@ MonoBehaviour:
   m_Spacing: {x: 16, y: 16}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &599778512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599778507}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4eef32673afe8f4796a5ad13b3e8326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  racerButtonPrefab: {fileID: 8674152613874703027, guid: f9b87bce36a74d547b65750e6c910cee,
+    type: 3}
+  MAX_RACERS: 8
+  listUI: {fileID: 2114027740}
+  listElement: {fileID: 918545270818903022, guid: 27d6d3dd2adf31f409b0fd4f4f87a226,
+    type: 3}
+  continueButton: {fileID: 777908517}
 --- !u!114 &599778513
 MonoBehaviour:
   m_ObjectHideFlags: 0

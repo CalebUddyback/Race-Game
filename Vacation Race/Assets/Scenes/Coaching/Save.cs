@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.UI;
 using System.IO;
 
@@ -33,54 +32,7 @@ public class Save : MonoBehaviour
             Directory.CreateDirectory(Application.streamingAssetsPath);
 
         if(!Directory.Exists(Application.streamingAssetsPath + "/Racers/"))
-            Directory.CreateDirectory(Application.streamingAssetsPath + "/Racers/");   
-    }
-
-    public void CreateProfile2()
-    {
-        string _name = "";
-
-        if (newRacerName.gameObject.activeSelf)
-        {
-            if (newRacerName.text == "")
-            {
-                return;
-            }
-
-            _name = newRacerName.text;
-        }
-        else
-        {
-            _name = racerName.text;
-        }
-
-        Racer racer = ScriptableObject.CreateInstance<Racer>();
-
-        racer.start_Reaction = int.Parse(startSpeed.text);
-        racer.acceleration = int.Parse(acceleration.text);
-        racer.top_Speed = int.Parse(topSpeed.text);
-        racer.stamina = int.Parse(stamina.text);
-
-        racer.skin_Color = skinColor.currentButton.GetComponent<Button>().colors.normalColor;
-        racer.eye_Color = eyeColor.currentButton.GetComponent<Button>().colors.normalColor;
-        racer.shirt_Color = shirtColor.currentButton.GetComponent<Button>().colors.normalColor;
-        racer.pant_Color = pantsColor.currentButton.GetComponent<Button>().colors.normalColor;
-        racer.shoe_Color = shoeColor.currentButton.GetComponent<Button>().colors.normalColor;
-
-        racer.head_Addon = int.Parse(headAddon.text);
-        racer.head_Addon_Color = headAddonColor.currentButton.GetComponent<Button>().colors.normalColor;
-
-        racer.face_Addon = int.Parse(faceAddon.text);
-
-
-
-        string path = "Assets/ScriptObjRacers/" + _name + ".asset";
-
-        AssetDatabase.CreateAsset(racer, path);
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
-        EditorUtility.FocusProjectWindow();
-        Selection.activeObject = racer;
+            Directory.CreateDirectory(Application.streamingAssetsPath + "/Racers/");
     }
 
     public void CreateProfile()

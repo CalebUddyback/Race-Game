@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Racer_Script : MonoBehaviour
 {
-    public Racer racer;
+    private Stats_Script stats;
 
     private float drain_speed = 2f;
 
@@ -28,7 +28,8 @@ public class Racer_Script : MonoBehaviour
 
     void Start()
     {
-        //current_stamina = racer.stamina;
+        stats = GetComponent<Stats_Script>();
+        current_stamina = stats.stamina;
     }
 
     public void Idle() => Event_Idle?.Invoke();
@@ -39,7 +40,7 @@ public class Racer_Script : MonoBehaviour
 
     IEnumerator StartPhase()
     {
-        float startDelay = 1 / (float)Random.Range(2, 7 + racer.start_Reaction);
+        float startDelay = 1 / (float)Random.Range(2, 7 + stats.start_reaction);
 
         yield return new WaitForSeconds(startDelay);
 
@@ -87,14 +88,14 @@ public class Racer_Script : MonoBehaviour
     {
         drain_speed /= 2;
 
-        while (current_speed < racer.top_Speed && HasStamina())
+        while (current_speed < stats.top_speed && HasStamina())
         {
-            yield return new WaitForSeconds(1 / (1 + racer.acceleration));
+            yield return new WaitForSeconds(1 / (1 + stats.acceleration));
             current_speed++;
             yield return null;
         }
 
-        if (current_speed == racer.top_Speed)
+        if (current_speed == stats.top_speed)
         {
             Event_Ghosts?.Invoke(true);
         }
