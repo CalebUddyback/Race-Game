@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject racerPrefab;
 
-    public class Racer
+    public GameObject pauseCanvas;
+
+    public class RacerPerformance
     {
         public string name;
         public int lane;
@@ -22,8 +24,8 @@ public class GameManager : MonoBehaviour
         public int points = 0;
     }
 
-    private Racer[] allRacers;
-    private Racer[] currentRacers;
+    private RacerPerformance[] allRacers;
+    private RacerPerformance[] currentRacers;
     private int numFinishedRacers = 0;
 
     private event System.Action Event_Go;
@@ -46,9 +48,6 @@ public class GameManager : MonoBehaviour
 
     public bool showBars = false;
 
-    private bool countFrames = false;
-    public int frames = 0;
-
     void Start()
     {
         ReadFromObject();
@@ -56,8 +55,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (countFrames)
-            frames++;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
     }
 
     private void ReadFromObject()
@@ -66,31 +67,33 @@ public class GameManager : MonoBehaviour
         {
             string[] objectLines = GameObject.Find("RacerList").GetComponent<RacerList>().racers.ToArray();
 
-            allRacers = new Racer[objectLines.Length];
+            allRacers = new RacerPerformance[objectLines.Length];
 
             for (int i = 0; i < allRacers.Length; i++)
             {
-                Racer racer = new Racer
+                RacerPerformance currentRacer = new RacerPerformance
                 {
                     name = objectLines[i],
                     lane = i,
                     instance = Instantiate(racerPrefab, transform.GetChild(0).GetChild(i).position, Quaternion.identity),
                 };
 
-                racer.instance.name = racer.name;
+                currentRacer.instance.name = currentRacer.name;
 
                 if (showBars)
                 {
-                    racer.instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
-                    racer.instance.transform.Find("Hud").GetComponent<Racer_UI>().speed_bar.gameObject.SetActive(true);
+                    currentRacer.instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
+                    currentRacer.instance.transform.Find("Hud").GetComponent<Racer_UI>().speed_bar.gameObject.SetActive(true);
                 }
 
-                racer.instance.GetComponent<LoadFromFile>().Load();
+                currentRacer.instance.GetComponent<LoadFromFile>().Load();
 
-                Event_Go += racer.instance.GetComponent<Racer_Script>().GO;
-                Event_GetSet += racer.instance.GetComponent<Racer_Script>().GetSet;
+                currentRacer.instance.GetComponent<Racer_Script>().current_stamina = currentRacer.instance.GetComponent<Racer_Script>().racer.stamina;
 
-                allRacers[i] = racer;
+                Event_Go += currentRacer.instance.GetComponent<Racer_Script>().GO;
+                Event_GetSet += currentRacer.instance.GetComponent<Racer_Script>().GetSet;
+
+                allRacers[i] = currentRacer;
             }
 
             cam.transform.position = new Vector3(0, 0, -10);
@@ -106,7 +109,7 @@ public class GameManager : MonoBehaviour
 
     void SetUpRound()
     {
-        foreach (Racer racer in currentRacers)
+        foreach (RacerPerformance racer in currentRacers)
         {
             racer.instance = Instantiate(racerPrefab, transform.GetChild(0).GetChild(racer.lane).position, Quaternion.identity);
             racer.instance.name = racer.name;
@@ -135,6 +138,13 @@ public class GameManager : MonoBehaviour
         roundNum++;
 
         StartCoroutine(RacePhases());
+    }
+
+    public void PauseGame()
+    {
+        pauseCanvas.SetActive(!pauseCanvas.activeSelf);
+
+        Time.timeScale = !pauseCanvas.activeSelf ? 1 : 0;
     }
 
     IEnumerator RacePhases()
@@ -168,8 +178,6 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("GO!");
 
-        countFrames = true;
-
         Event_Go?.Invoke();
 
         miniLeaderboard.SetActive(true);
@@ -200,8 +208,6 @@ public class GameManager : MonoBehaviour
 
             if (currentRacers[numFinishedRacers].instance.transform.position.y <= -100)
             {
-                countFrames = false;
-
                 currentRacers[numFinishedRacers].instance.GetComponent<Racer_Script>().FinishedPhase();
 
                 miniLeaderboard.transform.Find("Times").GetComponent<Text>().text += timer.ToString("F2") + "\n";
@@ -254,9 +260,9 @@ public class GameManager : MonoBehaviour
 
         BigLeaderboard(0);
 
-        Racer[] tempArray = currentRacers;
+        RacerPerformance[] tempArray = currentRacers;
 
-        currentRacers = new Racer[numFinishedRacers];
+        currentRacers = new RacerPerformance[numFinishedRacers];
 
         for(int i = 0; i< currentRacers.Length; i++)
         {
@@ -353,6 +359,12 @@ public class GameManager : MonoBehaviour
         allLeaderboards.transform.Find("Nav").gameObject.SetActive(true);
     }
 
+    public void QuitGame()
+    {
+        Time.timeScale = 1;
+        gameObject.AddComponent<SceneSwitcher>().SwitchScene("RacerSelect_8");
+    }
+
     void MiniLeaderboard()
     {
         string txt = "";
@@ -439,7 +451,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    int PositionComparison(Racer a, Racer b)
+    int PositionComparison(RacerPerformance a, RacerPerformance b)
     {
         if (a.finishTime == 0)
         {

@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.UI;
 using System.IO;
 using System.Linq;
 
 public class SelectionManager : MonoBehaviour
 {
+    readonly string _FILEPATH = "Assets/Racer Profiles/";
+
     public GameObject racerListPrefab;
     public GameObject racerButtonPrefab;
 
@@ -20,6 +23,11 @@ public class SelectionManager : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
+    {
+        Initialize();
+    }
+
+    void Initialize()
     {
         RacerList racerList;
 
@@ -43,26 +51,26 @@ public class SelectionManager : MonoBehaviour
 
         UpdateUI();
 
-        string[] filePaths = Directory.GetFiles(Application.streamingAssetsPath + "/Racers/", "*.txt");         // Put all racers into string array
+        string[] filePaths = Directory.GetFiles(_FILEPATH, "*.asset");         // Put all racers into string array
 
         for (int i = 0; i < selectedList.Count(); i++)
         {
-            if (!File.Exists(Application.streamingAssetsPath + "/Racers/" + selectedList[i] + ".txt"))          // Make sure Racer file exists
+            if (!File.Exists(_FILEPATH + selectedList[i] + ".asset"))          // Make sure Racer file exists
             {
                 UpdateList(selectedList[i]);
                 i--;
             }
         }
 
-        foreach (string file in filePaths)
+        foreach (string racerAsset in filePaths)
         {
-            Button button = Instantiate(racerButtonPrefab, transform).GetComponent<Button>();       // create button
+            Button button = Instantiate(racerButtonPrefab, transform).GetComponent<Button>();       // create button 
 
-            List<string> fileLines = File.ReadAllLines(file).ToList();                              // store race file lines in list    
+            string racerName = Path.GetFileNameWithoutExtension(racerAsset);
 
-            button.transform.GetChild(0).GetComponent<Text>().text = fileLines[1];                  // set button text to racer name
+            button.transform.GetChild(0).GetComponent<Text>().text = racerName;                  // set button text to racer name
 
-            if (selectedList.Contains(fileLines[1]))                                                // if racer already in selected list
+            if (selectedList.Contains(racerName))                                                // if racer already in selected list
             {
                 button.GetComponent<RacerSelect>().UpdateColor(true);
                 button.GetComponent<RacerSelect>().selected = true;

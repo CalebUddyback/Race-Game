@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b876f4e381d98f847b95c8e84bd5bb97, type: 3}
+  m_Name: Caleb
+  m_EditorClassIdentifier: 
+  start_Reaction: 0
+  acceleration: 0
+  top_Speed: 7
+  stamina: 2
+  skin_Color: {r: 0.6320754, g: 0.4660552, b: 0.3130562, a: 0}
+  eye_Color: {r: 0, g: 0, b: 0, a: 0}
+  shirt_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 0}
+  pant_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 0}
+  shoe_Color: {r: 0.7921569, g: 0.7921569, b: 0.7921569, a: 0}
+  head_Addon: 1
+  head_Addon_Color: {r: 0, g: 0, b: 0, a: 0}
+  face_Addon: 0
