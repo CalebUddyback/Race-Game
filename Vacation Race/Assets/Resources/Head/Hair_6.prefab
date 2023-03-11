@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7611852121315724730}
   - component: {fileID: 7611852121315724731}
   m_Layer: 0
-  m_Name: Hair_4
+  m_Name: Hair_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: -1789542129
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -7615588978530685155, guid: 273d4ec6d485a6e45bd958762ad7242b,
+  m_Sprite: {fileID: -557110555668845505, guid: 85ec24d93a073b4498558beb89c0fd77,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -94,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 7611852121315724733}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bee4f93721ed88e46bb47b4f98620bd7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 956f17f9b401b5e4b856ac49f758d41f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
