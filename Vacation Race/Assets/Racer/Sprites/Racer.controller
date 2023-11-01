@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2c5680d6e9f8b54395f118be76f7a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ignoreSpeedConversion: 0
+  ignoreSpeedConversion: 1
   speedConverion: 1.5
 --- !u!1102 &-8086566010750179546
 AnimatorState:
@@ -26,6 +26,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours:
+  - {fileID: -2081609810917779710}
   - {fileID: -719721975369039512}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -117,6 +118,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteSheet: {fileID: 2800000, guid: c1610d95488f2bf479c8322f61dfd26b, type: 3}
+--- !u!114 &-2081609810917779710
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c5680d6e9f8b54395f118be76f7a53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreSpeedConversion: 1
+  speedConverion: 0
 --- !u!114 &-719721975369039512
 MonoBehaviour:
   m_ObjectHideFlags: 1

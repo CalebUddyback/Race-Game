@@ -25,11 +25,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390196158630381025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0794, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0048, z: 0}
   m_LocalScale: {x: 0.6582547, y: 0.27871525, z: 0.79132366}
   m_Children: []
   m_Father: {fileID: 2986654685178026142}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5903804507635485946
 SpriteRenderer:
@@ -108,11 +108,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952889762323176077}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0859, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2986654685178026142}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1388147725381587095
 SpriteRenderer:
@@ -150,8 +150,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1789542129
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -8333091937584048074, guid: 543a2ae1034b3944090d591e7b621580,
     type: 3}
@@ -196,6 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5482ecf8ee2e91d4885fc7a199c5ac06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  racer_Script: {fileID: 0}
+  canHaveGhost: 0
 --- !u!1 &2986654684378240638
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +671,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2986654684991241386}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.54, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2986654685178026142}
@@ -689,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437e968e183aedf41b710ff207f3072c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doneLoading: 0
+  racerProfile: {fileID: 0}
 --- !u!114 &2986654684991241387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,13 +704,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240239f655241df4389814145e68b10e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  racer: {fileID: 0}
   current_speed: 0
   current_stamina: 0
   ghost: {fileID: 2768378044503936622, guid: 7cc746a6d1681e64baaaf5d8d2f656ad, type: 3}
-  ghost_frequency: 0.07
-  ghost_deathSpeed: 5
   sweat: {fileID: 1952889762323176077}
+  stepsTaken: 0
+  powerSteps: 0
+  dudSteps: 0
+  top_speed: 0
+  finished: 0
 --- !u!1 &2986654685045027915
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,9 +818,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2986654685178026141}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
+  - {fileID: 87150967853701903}
   - {fileID: 7780587988402436550}
   - {fileID: 6634769615305643927}
   m_Father: {fileID: 2986654684991241382}
@@ -861,7 +866,7 @@ SpriteRenderer:
   m_SortingLayerID: -1789542129
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -982904232830982447, guid: c1610d95488f2bf479c8322f61dfd26b,
+  m_Sprite: {fileID: 4723107735738678597, guid: 25eed2c54f83d404491c91062f21f100,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -904,6 +909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5482ecf8ee2e91d4885fc7a199c5ac06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  racer_Script: {fileID: 0}
+  canHaveGhost: 1
 --- !u!1 &2986654685787621602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,3 +1337,33 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!1 &8647041838898916630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 87150967853701903}
+  m_Layer: 0
+  m_Name: Head Addon Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &87150967853701903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8647041838898916630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2986654685178026142}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

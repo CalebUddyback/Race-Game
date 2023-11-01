@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b876f4e381d98f847b95c8e84bd5bb97, type: 3}
+  m_Name: Joel
+  m_EditorClassIdentifier: 
+  points: 0
+  start_Reaction: 0
+  start_Speed: 5
+  acceleration: 5
+  power: 5
+  stamina: 5
+  composure: 5
+  skin_Color: {r: 0.6320754, g: 0.46605524, b: 0.31305623, a: 1}
+  eye_Color: {r: 0, g: 0, b: 0, a: 1}
+  shirt_Color: {r: 0.13725491, g: 0.3882353, b: 0.5803922, a: 1}
+  pant_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
+  shoe_Color: {r: 0.5566038, g: 0.007876454, b: 0.030768527, a: 1}
+  head_Addon: 6
+  head_Addon_Color: {r: 0, g: 0, b: 0, a: 1}
+  face_Addon: 0

@@ -8,18 +8,17 @@ public class Play_Speed : StateMachineBehaviour
     public float speedConverion;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
-    //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        if (ignoreSpeedConversion)
+            animator.speed = 1;
+    }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (!ignoreSpeedConversion)
-            animator.speed = animator.transform.parent.root.GetComponent<Racer_Script>().current_speed / speedConverion;
-        else
-            animator.speed = 1;
+            animator.speed = animator.GetComponent<Sprites_Anim>().racer_Script.current_speed / speedConverion;
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

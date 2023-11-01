@@ -821,7 +821,7 @@ GameObject:
   - component: {fileID: 323174394}
   - component: {fileID: 323174393}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Finish Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3538,6 +3538,36 @@ Transform:
   m_Father: {fileID: 812621292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1404198428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404198429}
+  m_Layer: 0
+  m_Name: Ghosts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1404198429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404198428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1638074131}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409030910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,18 +4225,32 @@ PrefabInstance:
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.data[0]
-      value: Caleb
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d71a02b40f9f7c40ae8ec927169cae9,
+        type: 2}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.data[1]
-      value: Moe
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 11400000, guid: bdb00b5398acacb40b7e4ff8b3479c8d,
+        type: 2}
+    - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
+        type: 3}
+      propertyPath: racers.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: a9a593923ec122347ba88c3f257f4479,
+        type: 2}
+    - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
+        type: 3}
+      propertyPath: racers.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: b3a222e9390a16247ba8e26573e8fa35,
+        type: 2}
     - target: {fileID: 9152259822682778754, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: m_Name
@@ -4260,7 +4304,9 @@ MonoBehaviour:
   leaderboardRowPrefab: {fileID: 8012476284383549069, guid: b97b6244bdff8814bac21bf355a87776,
     type: 3}
   currentLeaderboard: {fileID: 0}
-  showBars: 1
+  ghostPrefab: {fileID: 2768378044503936622, guid: 7cc746a6d1681e64baaaf5d8d2f656ad,
+    type: 3}
+  showBars: 0
 --- !u!4 &1638074131
 Transform:
   m_ObjectHideFlags: 0
@@ -4273,6 +4319,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 812621292}
+  - {fileID: 1404198429}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

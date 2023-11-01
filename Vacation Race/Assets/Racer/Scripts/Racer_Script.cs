@@ -4,147 +4,191 @@ using UnityEngine;
 
 public class Racer_Script : MonoBehaviour
 {
-    public Racer racer;
+    private RacerProfile racerProfile;
 
-    private float drain_speed = 2f;
-
-    public int current_speed;
+    public float current_speed;
     public int current_stamina;
+
+    private float stepPower;
 
     public GameObject ghost;
 
-    [HideInInspector]
-    public float ghost_frequency = 0.07f;
-    [HideInInspector]
-    public float ghost_deathSpeed = 5;
-
     public GameObject sweat;
 
-    public event System.Action<bool> Event_Ghosts;
     public event System.Action Event_Idle;
     public event System.Action Event_Walk;
     public event System.Action Event_Run;
     public event System.Action Event_HandKnees;
 
-    void Start()
-    {
-        //current_stamina = racer.stamina;
-    }
+    public int stepsTaken = 0;
+    public int powerSteps = 0;
+    public int dudSteps = 0;
+    public float top_speed = 0;
+
+    public bool finished = false;
+
 
     public void Idle() => Event_Idle?.Invoke();
+
+    public void Walk() => Event_Walk?.Invoke();
+
+    public void Run() => Event_Run?.Invoke();
+
+    public void HandsKnees() => Event_HandKnees?.Invoke();
+
+
 
     public void GetSet() => Event_Run?.Invoke();
 
     public void GO() => StartCoroutine(StartPhase());
 
+    public Dictionary<RacerProfile.Stat, float> adjustedStat;
+
+    private void Start()
+    {
+        racerProfile = GetComponent<LoadFromProfile>().racerProfile;
+
+        adjustedStat = new Dictionary<RacerProfile.Stat, float>()
+        {
+            {RacerProfile.Stat.SRCT, 0                                                       },
+            {RacerProfile.Stat.SSPD, (racerProfile.start_Speed      *   0.05f)  +    2f      },
+            {RacerProfile.Stat.ACC,  (racerProfile.acceleration     *   0.05f)  +    9.5f    },
+            {RacerProfile.Stat.PWR,  (racerProfile.power            *   0.05f)  +    0.5f    },
+            {RacerProfile.Stat.STM,  (racerProfile.stamina          +   1    )  *    7       },
+            {RacerProfile.Stat.COM,  (racerProfile.composure        *   0.6f )  -    4f      },
+        };
+    }
+
     IEnumerator StartPhase()
     {
-        float startDelay = 1 / (float)Random.Range(2, 7 + racer.start_Reaction);
+        float startDelay = 1f - (racerProfile.start_Reaction / 10f);
 
-        yield return new WaitForSeconds(startDelay);
-
-        current_speed = Random.Range(4, 7);
+        yield return new WaitForSeconds(0);
 
         StartCoroutine(SpeedController());
-        StartCoroutine(StaminaController());
+
+        Step();
 
         Debug.Log(gameObject.name + "'s Start Delay: " + startDelay + " Start Speed: " + current_speed);
     }
 
+    public void Step()
+    {
+        if (finished)
+        {
+            Deccelerate();
+        }
+        else if (GetComponent<Competitve_Edge>() != null && GetComponent<Competitve_Edge>().Conditon())
+        {
+            
+        }
+        else if (stepsTaken == 0)
+        {
+            current_speed = adjustedStat[RacerProfile.Stat.SSPD];
+        }
+        else if (current_stamina > 0)
+        {
+
+            if (current_stamina > 1 && PowerStep())
+                current_stamina -= 2;
+            else
+                current_stamina--;
+
+            if (current_stamina <= 0)
+                sweat.SetActive(true);
+        }
+        else
+        {
+            DudStep();
+        }
+
+        if(!finished)
+            stepsTaken++;
+    }
+
     IEnumerator SpeedController()
     {
-        while (transform.position.y > -110)
+        while (true)
         {
-            transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, -110), Time.deltaTime * current_speed);
+            transform.Translate(Vector2.down * current_speed * Time.deltaTime);
 
-            yield return null;
-        }   
-    }
+            if (current_speed > top_speed)
+                top_speed = current_speed;
 
-    IEnumerator StaminaController()
-    {
-        StartCoroutine(AccelerationPhase());
-
-        while (HasStamina())
-        {
-            yield return new WaitForSeconds(drain_speed);
-            current_stamina--;
             yield return null;
         }
-
-        StartCoroutine(FatiguePhase());
     }
 
-    bool HasStamina()
+
+    bool PowerStep()
     {
-        if (current_stamina > 0)
+        float success = 9.5f + (racerProfile.acceleration * 0.05f); // This should not be called every step
+
+        success -= (powerSteps * 0.05f);
+
+        if (Random.Range(0f, 10f) < success)
+        {
+            float actual_power = 0.5f + (racerProfile.power * 0.05f);
+
+            actual_power -= (stepsTaken * 0.02f);
+
+            current_speed += actual_power;
+
+            GetComponent<GhostMaker>().MakeGhost(Color.blue, 1.5f);
+
+            powerSteps++;
+
             return true;
-        else
-            return false;
+        }
+
+        return false;
     }
 
-    IEnumerator AccelerationPhase()
+    bool DudStep()
     {
-        drain_speed /= 2;
+        float dud = 4f - (racerProfile.composure * 0.6f);
 
-        while (current_speed < racer.top_Speed && HasStamina())
+        if (Random.Range(0f, 10f) < dud)
         {
-            yield return new WaitForSeconds(1 / (1 + racer.acceleration));
-            current_speed++;
-            yield return null;
+            current_speed -= 0.6f;
+
+            if (current_speed <= 1)
+            {
+                current_speed = 1;
+                Event_Walk?.Invoke();
+            }
+
+            GetComponent<GhostMaker>().MakeGhost(Color.red);
+
+            dudSteps++;
+
+            return true;
         }
 
-        if (current_speed == racer.top_Speed)
-        {
-            Event_Ghosts?.Invoke(true);
-        }
-
-        drain_speed *= 2;
+        return false;
     }
 
-    IEnumerator FatiguePhase()
-    {
-        Event_Ghosts?.Invoke(false);
-
-        sweat.SetActive(true);
-
-        while (current_speed > 1)
-        {
-            current_speed--;
-            yield return new WaitForSeconds(drain_speed);
-            yield return null;
-        }
-
-        Event_Walk?.Invoke();
-    }
 
     public void FinishedPhase()
     {
-        StopAllCoroutines();
-        StartCoroutine(SpeedController());
-        StartCoroutine(Deccelerate());
-
-        Event_Ghosts?.Invoke(false);
+        stepPower = -6f;
+        finished = true;
     }
 
-    IEnumerator Deccelerate()
+    void Deccelerate()
     {
-        drain_speed = 0.2f;
-
-        while (current_speed > 0)
+        if (current_speed + stepPower < 1)
         {
-            yield return new WaitForSeconds(drain_speed);
-            current_speed--;
-            yield return null;
+            current_speed = 0;
+            Event_HandKnees?.Invoke();
         }
-
-        Event_HandKnees?.Invoke();
+        else
+            current_speed += stepPower;
     }
 
     public void Eliminate()
     {
-        Event_Ghosts?.Invoke(true);
-        Event_Ghosts?.Invoke(false);
+        GetComponent<GhostMaker>().MakeGhost(Color.white, 1.5f);
         Destroy(gameObject);
     }
 
