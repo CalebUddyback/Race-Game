@@ -101,10 +101,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 12
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -112,48 +112,6 @@ TextureImporter:
       bones: []
       spriteID: 11b181479875388f0800000000000000
       internalID: -539491282484454639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair_6_Run_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69b49cd45bf073d50800000000000000
-      internalID: 6716854640614919062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair_6_Run_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 109961e87aacef9f0800000000000000
-      internalID: -432685693188794111
       vertices: []
       indices: 
       edges: []

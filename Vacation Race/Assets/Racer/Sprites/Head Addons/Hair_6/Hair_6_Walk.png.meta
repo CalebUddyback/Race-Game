@@ -101,10 +101,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 12
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -112,48 +112,6 @@ TextureImporter:
       bones: []
       spriteID: 1b2981a65e05323a0800000000000000
       internalID: -6691415675084696911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair_6_Walk_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5edf18ae29f610c00800000000000000
-      internalID: 865095280222141925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair_6_Walk_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c292f30391b1648f0800000000000000
-      internalID: -556727708936099540
       vertices: []
       indices: 
       edges: []

@@ -101,10 +101,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 12
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -112,48 +112,6 @@ TextureImporter:
       bones: []
       spriteID: 33fbc11e76766c5f0800000000000000
       internalID: -736787793172447437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair_6_HandKnees_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5ddcbae6c0578d320800000000000000
-      internalID: 2582943082553789909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair_6_HandKnees_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3df17803b93592a10800000000000000
-      internalID: 1885129845030461395
       vertices: []
       indices: 
       edges: []

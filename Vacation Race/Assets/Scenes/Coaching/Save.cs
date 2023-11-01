@@ -8,12 +8,19 @@ using System.IO;
 public class Save : MonoBehaviour
 {
 
+    readonly string _FILEPATH = "Assets/Racer Profiles/";
+
     public InputField newRacerName;
     public Text racerName;
+
+    public Text points;
+
+    public Text startReact;
     public Text startSpeed;
     public Text acceleration;
-    public Text topSpeed;
+    public Text power;
     public Text stamina;
+    public Text composure;
 
     public ColorSelect skinColor;
     public ColorSelect eyeColor;
@@ -54,12 +61,21 @@ public class Save : MonoBehaviour
             _name = racerName.text;
         }
 
-        Racer racer = ScriptableObject.CreateInstance<Racer>();
+        RacerProfile racer = ScriptableObject.CreateInstance<RacerProfile>();
 
-        racer.start_Reaction = int.Parse(startSpeed.text);
+        /* STATS */
+
+        racer.points = int.Parse(points.text);
+
+        //racer.start_Reaction = int.Parse(startReact.text);
+        racer.start_Speed = int.Parse(startSpeed.text);
         racer.acceleration = int.Parse(acceleration.text);
-        racer.top_Speed = int.Parse(topSpeed.text);
+        racer.power = int.Parse(acceleration.text);
         racer.stamina = int.Parse(stamina.text);
+        racer.composure = int.Parse(power.text);
+
+
+        /* Cosmetics */
 
         racer.skin_Color = skinColor.currentButton.GetComponent<Button>().colors.normalColor;
         racer.eye_Color = eyeColor.currentButton.GetComponent<Button>().colors.normalColor;
@@ -74,7 +90,7 @@ public class Save : MonoBehaviour
 
 
 
-        string path = "Assets/ScriptObjRacers/" + _name + ".asset";
+        string path = _FILEPATH + _name + ".asset";
 
         AssetDatabase.CreateAsset(racer, path);
         AssetDatabase.SaveAssets();
@@ -109,11 +125,11 @@ public class Save : MonoBehaviour
         File.AppendAllText(txtDocumentName, "AvailablePoints:\n");
         File.AppendAllText(txtDocumentName, "1" + "\n");
         File.AppendAllText(txtDocumentName, "Start:\n");
-        File.AppendAllText(txtDocumentName, startSpeed.text + "\n");
+        File.AppendAllText(txtDocumentName, startReact.text + "\n");
         File.AppendAllText(txtDocumentName, "Acceleration:\n");
         File.AppendAllText(txtDocumentName, acceleration.text + "\n");
         File.AppendAllText(txtDocumentName, "Top Speed:\n");
-        File.AppendAllText(txtDocumentName, topSpeed.text + "\n");
+        File.AppendAllText(txtDocumentName, power.text + "\n");
         File.AppendAllText(txtDocumentName, "Stamina:\n");
         File.AppendAllText(txtDocumentName, stamina.text + "\n");
         File.AppendAllText(txtDocumentName, "Skin Color:\n");

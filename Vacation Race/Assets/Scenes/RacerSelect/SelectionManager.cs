@@ -14,7 +14,7 @@ public class SelectionManager : MonoBehaviour
     public GameObject racerButtonPrefab;
 
     public int MAX_RACERS = 8;
-    private List<string> selectedList = new List<string>();
+    private List<RacerProfile> selectedList = new List<RacerProfile>();
 
     public Transform listUI;
     public GameObject listElement;
@@ -66,11 +66,11 @@ public class SelectionManager : MonoBehaviour
         {
             Button button = Instantiate(racerButtonPrefab, transform).GetComponent<Button>();       // create button 
 
-            string racerName = Path.GetFileNameWithoutExtension(racerAsset);
+            RacerProfile racer_profile =  button.GetComponent<RacerSelect>().racer_profile = (RacerProfile)AssetDatabase.LoadAssetAtPath(racerAsset, typeof(RacerProfile));
 
-            button.transform.GetChild(0).GetComponent<Text>().text = racerName;                  // set button text to racer name
+            button.transform.GetChild(0).GetComponent<Text>().text = racer_profile.name;                  // set button text to racer name
 
-            if (selectedList.Contains(racerName))                                                // if racer already in selected list
+            if (selectedList.Contains(racer_profile))                                                // if racer already in selected list
             {
                 button.GetComponent<RacerSelect>().UpdateColor(true);
                 button.GetComponent<RacerSelect>().selected = true;
@@ -78,7 +78,7 @@ public class SelectionManager : MonoBehaviour
         }
     }
 
-    public bool UpdateList(string racerName)
+    public bool UpdateList(RacerProfile racerName)
     {
 
         if (!selectedList.Contains(racerName))
@@ -122,7 +122,7 @@ public class SelectionManager : MonoBehaviour
             for (int i = 0; i < selectedList.Count; i++)
             {
                 Transform element = Instantiate(listElement, listUI).transform;
-                element.GetChild(0).GetComponent<Text>().text = selectedList[i];
+                element.GetChild(0).GetComponent<Text>().text = selectedList[i].name;
             }
 
             continueButton.interactable = true;

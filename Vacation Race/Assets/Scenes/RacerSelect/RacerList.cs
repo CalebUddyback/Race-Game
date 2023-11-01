@@ -6,7 +6,7 @@ public class RacerList : MonoBehaviour
 {
     public int maxRacers;
 
-    public List<string> racers = new List<string>();
+    public List<RacerProfile> racers = new List<RacerProfile>();
 
     void Start()
     {

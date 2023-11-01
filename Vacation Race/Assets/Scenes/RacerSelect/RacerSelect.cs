@@ -7,6 +7,7 @@ public class RacerSelect : MonoBehaviour
 {
     private Button button;
     public bool selected = false;
+    public RacerProfile racer_profile;
 
     private void Awake()
     {
@@ -15,7 +16,8 @@ public class RacerSelect : MonoBehaviour
 
     public void Click()
     {
-        if (transform.parent.GetComponent<SelectionManager>().UpdateList(transform.GetChild(0).GetComponent<Text>().text))
+        //if (transform.parent.GetComponent<SelectionManager>().UpdateList(transform.GetChild(0).GetComponent<Text>().text))
+        if (transform.parent.GetComponent<SelectionManager>().UpdateList(racer_profile))
         {
             selected = !selected;
 

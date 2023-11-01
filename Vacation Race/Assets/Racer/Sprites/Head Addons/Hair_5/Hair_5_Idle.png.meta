@@ -98,10 +98,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 14
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5833334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -109,27 +109,6 @@ TextureImporter:
       bones: []
       spriteID: eb69da20e2d8b5c10800000000000000
       internalID: 2043382084695594686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hair_5_Idle_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19ab4858ef12e3ab0800000000000000
-      internalID: -5026542757053416815
       vertices: []
       indices: 
       edges: []

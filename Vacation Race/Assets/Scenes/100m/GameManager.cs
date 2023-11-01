@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     {
         public string name;
         public int lane;
+        public RacerProfile profile;
         public GameObject instance;
         public float finishTime = 0;
         public string placement = "";
@@ -46,11 +47,13 @@ public class GameManager : MonoBehaviour
     public GameObject currentLeaderboard;
     private readonly float leaderboardViewTime = 10;
 
+    public GameObject ghostPrefab;
+
     public bool showBars = false;
 
     void Start()
     {
-        ReadFromObject();
+        LoadRacers();
     }
 
     private void Update()
@@ -61,49 +64,29 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void ReadFromObject()
+    private void LoadRacers()
     {
         if (GameObject.Find("RacerList"))
         {
-            string[] objectLines = GameObject.Find("RacerList").GetComponent<RacerList>().racers.ToArray();
+            RacerProfile[] racersList = GameObject.Find("RacerList").GetComponent<RacerList>().racers.ToArray();
 
-            allRacers = new RacerPerformance[objectLines.Length];
+            allRacers = new RacerPerformance[racersList.Length];
 
             for (int i = 0; i < allRacers.Length; i++)
             {
-                RacerPerformance currentRacer = new RacerPerformance
+                RacerPerformance racer = new RacerPerformance
                 {
-                    name = objectLines[i],
+                    name = racersList[i].name,
                     lane = i,
-                    instance = Instantiate(racerPrefab, transform.GetChild(0).GetChild(i).position, Quaternion.identity),
+                    profile = racersList[i],
                 };
 
-                currentRacer.instance.name = currentRacer.name;
-
-                if (showBars)
-                {
-                    currentRacer.instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
-                    currentRacer.instance.transform.Find("Hud").GetComponent<Racer_UI>().speed_bar.gameObject.SetActive(true);
-                }
-
-                currentRacer.instance.GetComponent<LoadFromFile>().Load();
-
-                currentRacer.instance.GetComponent<Racer_Script>().current_stamina = currentRacer.instance.GetComponent<Racer_Script>().racer.stamina;
-
-                Event_Go += currentRacer.instance.GetComponent<Racer_Script>().GO;
-                Event_GetSet += currentRacer.instance.GetComponent<Racer_Script>().GetSet;
-
-                allRacers[i] = currentRacer;
+                allRacers[i] = racer;
             }
-
-            cam.transform.position = new Vector3(0, 0, -10);
-
-            miniLeaderboard.transform.Find("Names").GetComponent<Text>().text = "";
-            miniLeaderboard.transform.Find("Times").GetComponent<Text>().text = "";
 
             currentRacers = allRacers;
 
-            StartCoroutine(RacePhases());
+            SetUpRound();
         }
     }
 
@@ -112,15 +95,20 @@ public class GameManager : MonoBehaviour
         foreach (RacerPerformance racer in currentRacers)
         {
             racer.instance = Instantiate(racerPrefab, transform.GetChild(0).GetChild(racer.lane).position, Quaternion.identity);
-            racer.instance.name = racer.name;
+
+            racer.instance.AddComponent<GhostMaker>().ghostPrefab = ghostPrefab;
+
+            StartCoroutine(racer.instance.GetComponent<LoadFromProfile>().Loading(racer.profile));
+
+            //racer.instance.GetComponent<Racer_Script>().current_stamina = 10 + racer.instance.GetComponent<LoadFromProfile>().racerProfile.stamina * 2;
+
+            racer.instance.GetComponent<Racer_Script>().current_stamina = (1 + racer.instance.GetComponent<LoadFromProfile>().racerProfile.stamina) * 7;
 
             if (showBars)
             {
                 racer.instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
                 racer.instance.transform.Find("Hud").GetComponent<Racer_UI>().speed_bar.gameObject.SetActive(true);
             }
-
-            racer.instance.GetComponent<LoadFromFile>().Load();
 
             Event_Go += racer.instance.GetComponent<Racer_Script>().GO;
             Event_GetSet += racer.instance.GetComponent<Racer_Script>().GetSet;
@@ -343,6 +331,9 @@ public class GameManager : MonoBehaviour
     {
         allLeaderboards.gameObject.SetActive(false);
 
+        foreach (Transform ghost in transform.Find("Ghosts"))
+            Destroy(ghost.gameObject);
+
         for (int i = 0; i < currentRacers.Length; i++)
         {
             Event_Go -= currentRacers[i].instance.GetComponent<Racer_Script>().GO;
@@ -398,7 +389,7 @@ public class GameManager : MonoBehaviour
         {
             currentLeaderboard = Instantiate(leaderboardPrefab, content);
 
-            currentLeaderboard.transform.Find("Round").GetChild(0).GetComponent<Text>().text = "ROUND " + (roundNum + 1).ToString();
+            currentLeaderboard.transform.Find("Round").GetChild(0).GetComponent<Text>().text = "ROUND " + roundNum.ToString();
 
             for (int i = 0; i < allRacers.Length; i++)
             {
@@ -414,6 +405,7 @@ public class GameManager : MonoBehaviour
 
                 leaderboardRow.transform.Find("Position").GetChild(0).GetComponent<Text>().text = allRacers[i].placement;
                 leaderboardRow.transform.Find("Name").GetChild(0).GetComponent<Text>().text = allRacers[i].name;
+
                 if (allRacers[i].finishTime == 0)
                 {
                     if (currentRacers.Contains(allRacers[i]))
@@ -423,6 +415,11 @@ public class GameManager : MonoBehaviour
                     else
                     {
                         leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = "-";
+
+                        foreach (Transform child in leaderboardRow.transform)
+                        {
+                            child.GetComponent<Image>().color = Color.grey;
+                        }
                     }
                 }
                 else
@@ -445,7 +442,7 @@ public class GameManager : MonoBehaviour
             
             if(input == -1)
             {
-                if(content.position.x < 834 * (roundNum + 1))
+                if(content.position.x < 834 * (roundNum))
                     content.position += new Vector3(834, 0, 0);
             }
         }
