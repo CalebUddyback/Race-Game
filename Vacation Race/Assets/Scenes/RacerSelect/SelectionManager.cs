@@ -8,7 +8,7 @@ using System.Linq;
 
 public class SelectionManager : MonoBehaviour
 {
-    readonly string _FILEPATH = "Assets/Racer Profiles/";
+    readonly string _FILEPATH = "Racer Profiles/";
 
     public GameObject racerListPrefab;
     public GameObject racerButtonPrefab;
@@ -51,22 +51,22 @@ public class SelectionManager : MonoBehaviour
 
         UpdateUI();
 
-        string[] filePaths = Directory.GetFiles(_FILEPATH, "*.asset");         // Put all racers into string array
+        Object[] profiles = Resources.LoadAll(_FILEPATH);
 
-        for (int i = 0; i < selectedList.Count(); i++)
-        {
-            if (!File.Exists(_FILEPATH + selectedList[i] + ".asset"))          // Make sure Racer file exists
-            {
-                UpdateList(selectedList[i]);
-                i--;
-            }
-        }
+        //for (int i = 0; i < selectedList.Count(); i++)
+        //{
+        //    if (!File.Exists(_FILEPATH + selectedList[i] + ".asset"))          // Make sure Racer file exists
+        //    {
+        //        UpdateList(selectedList[i]);
+        //        i--;
+        //    }
+        //}
 
-        foreach (string racerAsset in filePaths)
+        foreach (Object racerAsset in profiles)
         {
             Button button = Instantiate(racerButtonPrefab, transform).GetComponent<Button>();       // create button 
 
-            RacerProfile racer_profile =  button.GetComponent<RacerSelect>().racer_profile = (RacerProfile)AssetDatabase.LoadAssetAtPath(racerAsset, typeof(RacerProfile));
+            RacerProfile racer_profile =  button.GetComponent<RacerSelect>().racer_profile = (RacerProfile)Resources.Load(_FILEPATH + racerAsset.name, typeof(RacerProfile));
 
             button.transform.GetChild(0).GetComponent<Text>().text = racer_profile.name;                  // set button text to racer name
 

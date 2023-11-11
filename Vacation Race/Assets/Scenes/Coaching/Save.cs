@@ -8,7 +8,7 @@ using System.IO;
 public class Save : MonoBehaviour
 {
 
-    readonly string _FILEPATH = "Assets/Racer Profiles/";
+    readonly string _FILEPATH = "Assets/Resources/Racer Profiles/";
 
     public InputField newRacerName;
     public Text racerName;
@@ -70,9 +70,9 @@ public class Save : MonoBehaviour
         //racer.start_Reaction = int.Parse(startReact.text);
         racer.start_Speed = int.Parse(startSpeed.text);
         racer.acceleration = int.Parse(acceleration.text);
-        racer.power = int.Parse(acceleration.text);
+        racer.power = int.Parse(power.text);
         racer.stamina = int.Parse(stamina.text);
-        racer.composure = int.Parse(power.text);
+        racer.composure = int.Parse(composure.text);
 
 
         /* Cosmetics */

@@ -100,10 +100,6 @@ public class GameManager : MonoBehaviour
 
             StartCoroutine(racer.instance.GetComponent<LoadFromProfile>().Loading(racer.profile));
 
-            //racer.instance.GetComponent<Racer_Script>().current_stamina = 10 + racer.instance.GetComponent<LoadFromProfile>().racerProfile.stamina * 2;
-
-            racer.instance.GetComponent<Racer_Script>().current_stamina = (1 + racer.instance.GetComponent<LoadFromProfile>().racerProfile.stamina) * 7;
-
             if (showBars)
             {
                 racer.instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
