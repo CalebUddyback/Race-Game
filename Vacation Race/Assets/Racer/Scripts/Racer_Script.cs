@@ -10,6 +10,7 @@ public class Racer_Script : MonoBehaviour
     public int current_stamina;
 
     private float stepPower;
+    private float dudDecay = 0.2f;
 
     public GameObject ghost;
 
@@ -51,18 +52,19 @@ public class Racer_Script : MonoBehaviour
         adjustedStat = new Dictionary<RacerProfile.Stat, float>()
         {
             {RacerProfile.Stat.SRCT, 0                                                              },
-            {RacerProfile.Stat.SSPD, (racerProfile.start_Speed      *   0.25f)      +    1f         },
-            {RacerProfile.Stat.ACC,  (racerProfile.acceleration     *   0.07f)       +    9.3f         },
-            {RacerProfile.Stat.PWR,  (racerProfile.power            *   0.017f)      +    0.7f        },
-            {RacerProfile.Stat.STM,  (racerProfile.stamina          *   3    )      +    10         },
-            {RacerProfile.Stat.COM,  (racerProfile.composure        *   -0.2f )     +    2f         },
+            {RacerProfile.Stat.SSPD, (racerProfile.start_Speed      *   0.25f )     +    1f         },
+            {RacerProfile.Stat.ACC,  (racerProfile.acceleration     *   0.07f )     +    9.3f       },
+            {RacerProfile.Stat.PWR,  (racerProfile.power            *   0.017f)     +    0.7f       },
+            {RacerProfile.Stat.STM,  (racerProfile.stamina          *   3     )     +    10         },
+            //{RacerProfile.Stat.COM,  (racerProfile.composure        *   0.9f  )     +    1f         },
+            {RacerProfile.Stat.COM,  (racerProfile.composure) },
         };
 
         current_stamina = (int)adjustedStat[RacerProfile.Stat.STM];
     }
 
 
-    public float sspd, acc, pwr, stm, com;
+    public float sspd, acc, pwr, stm, com, dd;
 
     private void Update() //for debuging
     {
@@ -71,6 +73,8 @@ public class Racer_Script : MonoBehaviour
         pwr = adjustedStat[RacerProfile.Stat.PWR];
         stm = adjustedStat[RacerProfile.Stat.STM];
         com = adjustedStat[RacerProfile.Stat.COM];
+
+        dd = dudDecay;
     }
 
     IEnumerator StartPhase()
@@ -114,6 +118,9 @@ public class Racer_Script : MonoBehaviour
         else
         {
             DudStep();
+
+            if(adjustedStat[RacerProfile.Stat.COM] > 0)
+                adjustedStat[RacerProfile.Stat.COM] -= (adjustedStat[RacerProfile.Stat.COM] * 0.005f);
         }
 
         if(!finished)
@@ -154,9 +161,11 @@ public class Racer_Script : MonoBehaviour
 
     bool DudStep()
     {
-        if (Random.Range(0f, 10f) < adjustedStat[RacerProfile.Stat.COM])
+        
+
+        if (adjustedStat[RacerProfile.Stat.COM] < Random.Range(0f, 10f))
         {
-            current_speed -= 0.5f;
+            current_speed -= dudDecay;
 
             if (current_speed <= 1)
             {
@@ -167,6 +176,8 @@ public class Racer_Script : MonoBehaviour
             GetComponent<GhostMaker>().MakeGhost(Color.red);
 
             dudSteps++;
+
+            dudDecay += 0.01f;
 
             return true;
         }

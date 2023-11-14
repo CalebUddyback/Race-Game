@@ -4225,7 +4225,7 @@ PrefabInstance:
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.size
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
@@ -4243,37 +4243,37 @@ PrefabInstance:
         type: 3}
       propertyPath: racers.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: a9a593923ec122347ba88c3f257f4479,
+      objectReference: {fileID: 11400000, guid: aa5cda81e82ed8c4d9d0e81b4998da7e,
         type: 2}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: b3a222e9390a16247ba8e26573e8fa35,
+      objectReference: {fileID: 11400000, guid: a9a593923ec122347ba88c3f257f4479,
         type: 2}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: db029fd0bfce9ef4f97388c39bc0a09e,
+      objectReference: {fileID: 11400000, guid: 18a7cf6b89e7faa458459da798c054b7,
         type: 2}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: bdb00b5398acacb40b7e4ff8b3479c8d,
+      objectReference: {fileID: 11400000, guid: b3a222e9390a16247ba8e26573e8fa35,
         type: 2}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: bdb00b5398acacb40b7e4ff8b3479c8d,
+      objectReference: {fileID: 11400000, guid: 002c92926d66a1d4aa5af3939315b65c,
         type: 2}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
       propertyPath: racers.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: bdb00b5398acacb40b7e4ff8b3479c8d,
+      objectReference: {fileID: 11400000, guid: db029fd0bfce9ef4f97388c39bc0a09e,
         type: 2}
     - target: {fileID: 7957029895841341435, guid: 4ecf565e96015164d98983f96329d9bd,
         type: 3}
