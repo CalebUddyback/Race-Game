@@ -16,6 +16,8 @@ public class Racer_Script : MonoBehaviour
 
     public GameObject sweat;
 
+    public GameObject crown;
+
     public event System.Action Event_Idle;
     public event System.Action Event_Walk;
     public event System.Action Event_Run;

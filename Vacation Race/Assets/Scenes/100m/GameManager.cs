@@ -108,6 +108,11 @@ public class GameManager : MonoBehaviour
 
             Event_Go += racer.instance.GetComponent<Racer_Script>().GO;
             Event_GetSet += racer.instance.GetComponent<Racer_Script>().GetSet;
+
+            if(racer.placement == "1st")
+                racer.instance.GetComponent<Racer_Script>().crown.SetActive(true);
+            else
+                racer.instance.GetComponent<Racer_Script>().crown.SetActive(false);
         }
 
         cam.transform.position = new Vector3(0, 0, -10);
@@ -267,7 +272,7 @@ public class GameManager : MonoBehaviour
     void Awards()
     {
         int[] awardedPoints = { 30, 20, 10, 5 };
-        string[] rank = { "st", "nd", "rd", "th" };
+        string[] suffix = { "st", "nd", "rd", "th" };
 
         int p = 0;
         int r = 1;
@@ -296,7 +301,12 @@ public class GameManager : MonoBehaviour
                 currentRacers[i].points += awardedPoints[p];
             }
 
-            currentRacers[i].placement = r.ToString() + rank[p];
+            currentRacers[i].placement = r.ToString() + suffix[p];
+
+            if (currentRacers[i].placement == "1st")           
+                currentRacers[i].instance.GetComponent<Racer_Script>().crown.SetActive(true);           
+            else
+                currentRacers[i].instance.GetComponent<Racer_Script>().crown.SetActive(false);
 
             if (i + 1 < currentRacers.Length)
             {
