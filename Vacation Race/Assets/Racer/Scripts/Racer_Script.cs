@@ -89,7 +89,7 @@ public class Racer_Script : MonoBehaviour
 
         Step();
 
-        Debug.Log(gameObject.name + "'s Start Delay: " + startDelay + " Start Speed: " + current_speed);
+        //Debug.Log(gameObject.name + "'s Start Delay: " + startDelay + " Start Speed: " + current_speed);
     }
 
     public void Step()

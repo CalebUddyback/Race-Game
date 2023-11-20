@@ -7,9 +7,7 @@ public class Leaderboard : MonoBehaviour
 {
     public Slider bar;
 
-    public void StartTimer(float time) => StartCoroutine(Timer(time));
-
-    IEnumerator Timer(float time)
+    public IEnumerator Timer(float time)
     {
         float currentValue = 1;
         float t = 0;

@@ -26,8 +26,10 @@ public class GameManager : MonoBehaviour
     }
 
     private RacerPerformance[] allRacers;
-    private RacerPerformance[] currentRacers;
-    private int numFinishedRacers = 0;
+
+    public int numCurrentRacers = 0;
+
+    public int numFinisedRacers = 0;
 
     private event System.Action Event_Go;
     private event System.Action Event_GetSet;
@@ -53,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        LoadRacers();
+        StartCoroutine(Phases());
     }
 
     private void Update()
@@ -62,6 +64,49 @@ public class GameManager : MonoBehaviour
         {
             PauseGame();
         }
+    }
+
+    IEnumerator Phases()
+    {
+        LoadRacers();       
+
+        while (numCurrentRacers > 1)
+        {
+            SetUpRound();
+
+            yield return StartCoroutine(RoundStart());
+
+            miniLeaderboard.SetActive(true);
+
+            yield return StartCoroutine(RoundInProgress());
+
+            yield return StartCoroutine(Eliminations());
+
+            yield return new WaitForSeconds(1);
+
+            Awards();
+
+            BigLeaderboard();  // Create new Leaderboard
+
+            yield return new WaitForSeconds(3);
+
+            miniLeaderboard.SetActive(false);
+
+            allLeaderboards.gameObject.SetActive(true);
+
+            yield return currentLeaderboard.GetComponent<Leaderboard>().Timer(leaderboardViewTime); ;
+
+            if (numCurrentRacers == 2)
+                break;
+
+            allLeaderboards.gameObject.SetActive(false);
+
+            CleanUpRound();
+        }
+
+        FinishRace();
+
+        yield return null;
     }
 
     private void LoadRacers()
@@ -83,37 +128,34 @@ public class GameManager : MonoBehaviour
 
                 allRacers[i] = racer;
             }
-
-            currentRacers = allRacers;
-
-            SetUpRound();
         }
+
+        numCurrentRacers = allRacers.Length;
     }
 
     void SetUpRound()
     {
-        foreach (RacerPerformance racer in currentRacers)
+
+        for (int i = 0; i < numCurrentRacers; i++)
         {
-            racer.instance = Instantiate(racerPrefab, transform.GetChild(0).GetChild(racer.lane).position, Quaternion.identity);
+            allRacers[i].instance = Instantiate(racerPrefab, transform.GetChild(0).GetChild(allRacers[i].lane).position, Quaternion.identity);
 
-            racer.instance.AddComponent<GhostMaker>().ghostPrefab = ghostPrefab;
+            allRacers[i].instance.AddComponent<GhostMaker>().ghostPrefab = ghostPrefab;
 
-            StartCoroutine(racer.instance.GetComponent<LoadFromProfile>().Loading(racer.profile));
+            StartCoroutine(allRacers[i].instance.GetComponent<LoadFromProfile>().Loading(allRacers[i].profile));
 
             if (showBars)
             {
-                racer.instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
-                racer.instance.transform.Find("Hud").GetComponent<Racer_UI>().speed_bar.gameObject.SetActive(true);
+                allRacers[i].instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
+                allRacers[i].instance.transform.Find("Hud").GetComponent<Racer_UI>().speed_bar.gameObject.SetActive(true);
             }
 
-            Event_Go += racer.instance.GetComponent<Racer_Script>().GO;
-            Event_GetSet += racer.instance.GetComponent<Racer_Script>().GetSet;
-
-            if(racer.placement == "1st")
-                racer.instance.GetComponent<Racer_Script>().crown.SetActive(true);
-            else
-                racer.instance.GetComponent<Racer_Script>().crown.SetActive(false);
+            Event_Go += allRacers[i].instance.GetComponent<Racer_Script>().GO;
+            Event_GetSet += allRacers[i].instance.GetComponent<Racer_Script>().GetSet;
         }
+
+        if(allRacers[0].placement == "1st")
+            allRacers[0].instance.GetComponent<Racer_Script>().crown.SetActive(true);
 
         cam.transform.position = new Vector3(0, 0, -10);
 
@@ -125,8 +167,6 @@ public class GameManager : MonoBehaviour
         roundEndCountdown.gameObject.SetActive(false);
 
         roundNum++;
-
-        StartCoroutine(RacePhases());
     }
 
     public void PauseGame()
@@ -134,23 +174,6 @@ public class GameManager : MonoBehaviour
         pauseCanvas.SetActive(!pauseCanvas.activeSelf);
 
         Time.timeScale = !pauseCanvas.activeSelf ? 1 : 0;
-    }
-
-    IEnumerator RacePhases()
-    {
-        yield return StartCoroutine(RoundStart());
-
-        yield return StartCoroutine(RoundInProgress());
-
-        yield return StartCoroutine(RoundFinish());
-
-        if (currentRacers.Length > 1)
-        {
-            CleanUpRound();
-            SetUpRound();
-        }
-        else
-            FinishRace();
     }
 
     IEnumerator RoundStart()
@@ -168,22 +191,34 @@ public class GameManager : MonoBehaviour
         Debug.Log("GO!");
 
         Event_Go?.Invoke();
-
-        miniLeaderboard.SetActive(true);
     }
 
     IEnumerator RoundInProgress()
     {
-        while (numFinishedRacers < currentRacers.Length)
+        numFinisedRacers = 0;
+
+        while (numFinisedRacers < numCurrentRacers)
         {
             timer += Time.deltaTime;
 
-            System.Array.Sort(currentRacers, PositionComparison);
-            cam.transform.position = Vector3.Lerp(cam.transform.position, new Vector3(0, currentRacers[numFinishedRacers].instance.transform.position.y, -10), Time.deltaTime * 5f);
+            miniLeaderboard.transform.Find("Timer").GetComponent<Text>().text = timer.ToString("F2");
+
+            System.Array.Sort(allRacers, numFinisedRacers, numCurrentRacers - numFinisedRacers, new Comparer());
+            cam.transform.position = Vector3.Lerp(cam.transform.position, new Vector3(0, allRacers[numFinisedRacers].instance.transform.position.y, -10), Time.deltaTime * 5f);
 
             MiniLeaderboard();
 
-            if (numFinishedRacers > 0)
+            if (allRacers[numFinisedRacers].instance.transform.position.y <= -100)
+            {
+                allRacers[numFinisedRacers].instance.GetComponent<Racer_Script>().FinishedPhase();
+
+                miniLeaderboard.transform.Find("Times").GetComponent<Text>().text += timer.ToString("F2") + "\n";
+                allRacers[numFinisedRacers].finishTime = Mathf.Round(timer * 100f) / 100f;
+
+                numFinisedRacers++;
+            }
+
+            if (numFinisedRacers > 0)
             {
                 roundEndCountdown.gameObject.SetActive(true);
                 roundEndCountDownTime -= Time.deltaTime;
@@ -195,78 +230,45 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            if (currentRacers[numFinishedRacers].instance.transform.position.y <= -100)
-            {
-                currentRacers[numFinishedRacers].instance.GetComponent<Racer_Script>().FinishedPhase();
-
-                miniLeaderboard.transform.Find("Times").GetComponent<Text>().text += timer.ToString("F2") + "\n";
-                currentRacers[numFinishedRacers].finishTime = Mathf.Round(timer * 100f) / 100f;
-
-                numFinishedRacers++;
-            }
-
             yield return null;
         }
+
+        roundEndCountdown.text = "FINISH";
     }
 
-    IEnumerator RoundFinish()
+    IEnumerator Eliminations()
     {
-        roundEndCountdown.text = "FINISH";
-
-        Awards();
-
-        if (numFinishedRacers == currentRacers.Length)     // All racers finished
+        if (numFinisedRacers == numCurrentRacers)     // All racers finished
         {
-            float tieTime = currentRacers[currentRacers.Length -1].finishTime;
+            float tieTime = allRacers[numCurrentRacers-1].finishTime;
 
-            if (currentRacers[0].finishTime != tieTime)                // Check if all racers tied
+            if (allRacers[0].finishTime != tieTime)                // Check if all racers tied
             {
-                for (int i = 1; i < currentRacers.Length; i++)      // eliminate all racers tied with last
+                for (int i = 1; i < numFinisedRacers; i++)      // remove all racers tied for last
                 {
-                    if (currentRacers[i].finishTime == tieTime)
+                    if (allRacers[i].finishTime == tieTime)
                     {
-                        numFinishedRacers--;
+                        numFinisedRacers--;
                     }
                 }
             }
         }
 
-        for (int i = numFinishedRacers; i < currentRacers.Length; i++)
+        for (int i = numFinisedRacers; i < numCurrentRacers; i++)
         {
-            while (cam.transform.position.y < currentRacers[i].instance.transform.position.y)
+            while (cam.transform.position.y < allRacers[i].instance.transform.position.y)
             {
-                cam.transform.position = Vector3.Lerp(cam.transform.position, new Vector3(0, currentRacers[i].instance.transform.position.y, -10), Time.deltaTime * 5f);
+                cam.transform.position = Vector3.Lerp(cam.transform.position, new Vector3(0, allRacers[i].instance.transform.position.y, -10), Time.deltaTime * 5f);
                 yield return null;
             }
 
             yield return new WaitForSeconds(1f);
 
-            Event_Go -= currentRacers[i].instance.GetComponent<Racer_Script>().GO;
-            Event_GetSet -= currentRacers[i].instance.GetComponent<Racer_Script>().GetSet;
+            Event_Go -= allRacers[i].instance.GetComponent<Racer_Script>().GO;
+            Event_GetSet -= allRacers[i].instance.GetComponent<Racer_Script>().GetSet;
 
-            currentRacers[i].instance.GetComponent<Racer_Script>().Eliminate();
+            allRacers[i].instance.GetComponent<Racer_Script>().Eliminate();
         }
-
-        BigLeaderboard(0);
-
-        RacerPerformance[] tempArray = currentRacers;
-
-        currentRacers = new RacerPerformance[numFinishedRacers];
-
-        for(int i = 0; i< currentRacers.Length; i++)
-        {
-            currentRacers[i] = tempArray[i];
-        }
-
-        yield return new WaitForSeconds(3);
-
-        miniLeaderboard.SetActive(false);
-
-        allLeaderboards.gameObject.SetActive(true);
-
-        currentLeaderboard.GetComponent<Leaderboard>().StartTimer(leaderboardViewTime);
-
-        yield return new WaitForSeconds(leaderboardViewTime);
     }
 
     void Awards()
@@ -280,37 +282,41 @@ public class GameManager : MonoBehaviour
         bool tie = false;
 
 
-        if (numFinishedRacers > 1)
+        if (numCurrentRacers > 1)
         {
-            if (currentRacers[0].finishTime != currentRacers[1].finishTime)    // if no one tied for 1st
+            if (allRacers[0].finishTime != allRacers[1].finishTime)    // if no one tied for 1st
             {
-                currentRacers[0].wins++;
+                allRacers[0].wins++;
             }
         }
         else
         {
-            currentRacers[0].wins++;
+            allRacers[0].wins++;
         }
 
 
-
-        for (int i = 0; i < currentRacers.Length; i++)
+        for (int i = 0; i < numFinisedRacers; i++)
         {
-            if (i < numFinishedRacers)
+            if (i == 0)
+                allRacers[i].instance.GetComponent<Racer_Script>().crown.SetActive(true);
+            else
+                allRacers[i].instance.GetComponent<Racer_Script>().crown.SetActive(false);
+        }
+
+
+        for (int i = 0; i < numCurrentRacers; i++)
+        { 
+
+            if (i < numCurrentRacers)
             {
-                currentRacers[i].points += awardedPoints[p];
+                allRacers[i].points += awardedPoints[p];
             }
 
-            currentRacers[i].placement = r.ToString() + suffix[p];
+            allRacers[i].placement = r.ToString() + suffix[p];                
 
-            if (currentRacers[i].placement == "1st")           
-                currentRacers[i].instance.GetComponent<Racer_Script>().crown.SetActive(true);           
-            else
-                currentRacers[i].instance.GetComponent<Racer_Script>().crown.SetActive(false);
-
-            if (i + 1 < currentRacers.Length)
+            if (i + 1 < numCurrentRacers)
             {
-                if (currentRacers[i].finishTime != currentRacers[i + 1].finishTime || i >= numFinishedRacers)
+                if (allRacers[i].finishTime != allRacers[i + 1].finishTime || i >= numCurrentRacers)
                 {
                     r++;
 
@@ -335,20 +341,18 @@ public class GameManager : MonoBehaviour
 
     void CleanUpRound()
     {
-        allLeaderboards.gameObject.SetActive(false);
+        numCurrentRacers = numFinisedRacers;
 
         foreach (Transform ghost in transform.Find("Ghosts"))
             Destroy(ghost.gameObject);
 
-        for (int i = 0; i < currentRacers.Length; i++)
+        for (int i = 0; i < numCurrentRacers; i++)
         {
-            Event_Go -= currentRacers[i].instance.GetComponent<Racer_Script>().GO;
-            Event_GetSet -= currentRacers[i].instance.GetComponent<Racer_Script>().GetSet;
+            Event_Go -= allRacers[i].instance.GetComponent<Racer_Script>().GO;
+            Event_GetSet -= allRacers[i].instance.GetComponent<Racer_Script>().GetSet;
 
-            Destroy(currentRacers[i].instance);
+            Destroy(allRacers[i].instance);
         }
-
-        numFinishedRacers = 0;
     }
 
     void FinishRace()
@@ -367,13 +371,13 @@ public class GameManager : MonoBehaviour
         string txt = "";
         string etxt = "";
 
-        for (int i = 0; i < currentRacers.Length; i++)
+        for (int i = 0; i < numCurrentRacers; i++)
         {
-            txt += currentRacers[i].name + "\n";
+            txt += allRacers[i].name + "\n";
             etxt += "\n";
         }
 
-        for(int i = currentRacers.Length; i < allRacers.Length; i++)
+        for(int i = numCurrentRacers; i < allRacers.Length; i++)
         {
             etxt += allRacers[i].name + "\n";
         }
@@ -382,112 +386,86 @@ public class GameManager : MonoBehaviour
         miniLeaderboard.transform.Find("Eliminated Names").GetComponent<Text>().text = etxt;
     }
 
+    public void BigLeaderboard()
+    {
+        Transform content = allLeaderboards.transform.Find("Viewport/Content").transform;
+
+        currentLeaderboard = Instantiate(leaderboardPrefab, content);
+
+        currentLeaderboard.transform.Find("Round").GetChild(0).GetComponent<Text>().text = "ROUND " + roundNum.ToString();
+
+        for (int i = 0; i < allRacers.Length; i++)
+        {
+            GameObject leaderboardRow = Instantiate(leaderboardRowPrefab, currentLeaderboard.transform.Find("Board").transform);
+
+            leaderboardRow.transform.Find("Position").GetChild(0).GetComponent<Text>().text = allRacers[i].placement;
+            leaderboardRow.transform.Find("Name").GetChild(0).GetComponent<Text>().text = allRacers[i].name;
+
+
+            if (i < numFinisedRacers)
+            {
+                leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = allRacers[i].finishTime.ToString("F2");
+            }
+            else if (i < numCurrentRacers)
+            {
+                if(allRacers[i].finishTime == 0)
+                    leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = "DNF";
+                else
+                    leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = allRacers[i].finishTime.ToString("F2");
+
+                foreach (Transform child in leaderboardRow.transform)
+                {
+                    child.GetComponent<Image>().color = Color.red;
+                }
+            }
+            else
+            {
+                leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = "-";
+
+                foreach (Transform child in leaderboardRow.transform)
+                {
+                    child.GetComponent<Image>().color = Color.grey;
+                }
+            }
+
+            allRacers[i].finishTime = 0;
+            leaderboardRow.transform.Find("Wins").GetChild(0).GetComponent<Text>().text = allRacers[i].wins.ToString();
+            leaderboardRow.transform.Find("Points").GetChild(0).GetComponent<Text>().text = allRacers[i].points.ToString();
+        }
+    }
+
     public void BigLeaderboard(int input)
     {
         Transform content = allLeaderboards.transform.Find("Viewport/Content").transform;
 
-        for(int i = 0; i < currentRacers.Length; i++)
+        if (Mathf.Abs(input) == 1)
         {
-            allRacers[i] = currentRacers[i];
-        }
-
-        if (input == 0)
-        {
-            currentLeaderboard = Instantiate(leaderboardPrefab, content);
-
-            currentLeaderboard.transform.Find("Round").GetChild(0).GetComponent<Text>().text = "ROUND " + roundNum.ToString();
-
-            for (int i = 0; i < allRacers.Length; i++)
-            {
-                GameObject leaderboardRow = Instantiate(leaderboardRowPrefab, currentLeaderboard.transform.Find("Board").transform);
-
-                if(i >= numFinishedRacers)
-                {
-                    foreach(Transform child in leaderboardRow.transform)
-                    {
-                        child.GetComponent<Image>().color = Color.red;
-                    }
-                }
-
-                leaderboardRow.transform.Find("Position").GetChild(0).GetComponent<Text>().text = allRacers[i].placement;
-                leaderboardRow.transform.Find("Name").GetChild(0).GetComponent<Text>().text = allRacers[i].name;
-
-                if (allRacers[i].finishTime == 0)
-                {
-                    if (currentRacers.Contains(allRacers[i]))
-                    {
-                        leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = "DNF";
-                    }
-                    else
-                    {
-                        leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = "-";
-
-                        foreach (Transform child in leaderboardRow.transform)
-                        {
-                            child.GetComponent<Image>().color = Color.grey;
-                        }
-                    }
-                }
-                else
-                {
-                    leaderboardRow.transform.Find("Time").GetChild(0).GetComponent<Text>().text = allRacers[i].finishTime.ToString("F2");
-                }
-                allRacers[i].finishTime = 0;
-                leaderboardRow.transform.Find("Wins").GetChild(0).GetComponent<Text>().text = allRacers[i].wins.ToString();
-                leaderboardRow.transform.Find("Points").GetChild(0).GetComponent<Text>().text = allRacers[i].points.ToString();
-            }
-        }
-
-        if(Mathf.Abs(input) == 1)
-        {
-            if(input == 1)
+            if (input == 1)
             {
                 if (content.position.x > 834 * 2)
                     content.position -= new Vector3(834, 0, 0);
             }
-            
-            if(input == -1)
+
+            if (input == -1)
             {
-                if(content.position.x < 834 * (roundNum))
+                if (content.position.x < 834 * (roundNum))
                     content.position += new Vector3(834, 0, 0);
             }
         }
     }
 
-    int PositionComparison(RacerPerformance a, RacerPerformance b)
+
+    public class Comparer : IComparer
     {
-        if (a.finishTime == 0)
+        public int Compare(object x, object y)
         {
-            if (b.finishTime == 0)
-            {
-                float ay = a.instance.transform.position.y;
-                float by = b.instance.transform.position.y;
+            RacerPerformance a = x as RacerPerformance;
+            RacerPerformance b = y as RacerPerformance;
 
-                return ay.CompareTo(by);
-            }
-            else
-            {
-                return 1;
-            }
+            float ay = a.instance.transform.position.y;
+            float by = b.instance.transform.position.y;
+
+            return ay.CompareTo(by);
         }
-
-        if (b.finishTime == 0)
-            return -1;
-
-        float at = a.finishTime;
-        float bt = b.finishTime;
-
-        return at.CompareTo(bt);
-
-        /*  OLD CODE
-        if (a.instance == null) return (b.instance == null) ? 0 : 1;
-        if (b.instance == null) return -1;
-
-        float ay = a.instance.transform.position.y;
-        float by = b.instance.transform.position.y;
-
-        return ay.CompareTo(by);
-        */
     }
-
 }
