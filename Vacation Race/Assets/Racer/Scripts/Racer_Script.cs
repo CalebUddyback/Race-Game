@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Racer_Script : MonoBehaviour
 {
-    private RacerProfile racerProfile;
-
     public float current_speed;
     public int current_stamina;
 
@@ -45,43 +43,50 @@ public class Racer_Script : MonoBehaviour
 
     public void GO() => StartCoroutine(StartPhase());
 
-    public Dictionary<RacerProfile.Stat, float> adjustedStat;
+    private Dictionary<RacerProfile.Stat, float> adjustedStats;
 
-    private void Start()
+
+    public void AdjustStats(Dictionary<RacerProfile.Stat, float> baseStats)
     {
-        racerProfile = GetComponent<LoadFromProfile>().racerProfile;
+        srct = baseStats[RacerProfile.Stat.SRCT];
+        sspd = baseStats[RacerProfile.Stat.SSPD];
+        acc =  baseStats[RacerProfile.Stat.ACC];
+        pwr =  baseStats[RacerProfile.Stat.PWR];
+        stm =  baseStats[RacerProfile.Stat.STM];
+        com =  baseStats[RacerProfile.Stat.COM];
 
-        adjustedStat = new Dictionary<RacerProfile.Stat, float>()
+
+        adjustedStats = new Dictionary<RacerProfile.Stat, float>()
         {
-            {RacerProfile.Stat.SRCT, 0                                                              },
-            {RacerProfile.Stat.SSPD, (racerProfile.start_Speed      *   0.25f )     +    1f         },
-            {RacerProfile.Stat.ACC,  (racerProfile.acceleration     *   0.07f )     +    9.3f       },
-            {RacerProfile.Stat.PWR,  (racerProfile.power            *   0.017f)     +    0.7f       },
-            {RacerProfile.Stat.STM,  (racerProfile.stamina          *   3     )     +    10         },
-            //{RacerProfile.Stat.COM,  (racerProfile.composure        *   0.9f  )     +    1f         },
-            {RacerProfile.Stat.COM,  (racerProfile.composure) },
+            {RacerProfile.Stat.SRCT,  baseStats[RacerProfile.Stat.SRCT]                                                                      },
+            {RacerProfile.Stat.SSPD, (baseStats[RacerProfile.Stat.SSPD]     *   0.25f )     +    1f         },
+            {RacerProfile.Stat.ACC,  (baseStats[RacerProfile.Stat.ACC]     *   0.07f )     +    9.3f       },
+            {RacerProfile.Stat.PWR,  (baseStats[RacerProfile.Stat.PWR]     *   0.017f)     +    0.7f       },
+            {RacerProfile.Stat.STM,  (baseStats[RacerProfile.Stat.STM]     *   3     )     +    10         },
+            {RacerProfile.Stat.COM,   baseStats[RacerProfile.Stat.COM]                                     },
         };
 
-        current_stamina = (int)adjustedStat[RacerProfile.Stat.STM];
+        current_stamina = (int)adjustedStats[RacerProfile.Stat.STM];
     }
 
 
-    public float sspd, acc, pwr, stm, com, dd;
+    public float srct, sspd, acc, pwr, stm, com, dd;
 
     private void Update() //for debuging
     {
-        sspd = adjustedStat[RacerProfile.Stat.SSPD];
-        acc = adjustedStat[RacerProfile.Stat.ACC];
-        pwr = adjustedStat[RacerProfile.Stat.PWR];
-        stm = adjustedStat[RacerProfile.Stat.STM];
-        com = adjustedStat[RacerProfile.Stat.COM];
-
-        dd = dudDecay;
+        //srct = adjustedStats[RacerProfile.Stat.SRCT];
+        //sspd = adjustedStats[RacerProfile.Stat.SSPD];
+        //acc = adjustedStats[RacerProfile.Stat.ACC];
+        //pwr = adjustedStats[RacerProfile.Stat.PWR];
+        //stm = adjustedStats[RacerProfile.Stat.STM];
+        //com = adjustedStats[RacerProfile.Stat.COM];
+        //
+        //dd = dudDecay;
     }
 
     IEnumerator StartPhase()
     {
-        float startDelay = 1f - (racerProfile.start_Reaction / 10f);
+        //float startDelay = 1f - (racerProfile.start_Reaction / 10f);
 
         yield return new WaitForSeconds(0);
 
@@ -104,13 +109,13 @@ public class Racer_Script : MonoBehaviour
         }
         else if (stepsTaken == 0)
         {
-            current_speed = adjustedStat[RacerProfile.Stat.SSPD];
+            current_speed = adjustedStats[RacerProfile.Stat.SSPD];
         }
         else if (current_stamina > 0)
         {
             PowerStep();
 
-            adjustedStat[RacerProfile.Stat.PWR] -= adjustedStat[RacerProfile.Stat.PWR] * 0.05f;
+            adjustedStats[RacerProfile.Stat.PWR] -= adjustedStats[RacerProfile.Stat.PWR] * 0.05f;
 
             current_stamina--;
 
@@ -121,8 +126,8 @@ public class Racer_Script : MonoBehaviour
         {
             DudStep();
 
-            if(adjustedStat[RacerProfile.Stat.COM] > 0)
-                adjustedStat[RacerProfile.Stat.COM] -= (adjustedStat[RacerProfile.Stat.COM] * 0.005f);
+            if(adjustedStats[RacerProfile.Stat.COM] > 0)
+                adjustedStats[RacerProfile.Stat.COM] -= (adjustedStats[RacerProfile.Stat.COM] * 0.005f);
         }
 
         if(!finished)
@@ -145,15 +150,15 @@ public class Racer_Script : MonoBehaviour
 
     bool PowerStep()
     {
-        if (Random.Range(0f, 10f) < adjustedStat[RacerProfile.Stat.ACC])
+        if (Random.Range(0f, 10f) < adjustedStats[RacerProfile.Stat.ACC])
         {
-            current_speed += adjustedStat[RacerProfile.Stat.PWR];
+            current_speed += adjustedStats[RacerProfile.Stat.PWR];
 
             GetComponent<GhostMaker>().MakeGhost(Color.blue, 1.5f);
 
             powerSteps++;
 
-            adjustedStat[RacerProfile.Stat.ACC] -=  adjustedStat[RacerProfile.Stat.ACC] * 0.015f;
+            adjustedStats[RacerProfile.Stat.ACC] -=  adjustedStats[RacerProfile.Stat.ACC] * 0.015f;
 
             return true;
         }
@@ -165,7 +170,7 @@ public class Racer_Script : MonoBehaviour
     {
         
 
-        if (adjustedStat[RacerProfile.Stat.COM] < Random.Range(0f, 10f))
+        if (adjustedStats[RacerProfile.Stat.COM] < Random.Range(0f, 10f))
         {
             current_speed -= dudDecay;
 

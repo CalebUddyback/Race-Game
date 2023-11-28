@@ -27,4 +27,5 @@ MonoBehaviour:
   power: 10
   stamina: 1
   composure: 10
+  upgrades: 000000000000000000000000000000000000000000000000
   comp_edge: 

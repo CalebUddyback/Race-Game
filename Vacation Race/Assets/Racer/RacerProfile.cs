@@ -36,5 +36,26 @@ public class RacerProfile : ScriptableObject
         COM,
     };
 
+    public Dictionary<Stat, float> GetBaseStats
+    {
+        get
+        {
+
+            Dictionary<Stat, float> newDictionary = new Dictionary<Stat, float>
+            {
+                {Stat.SRCT, 0            },
+                {Stat.SSPD, start_Speed  },
+                {Stat.ACC,  acceleration },
+                {Stat.PWR,  power        },
+                {Stat.STM,  stamina      },
+                {Stat.COM,  composure    },
+            };
+
+            return newDictionary;
+        }
+    }
+
+    public Stat[] upgrades = new Stat[7];
+
     public string comp_edge = "";
 }

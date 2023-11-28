@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         public string name;
         public int lane;
         public RacerProfile profile;
+        public Dictionary<RacerProfile.Stat, float> stats;
         public GameObject instance;
         public float finishTime = 0;
         public string placement = "";
@@ -124,6 +125,7 @@ public class GameManager : MonoBehaviour
                     name = racersList[i].name,
                     lane = i,
                     profile = racersList[i],
+                    stats = racersList[i].GetBaseStats,
                 };
 
                 allRacers[i] = racer;
@@ -143,6 +145,14 @@ public class GameManager : MonoBehaviour
             allRacers[i].instance.AddComponent<GhostMaker>().ghostPrefab = ghostPrefab;
 
             StartCoroutine(allRacers[i].instance.GetComponent<LoadFromProfile>().Loading(allRacers[i].profile));
+
+            // upgrade
+
+            if(roundNum > 0)
+                allRacers[i].stats[allRacers[i].profile.upgrades.ElementAt(roundNum-1)] += 1;
+
+            allRacers[i].instance.GetComponent<Racer_Script>().AdjustStats(allRacers[i].stats);
+
 
             if (showBars)
             {

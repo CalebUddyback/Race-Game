@@ -12,13 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b876f4e381d98f847b95c8e84bd5bb97, type: 3}
   m_Name: Jaheed
   m_EditorClassIdentifier: 
-  points: 0
-  start_Reaction: 0
-  start_Speed: 5
-  acceleration: 5
-  power: 5
-  stamina: 5
-  composure: 5
   skin_Color: {r: 0.4528302, g: 0.2884426, b: 0.11747954, a: 1}
   eye_Color: {r: 0, g: 0, b: 0, a: 1}
   shirt_Color: {r: 0.14901961, g: 0.6039216, b: 0.14117648, a: 1}
@@ -27,3 +20,12 @@ MonoBehaviour:
   head_Addon: 2
   head_Addon_Color: {r: 0, g: 0, b: 0, a: 1}
   face_Addon: 1
+  points: 0
+  start_Reaction: 0
+  start_Speed: 5
+  acceleration: 5
+  power: 5
+  stamina: 5
+  composure: 5
+  upgrades: 000000000000000000000000000000000000000000000000
+  comp_edge: 
