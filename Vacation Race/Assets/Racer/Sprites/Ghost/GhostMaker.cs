@@ -10,16 +10,23 @@ public class GhostMaker : MonoBehaviour
 
     public GameObject ghostPrefab;
 
-    private readonly float ghost_deathSpeed = 0.4f;
+    private readonly float ghost_deathSpeed = 4f;
 
     public void MakeGhost(Color col)
     {
-        MakeGhost(col, ghost_deathSpeed);
+        StartCoroutine(MakingGhost(col, ghost_deathSpeed));
     }
-
 
     public void MakeGhost(Color col, float timer)
     {
+        StartCoroutine(MakingGhost(col, timer));
+    }
+
+
+    private IEnumerator MakingGhost(Color col, float timer)
+    {
+        yield return new WaitForEndOfFrame();
+
         GameObject ghostIntance = Instantiate(ghostPrefab, transform.position, Quaternion.identity);
 
         ghostIntance.transform.SetParent(GameObject.Find("GameManager/Ghosts").transform);

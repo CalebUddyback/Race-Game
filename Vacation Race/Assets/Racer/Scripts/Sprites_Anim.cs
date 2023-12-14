@@ -35,12 +35,14 @@ public class Sprites_Anim : MonoBehaviour
         //racer_Script = transform.parent.root.GetComponent<Racer_Script>();
 
         racer_Script.Event_Idle += Animation_Idle;
+        racer_Script.Event_Set += Animation_Set;
         racer_Script.Event_Run += Animation_Run;
         racer_Script.Event_Walk += Animation_Walk;
         racer_Script.Event_HandKnees += Animation_HandKnees;      
     }
 
     public void Animation_Idle() => anim.SetTrigger("Idle");
+    public void Animation_Set() => anim.SetTrigger("Set");
     public void Animation_Run() => anim.SetTrigger("Run");
     public void Animation_Walk() => anim.SetTrigger("Walk");
     public void Animation_HandKnees() => anim.SetTrigger("HandKnees");

@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     public int numFinisedRacers = 0;
 
     private event System.Action Event_Go;
-    private event System.Action Event_GetSet;
+    private event System.Action Event_Set;
 
     private float timer = 0;
 
@@ -51,8 +51,6 @@ public class GameManager : MonoBehaviour
     private readonly float leaderboardViewTime = 10;
 
     public GameObject ghostPrefab;
-
-    public bool showBars = false;
 
     void Start()
     {
@@ -74,6 +72,12 @@ public class GameManager : MonoBehaviour
         while (numCurrentRacers > 1)
         {
             SetUpRound();
+
+            yield return new WaitForSeconds(1f);
+
+            yield return StartCoroutine(Upgrades());
+
+            yield return new WaitForSeconds(0.2f);
 
             yield return StartCoroutine(RoundStart());
 
@@ -137,6 +141,7 @@ public class GameManager : MonoBehaviour
 
     void SetUpRound()
     {
+        roundNum++;
 
         for (int i = 0; i < numCurrentRacers; i++)
         {
@@ -146,22 +151,8 @@ public class GameManager : MonoBehaviour
 
             StartCoroutine(allRacers[i].instance.GetComponent<LoadFromProfile>().Loading(allRacers[i].profile));
 
-            // upgrade
-
-            if(roundNum > 0)
-                allRacers[i].stats[allRacers[i].profile.upgrades.ElementAt(roundNum-1)] += 1;
-
-            allRacers[i].instance.GetComponent<Racer_Script>().AdjustStats(allRacers[i].stats);
-
-
-            if (showBars)
-            {
-                allRacers[i].instance.transform.Find("Hud").GetComponent<Racer_UI>().stamina_bar.gameObject.SetActive(true);
-                allRacers[i].instance.transform.Find("Hud").GetComponent<Racer_UI>().speed_bar.gameObject.SetActive(true);
-            }
-
-            Event_Go += allRacers[i].instance.GetComponent<Racer_Script>().GO;
-            Event_GetSet += allRacers[i].instance.GetComponent<Racer_Script>().GetSet;
+            Event_Go += allRacers[i].instance.GetComponent<Racer_Script>().Go;
+            Event_Set += allRacers[i].instance.GetComponent<Racer_Script>().Set;
         }
 
         if(allRacers[0].placement == "1st")
@@ -175,8 +166,30 @@ public class GameManager : MonoBehaviour
         timer = 0;
         roundEndCountDownTime = 10;
         roundEndCountdown.gameObject.SetActive(false);
+    }
 
-        roundNum++;
+    IEnumerator Upgrades()
+    {
+        RacerPerformance[] laneSorted = new RacerPerformance[numCurrentRacers];
+
+        System.Array.Copy(allRacers, laneSorted, numCurrentRacers);
+
+        laneSorted = laneSorted.OrderBy(l => l.lane).ToArray();
+
+        for (int i = 0; i < numCurrentRacers; i++)
+        {
+
+            if (roundNum > 1)
+            {
+                laneSorted[i].stats[laneSorted[i].profile.upgrades.ElementAt(roundNum - 2)] += 1;
+                yield return laneSorted[i].instance.transform.Find("Hud").GetComponent<Racer_UI>().Upgrade(laneSorted[i].profile.upgrades[roundNum - 2]);
+            }
+
+            laneSorted[i].instance.GetComponent<Racer_Script>().AdjustStats(laneSorted[i].stats);
+
+        }
+
+        yield return null;
     }
 
     public void PauseGame()
@@ -194,7 +207,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Get Set...");
 
-        Event_GetSet?.Invoke();
+        Event_Set?.Invoke();
 
         yield return new WaitForSeconds(1);
 
@@ -274,8 +287,8 @@ public class GameManager : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
 
-            Event_Go -= allRacers[i].instance.GetComponent<Racer_Script>().GO;
-            Event_GetSet -= allRacers[i].instance.GetComponent<Racer_Script>().GetSet;
+            Event_Go -= allRacers[i].instance.GetComponent<Racer_Script>().Go;
+            Event_Set -= allRacers[i].instance.GetComponent<Racer_Script>().Set;
 
             allRacers[i].instance.GetComponent<Racer_Script>().Eliminate();
         }
@@ -358,8 +371,8 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < numCurrentRacers; i++)
         {
-            Event_Go -= allRacers[i].instance.GetComponent<Racer_Script>().GO;
-            Event_GetSet -= allRacers[i].instance.GetComponent<Racer_Script>().GetSet;
+            Event_Go -= allRacers[i].instance.GetComponent<Racer_Script>().Go;
+            Event_Set -= allRacers[i].instance.GetComponent<Racer_Script>().Set;
 
             Destroy(allRacers[i].instance);
         }

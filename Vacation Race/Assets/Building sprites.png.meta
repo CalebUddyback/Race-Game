@@ -89,6 +89,5703 @@ TextureImporter:
   - first:
       213: 7223582575486603910
     second: Building sprites_28
+  - first:
+      213: 7584882907954513415
+    second: Building sprites_0
+  - first:
+      213: 3665032407274670305
+    second: Building sprites_1
+  - first:
+      213: -636028943981291650
+    second: Building sprites_2
+  - first:
+      213: 8351506991376121248
+    second: Building sprites_3
+  - first:
+      213: -8834482724918379552
+    second: Building sprites_4
+  - first:
+      213: 4839297252484028573
+    second: Building sprites_5
+  - first:
+      213: -7131968752656513462
+    second: Building sprites_6
+  - first:
+      213: -2258855755440002551
+    second: Building sprites_7
+  - first:
+      213: 2490068943274358314
+    second: Building sprites_8
+  - first:
+      213: -8732250383070093957
+    second: Building sprites_9
+  - first:
+      213: -6500797571096630477
+    second: Building sprites_10
+  - first:
+      213: 262398437500941521
+    second: Building sprites_11
+  - first:
+      213: 1951174988438385466
+    second: Building sprites_12
+  - first:
+      213: 9149083409031443032
+    second: Building sprites_13
+  - first:
+      213: 4204341951020765294
+    second: Building sprites_14
+  - first:
+      213: 6112177307550007436
+    second: Building sprites_15
+  - first:
+      213: -1471442681367399141
+    second: Building sprites_16
+  - first:
+      213: -2165792845828330033
+    second: Building sprites_17
+  - first:
+      213: -254721205651577486
+    second: Building sprites_18
+  - first:
+      213: -7531873102440242243
+    second: Building sprites_19
+  - first:
+      213: -2500617009303487844
+    second: Building sprites_20
+  - first:
+      213: 6106044435292162357
+    second: Building sprites_21
+  - first:
+      213: -2986102797903695549
+    second: Building sprites_22
+  - first:
+      213: 4732070245125323261
+    second: Building sprites_23
+  - first:
+      213: -2197259838537786588
+    second: Building sprites_24
+  - first:
+      213: -8385320071291054977
+    second: Building sprites_25
+  - first:
+      213: 7209772953085853228
+    second: Building sprites_26
+  - first:
+      213: -6218336416840817072
+    second: Building sprites_27
+  - first:
+      213: 5922746113402660176
+    second: Building sprites_28
+  - first:
+      213: 4043483047592217875
+    second: Building sprites_29
+  - first:
+      213: 932278373446046018
+    second: Building sprites_30
+  - first:
+      213: -3922190259007839839
+    second: Building sprites_31
+  - first:
+      213: 6979125682668900087
+    second: Building sprites_32
+  - first:
+      213: 7423854234093443131
+    second: Building sprites_33
+  - first:
+      213: -2517719627754419464
+    second: Building sprites_34
+  - first:
+      213: 837023133878444705
+    second: Building sprites_35
+  - first:
+      213: 6945866420090905507
+    second: Building sprites_36
+  - first:
+      213: -5149405931831066103
+    second: Building sprites_37
+  - first:
+      213: 1266188844776864664
+    second: Building sprites_38
+  - first:
+      213: -1019847230192391260
+    second: Building sprites_39
+  - first:
+      213: 252243768019068821
+    second: Building sprites_40
+  - first:
+      213: 2381298351959148899
+    second: Building sprites_41
+  - first:
+      213: 827257497332596498
+    second: Building sprites_42
+  - first:
+      213: -9069061560324307808
+    second: Building sprites_43
+  - first:
+      213: -6600564816515851865
+    second: Building sprites_44
+  - first:
+      213: -8360951511346837424
+    second: Building sprites_45
+  - first:
+      213: 4432925768473303154
+    second: Building sprites_46
+  - first:
+      213: 6636324837042822560
+    second: Building sprites_47
+  - first:
+      213: -9180170542401806672
+    second: Building sprites_48
+  - first:
+      213: 6371182779254705356
+    second: Building sprites_49
+  - first:
+      213: -8615473626735022709
+    second: Building sprites_50
+  - first:
+      213: 2256383321160616233
+    second: Building sprites_51
+  - first:
+      213: 2949893156160536454
+    second: Building sprites_52
+  - first:
+      213: -4170621486630995254
+    second: Building sprites_53
+  - first:
+      213: 7085005588950922307
+    second: Building sprites_54
+  - first:
+      213: 8270766729823484791
+    second: Building sprites_55
+  - first:
+      213: 438660008732913697
+    second: Building sprites_56
+  - first:
+      213: 4129099666743349569
+    second: Building sprites_57
+  - first:
+      213: -8327623225011857132
+    second: Building sprites_58
+  - first:
+      213: 863414397947000250
+    second: Building sprites_59
+  - first:
+      213: -4924574515898365325
+    second: Building sprites_60
+  - first:
+      213: -940928119005328741
+    second: Building sprites_61
+  - first:
+      213: 6742751545290285318
+    second: Building sprites_62
+  - first:
+      213: -3179057300168144631
+    second: Building sprites_63
+  - first:
+      213: 1054494342920195468
+    second: Building sprites_64
+  - first:
+      213: 6691833685711264080
+    second: Building sprites_65
+  - first:
+      213: 2702322958767737401
+    second: Building sprites_66
+  - first:
+      213: -6014934130782688756
+    second: Building sprites_67
+  - first:
+      213: 3428047925070454410
+    second: Building sprites_68
+  - first:
+      213: -2901564393178356314
+    second: Building sprites_69
+  - first:
+      213: 8432608044457360553
+    second: Building sprites_70
+  - first:
+      213: 5853583124562872106
+    second: Building sprites_71
+  - first:
+      213: -7022821332019803145
+    second: Building sprites_72
+  - first:
+      213: 3926042899841584554
+    second: Building sprites_73
+  - first:
+      213: 3387749870809171262
+    second: Building sprites_74
+  - first:
+      213: 4878396236734412948
+    second: Building sprites_75
+  - first:
+      213: 3018074687925151283
+    second: Building sprites_76
+  - first:
+      213: -8961394280879408934
+    second: Building sprites_77
+  - first:
+      213: 4084431400193512374
+    second: Building sprites_78
+  - first:
+      213: -1890867341500337951
+    second: Building sprites_79
+  - first:
+      213: -6717667921144212667
+    second: Building sprites_80
+  - first:
+      213: 1552991120568769968
+    second: Building sprites_81
+  - first:
+      213: 7284384523150495346
+    second: Building sprites_82
+  - first:
+      213: -7220360506450629865
+    second: Building sprites_83
+  - first:
+      213: 4453961800180182528
+    second: Building sprites_84
+  - first:
+      213: -4104094868571846770
+    second: Building sprites_85
+  - first:
+      213: -2573319999452280418
+    second: Building sprites_86
+  - first:
+      213: -2986459416744037007
+    second: Building sprites_87
+  - first:
+      213: 2534792151521530166
+    second: Building sprites_88
+  - first:
+      213: 86106679152587104
+    second: Building sprites_89
+  - first:
+      213: -211601069276791973
+    second: Building sprites_90
+  - first:
+      213: -7633847129152685071
+    second: Building sprites_91
+  - first:
+      213: 364022751365778213
+    second: Building sprites_92
+  - first:
+      213: -8036752013889934066
+    second: Building sprites_93
+  - first:
+      213: 1606249276378419640
+    second: Building sprites_94
+  - first:
+      213: 3685007804682400578
+    second: Building sprites_95
+  - first:
+      213: 6707247965316002931
+    second: Building sprites_96
+  - first:
+      213: -7920536952992390501
+    second: Building sprites_97
+  - first:
+      213: 9218137650817669252
+    second: Building sprites_98
+  - first:
+      213: -5058143384429944938
+    second: Building sprites_99
+  - first:
+      213: 3053258751368196610
+    second: Building sprites_100
+  - first:
+      213: -7589503541210170601
+    second: Building sprites_101
+  - first:
+      213: -5178708908835923870
+    second: Building sprites_102
+  - first:
+      213: -7091242024394115037
+    second: Building sprites_103
+  - first:
+      213: -6675857768947795868
+    second: Building sprites_104
+  - first:
+      213: -7410477195484414723
+    second: Building sprites_105
+  - first:
+      213: 8974991896573320202
+    second: Building sprites_106
+  - first:
+      213: 2068720700114938777
+    second: Building sprites_107
+  - first:
+      213: 1845565466886965011
+    second: Building sprites_108
+  - first:
+      213: -4700151632888259177
+    second: Building sprites_109
+  - first:
+      213: -7202214240424449691
+    second: Building sprites_110
+  - first:
+      213: 3399224986430718165
+    second: Building sprites_111
+  - first:
+      213: 1303356379510532729
+    second: Building sprites_112
+  - first:
+      213: -8144571522952921984
+    second: Building sprites_113
+  - first:
+      213: -3112342822225749419
+    second: Building sprites_114
+  - first:
+      213: -8480051271121615596
+    second: Building sprites_115
+  - first:
+      213: -1269036935155775063
+    second: Building sprites_116
+  - first:
+      213: 1618629260660194222
+    second: Building sprites_117
+  - first:
+      213: -8077264795600451072
+    second: Building sprites_118
+  - first:
+      213: -6486504952657594655
+    second: Building sprites_119
+  - first:
+      213: 3303249419275963447
+    second: Building sprites_120
+  - first:
+      213: 3041577196670147093
+    second: Building sprites_121
+  - first:
+      213: -1225333736707775712
+    second: Building sprites_122
+  - first:
+      213: -6297316363014844798
+    second: Building sprites_123
+  - first:
+      213: -1461477624614566956
+    second: Building sprites_124
+  - first:
+      213: -1902418884079858199
+    second: Building sprites_125
+  - first:
+      213: 8836614130859313777
+    second: Building sprites_126
+  - first:
+      213: -3258342791118932597
+    second: Building sprites_127
+  - first:
+      213: -2158994389365368762
+    second: Building sprites_128
+  - first:
+      213: -3844855281854863181
+    second: Building sprites_129
+  - first:
+      213: -1297027108444232293
+    second: Building sprites_130
+  - first:
+      213: -2334996977940284522
+    second: Building sprites_131
+  - first:
+      213: -8796819043169772477
+    second: Building sprites_132
+  - first:
+      213: 6431720893373638708
+    second: Building sprites_133
+  - first:
+      213: 3824536433085614085
+    second: Building sprites_134
+  - first:
+      213: 1622225658908240485
+    second: Building sprites_135
+  - first:
+      213: 8365337227028729464
+    second: Building sprites_136
+  - first:
+      213: 5513105242047198497
+    second: Building sprites_137
+  - first:
+      213: 6756327794640004638
+    second: Building sprites_138
+  - first:
+      213: 9014824004425076982
+    second: Building sprites_139
+  - first:
+      213: 5076938143371056004
+    second: Building sprites_140
+  - first:
+      213: -4294928037316749419
+    second: Building sprites_141
+  - first:
+      213: 9073370271242715608
+    second: Building sprites_142
+  - first:
+      213: 3859141072601336081
+    second: Building sprites_143
+  - first:
+      213: 6260463042795099571
+    second: Building sprites_144
+  - first:
+      213: -3868425408103100022
+    second: Building sprites_145
+  - first:
+      213: 3058508399659012146
+    second: Building sprites_146
+  - first:
+      213: 7413380528890317233
+    second: Building sprites_147
+  - first:
+      213: 3569881841045866482
+    second: Building sprites_148
+  - first:
+      213: -8760808453832044022
+    second: Building sprites_149
+  - first:
+      213: 2749621393489142740
+    second: Building sprites_150
+  - first:
+      213: -4222486456248870152
+    second: Building sprites_151
+  - first:
+      213: 8861255888442688643
+    second: Building sprites_152
+  - first:
+      213: -8324291583214017748
+    second: Building sprites_153
+  - first:
+      213: 3979997505094723206
+    second: Building sprites_154
+  - first:
+      213: -7101364241107247749
+    second: Building sprites_155
+  - first:
+      213: 2101897934294348939
+    second: Building sprites_156
+  - first:
+      213: 4874797399177020796
+    second: Building sprites_157
+  - first:
+      213: -6604756433038058933
+    second: Building sprites_158
+  - first:
+      213: -2249425981660510832
+    second: Building sprites_159
+  - first:
+      213: 7773129547265393178
+    second: Building sprites_160
+  - first:
+      213: -7268688374388980015
+    second: Building sprites_161
+  - first:
+      213: 1769515721231381225
+    second: Building sprites_162
+  - first:
+      213: -187988372401068405
+    second: Building sprites_163
+  - first:
+      213: -7048043641051406536
+    second: Building sprites_164
+  - first:
+      213: 2821297586562867222
+    second: Building sprites_165
+  - first:
+      213: 86338725083869310
+    second: Building sprites_166
+  - first:
+      213: -1858804785050300157
+    second: Building sprites_167
+  - first:
+      213: 896016463723541821
+    second: Building sprites_168
+  - first:
+      213: 6790339406481439580
+    second: Building sprites_169
+  - first:
+      213: 6720327762059794171
+    second: Building sprites_170
+  - first:
+      213: 4606165951121650725
+    second: Building sprites_171
+  - first:
+      213: 8338818289418775752
+    second: Building sprites_172
+  - first:
+      213: -9121572117143031579
+    second: Building sprites_173
+  - first:
+      213: 6111364341629462237
+    second: Building sprites_174
+  - first:
+      213: -4030900300048914350
+    second: Building sprites_175
+  - first:
+      213: 9107361213437858127
+    second: Building sprites_176
+  - first:
+      213: 4553575074516804758
+    second: Building sprites_177
+  - first:
+      213: 6482544880564171046
+    second: Building sprites_178
+  - first:
+      213: -6518953492298167872
+    second: Building sprites_179
+  - first:
+      213: 2437437981289538456
+    second: Building sprites_180
+  - first:
+      213: -7141137097973869107
+    second: Building sprites_181
+  - first:
+      213: 2516332577496167385
+    second: Building sprites_182
+  - first:
+      213: 987686092576857838
+    second: Building sprites_183
+  - first:
+      213: 6783266696387630154
+    second: Building sprites_184
+  - first:
+      213: 7732753711017621979
+    second: Building sprites_185
+  - first:
+      213: -7078744284537479424
+    second: Building sprites_186
+  - first:
+      213: 5745524840683557183
+    second: Building sprites_187
+  - first:
+      213: -1192308138792704719
+    second: Building sprites_188
+  - first:
+      213: 8143722424048331813
+    second: Building sprites_189
+  - first:
+      213: -82771621435250685
+    second: Building sprites_190
+  - first:
+      213: -1116742794803449861
+    second: Building sprites_191
+  - first:
+      213: 3157999121030629755
+    second: Building sprites_192
+  - first:
+      213: 868161092474735083
+    second: Building sprites_193
+  - first:
+      213: -6288494611415389899
+    second: Building sprites_194
+  - first:
+      213: -8416871003226703639
+    second: Building sprites_195
+  - first:
+      213: 7864942861208451337
+    second: Building sprites_196
+  - first:
+      213: -6891659928326014712
+    second: Building sprites_197
+  - first:
+      213: -3891436652947916613
+    second: Building sprites_198
+  - first:
+      213: 8163277432368983207
+    second: Building sprites_199
+  - first:
+      213: -4451019951510579563
+    second: Building sprites_200
+  - first:
+      213: 1388131974785438828
+    second: Building sprites_201
+  - first:
+      213: 6601477661690933743
+    second: Building sprites_202
+  - first:
+      213: -1680737480770011093
+    second: Building sprites_203
+  - first:
+      213: -4006414630074761161
+    second: Building sprites_204
+  - first:
+      213: -3522090152130938206
+    second: Building sprites_205
+  - first:
+      213: 5631214086551948416
+    second: Building sprites_206
+  - first:
+      213: -5344704301581244735
+    second: Building sprites_207
+  - first:
+      213: 7886542500277666098
+    second: Building sprites_208
+  - first:
+      213: 539645748190986346
+    second: Building sprites_209
+  - first:
+      213: -8422946382218786456
+    second: Building sprites_210
+  - first:
+      213: 626614739961186463
+    second: Building sprites_211
+  - first:
+      213: 6098875737430296966
+    second: Building sprites_212
+  - first:
+      213: 4593933527397809429
+    second: Building sprites_213
+  - first:
+      213: -433296073949216210
+    second: Building sprites_214
+  - first:
+      213: -8310716139792604077
+    second: Building sprites_215
+  - first:
+      213: 2912117645633707731
+    second: Building sprites_216
+  - first:
+      213: 2656654154852828155
+    second: Building sprites_217
+  - first:
+      213: -8582761177462671803
+    second: Building sprites_218
+  - first:
+      213: 6544172595640642853
+    second: Building sprites_219
+  - first:
+      213: 5851263781840493194
+    second: Building sprites_220
+  - first:
+      213: 5006183332303434890
+    second: Building sprites_221
+  - first:
+      213: -8734720203035237439
+    second: Building sprites_222
+  - first:
+      213: -7237477137772519874
+    second: Building sprites_223
+  - first:
+      213: -3199920037781540156
+    second: Building sprites_224
+  - first:
+      213: -8714418313407618348
+    second: Building sprites_225
+  - first:
+      213: 812960148645080557
+    second: Building sprites_226
+  - first:
+      213: 4118769095759790623
+    second: Building sprites_227
+  - first:
+      213: -7708266104705197545
+    second: Building sprites_228
+  - first:
+      213: -8795072441351184201
+    second: Building sprites_229
+  - first:
+      213: 5535126235758461751
+    second: Building sprites_230
+  - first:
+      213: 1054363819558536707
+    second: Building sprites_231
+  - first:
+      213: -4284851093025796048
+    second: Building sprites_232
+  - first:
+      213: -2943818076896976668
+    second: Building sprites_233
+  - first:
+      213: 9110130404720473674
+    second: Building sprites_234
+  - first:
+      213: -8949628493130435039
+    second: Building sprites_235
+  - first:
+      213: -198893348414498496
+    second: Building sprites_236
+  - first:
+      213: -4552660309441317955
+    second: Building sprites_237
+  - first:
+      213: -6822309834423039589
+    second: Building sprites_238
+  - first:
+      213: 1819850429041969481
+    second: Building sprites_239
+  - first:
+      213: 3940613428240474870
+    second: Building sprites_240
+  - first:
+      213: 8328688581971415113
+    second: Building sprites_241
+  - first:
+      213: 475750745411438224
+    second: Building sprites_242
+  - first:
+      213: 2358871033855600219
+    second: Building sprites_243
+  - first:
+      213: 7398077704572229437
+    second: Building sprites_244
+  - first:
+      213: 389498966745568832
+    second: Building sprites_245
+  - first:
+      213: -196131826891252688
+    second: Building sprites_246
+  - first:
+      213: -4253197657919504438
+    second: Building sprites_247
+  - first:
+      213: -7489964195523369123
+    second: Building sprites_248
+  - first:
+      213: -3569421289768637521
+    second: Building sprites_249
+  - first:
+      213: -248229867284648321
+    second: Building sprites_250
+  - first:
+      213: 2033644518702643084
+    second: Building sprites_251
+  - first:
+      213: 1624808435469361233
+    second: Building sprites_252
+  - first:
+      213: 3864041518327973538
+    second: Building sprites_253
+  - first:
+      213: 6572539814690018358
+    second: Building sprites_254
+  - first:
+      213: 2023715122711639341
+    second: Building sprites_255
+  - first:
+      213: 925277212926779116
+    second: Building sprites_256
+  - first:
+      213: -57194561239127771
+    second: Building sprites_257
+  - first:
+      213: -1593093442374778066
+    second: Building sprites_258
+  - first:
+      213: 8343893959215079743
+    second: Building sprites_259
+  - first:
+      213: -7937739325103439094
+    second: Building sprites_260
+  - first:
+      213: -7491079399836203906
+    second: Building sprites_261
+  - first:
+      213: -2939905579009141281
+    second: Building sprites_262
+  - first:
+      213: 8190096070203675427
+    second: Building sprites_263
+  - first:
+      213: -5830469409896986471
+    second: Building sprites_264
+  - first:
+      213: 378758081307344214
+    second: Building sprites_265
+  - first:
+      213: 5847576550507357158
+    second: Building sprites_266
+  - first:
+      213: -2570872028920579931
+    second: Building sprites_267
+  - first:
+      213: -8144492573167341794
+    second: Building sprites_268
+  - first:
+      213: -4390351353594229182
+    second: Building sprites_269
+  - first:
+      213: -5695555648282761810
+    second: Building sprites_270
+  - first:
+      213: -5612957109039461644
+    second: Building sprites_271
+  - first:
+      213: -4979881168839488309
+    second: Building sprites_272
+  - first:
+      213: -7012429369359247507
+    second: Building sprites_273
+  - first:
+      213: -805785342709365829
+    second: Building sprites_274
+  - first:
+      213: 1222777678645395058
+    second: Building sprites_275
+  - first:
+      213: 2063620455991624686
+    second: Building sprites_276
+  - first:
+      213: 5578144128619732381
+    second: Building sprites_277
+  - first:
+      213: 2963913116877898930
+    second: Building sprites_278
+  - first:
+      213: -1171366036161909549
+    second: Building sprites_279
+  - first:
+      213: 2607862454275480875
+    second: Building sprites_280
+  - first:
+      213: 8380713152405919751
+    second: Building sprites_281
+  - first:
+      213: 2991969644748544934
+    second: Building sprites_282
+  - first:
+      213: -1061352978596251010
+    second: Building sprites_283
+  - first:
+      213: -5125909511905937310
+    second: Building sprites_284
+  - first:
+      213: -3503357000317393753
+    second: Building sprites_285
+  - first:
+      213: -3797045222454305882
+    second: Building sprites_286
+  - first:
+      213: -5252741646182707053
+    second: Building sprites_287
+  - first:
+      213: -683851411815384041
+    second: Building sprites_288
+  - first:
+      213: 7115365451755264614
+    second: Building sprites_289
+  - first:
+      213: 6044051766881610435
+    second: Building sprites_290
+  - first:
+      213: 3698834631811880931
+    second: Building sprites_291
+  - first:
+      213: 4144289621206676452
+    second: Building sprites_292
+  - first:
+      213: -7975521546987784864
+    second: Building sprites_293
+  - first:
+      213: -32517407551754835
+    second: Building sprites_294
+  - first:
+      213: 987971212319950677
+    second: Building sprites_295
+  - first:
+      213: -5443414552236898884
+    second: Building sprites_296
+  - first:
+      213: -5484288093928107375
+    second: Building sprites_297
+  - first:
+      213: -7589464550606345430
+    second: Building sprites_298
+  - first:
+      213: -2533167523840846704
+    second: Building sprites_299
+  - first:
+      213: 5816112353710240050
+    second: Building sprites_300
+  - first:
+      213: 6920190750878745983
+    second: Building sprites_301
+  - first:
+      213: 7956518441158407082
+    second: Building sprites_302
+  - first:
+      213: 3512627776324778903
+    second: Building sprites_303
+  - first:
+      213: -1152604058253944721
+    second: Building sprites_304
+  - first:
+      213: 2334256218451256040
+    second: Building sprites_305
+  - first:
+      213: -3775825055803488458
+    second: Building sprites_306
+  - first:
+      213: -5903111329480842823
+    second: Building sprites_307
+  - first:
+      213: 2796719157288184106
+    second: Building sprites_308
+  - first:
+      213: -4668395507273523253
+    second: Building sprites_309
+  - first:
+      213: 5260260925156494513
+    second: Building sprites_310
+  - first:
+      213: 93474883896110315
+    second: Building sprites_311
+  - first:
+      213: 668103392844688830
+    second: Building sprites_312
+  - first:
+      213: -4444265752293135487
+    second: Building sprites_313
+  - first:
+      213: 7718283428685741038
+    second: Building sprites_314
+  - first:
+      213: 4093713138829281549
+    second: Building sprites_315
+  - first:
+      213: -992628696719613505
+    second: Building sprites_316
+  - first:
+      213: -8200979884344856757
+    second: Building sprites_317
+  - first:
+      213: 3986368302541608583
+    second: Building sprites_318
+  - first:
+      213: 5179998597178630499
+    second: Building sprites_319
+  - first:
+      213: -4575406455758850771
+    second: Building sprites_320
+  - first:
+      213: -4121476689974378414
+    second: Building sprites_321
+  - first:
+      213: 2576811008162022344
+    second: Building sprites_322
+  - first:
+      213: -9052110253152084018
+    second: Building sprites_323
+  - first:
+      213: -6863337487187771525
+    second: Building sprites_324
+  - first:
+      213: -7029803958853968516
+    second: Building sprites_325
+  - first:
+      213: -2859790703859202369
+    second: Building sprites_326
+  - first:
+      213: -5628460172498039624
+    second: Building sprites_327
+  - first:
+      213: -3374634511482618414
+    second: Building sprites_328
+  - first:
+      213: 5222714140710564548
+    second: Building sprites_329
+  - first:
+      213: -4111002915916797794
+    second: Building sprites_330
+  - first:
+      213: 7962601351630587940
+    second: Building sprites_331
+  - first:
+      213: -4899193532453954193
+    second: Building sprites_332
+  - first:
+      213: 7497297035947427893
+    second: Building sprites_333
+  - first:
+      213: -1150549405275565638
+    second: Building sprites_334
+  - first:
+      213: -8507050484330982315
+    second: Building sprites_335
+  - first:
+      213: -3279283885546698830
+    second: Building sprites_336
+  - first:
+      213: -218609551742730712
+    second: Building sprites_337
+  - first:
+      213: 6191726581340625328
+    second: Building sprites_338
+  - first:
+      213: 3603533816939373324
+    second: Building sprites_339
+  - first:
+      213: 1612887543859156232
+    second: Building sprites_340
+  - first:
+      213: -7116321175967317641
+    second: Building sprites_341
+  - first:
+      213: -2081927014728902447
+    second: Building sprites_342
+  - first:
+      213: -110015198689218542
+    second: Building sprites_343
+  - first:
+      213: 3131528677036761756
+    second: Building sprites_344
+  - first:
+      213: -3145852923269189657
+    second: Building sprites_345
+  - first:
+      213: -4046596904018263363
+    second: Building sprites_346
+  - first:
+      213: 3619925691566568866
+    second: Building sprites_347
+  - first:
+      213: -1980619920713506262
+    second: Building sprites_348
+  - first:
+      213: -848398935777029856
+    second: Building sprites_349
+  - first:
+      213: -6112857762132682321
+    second: Building sprites_350
+  - first:
+      213: 2479506167570841872
+    second: Building sprites_351
+  - first:
+      213: -7892250605763763736
+    second: Building sprites_352
+  - first:
+      213: -4352041792226099384
+    second: Building sprites_353
+  - first:
+      213: 7822770940133575793
+    second: Building sprites_354
+  - first:
+      213: -8249943832987925197
+    second: Building sprites_355
+  - first:
+      213: 1553670010501239662
+    second: Building sprites_356
+  - first:
+      213: 9195779788449936908
+    second: Building sprites_357
+  - first:
+      213: -4924303362837976325
+    second: Building sprites_358
+  - first:
+      213: -3475749624057074085
+    second: Building sprites_359
+  - first:
+      213: 5002128383794252634
+    second: Building sprites_360
+  - first:
+      213: -4493936039866422430
+    second: Building sprites_361
+  - first:
+      213: -1886586848611581260
+    second: Building sprites_362
+  - first:
+      213: 1263649193058015434
+    second: Building sprites_363
+  - first:
+      213: -7719239708973673415
+    second: Building sprites_364
+  - first:
+      213: -4082759041594777582
+    second: Building sprites_365
+  - first:
+      213: 5924905299149800219
+    second: Building sprites_366
+  - first:
+      213: 8113491488162211823
+    second: Building sprites_367
+  - first:
+      213: -6180735890818594447
+    second: Building sprites_368
+  - first:
+      213: -3612900990530473476
+    second: Building sprites_369
+  - first:
+      213: 4099380665696103406
+    second: Building sprites_370
+  - first:
+      213: -9000751779285884736
+    second: Building sprites_371
+  - first:
+      213: 3510784617493873248
+    second: Building sprites_372
+  - first:
+      213: 731741237925306427
+    second: Building sprites_373
+  - first:
+      213: -7994379094803784646
+    second: Building sprites_374
+  - first:
+      213: -1728761525279155337
+    second: Building sprites_375
+  - first:
+      213: -8888088256611076237
+    second: Building sprites_376
+  - first:
+      213: 2077928010269670738
+    second: Building sprites_377
+  - first:
+      213: -5579997622358567594
+    second: Building sprites_378
+  - first:
+      213: -1393399479111276689
+    second: Building sprites_379
+  - first:
+      213: 967233905401006683
+    second: Building sprites_380
+  - first:
+      213: 460616261958469940
+    second: Building sprites_381
+  - first:
+      213: 2344040456689513133
+    second: Building sprites_382
+  - first:
+      213: -4805900181609235580
+    second: Building sprites_383
+  - first:
+      213: -3029282553734321895
+    second: Building sprites_384
+  - first:
+      213: 1457446770041894788
+    second: Building sprites_385
+  - first:
+      213: -2951381680249489422
+    second: Building sprites_386
+  - first:
+      213: -8516543537574538972
+    second: Building sprites_387
+  - first:
+      213: -3332372372974255662
+    second: Building sprites_388
+  - first:
+      213: -6708478325543144627
+    second: Building sprites_389
+  - first:
+      213: 7317385195436172216
+    second: Building sprites_390
+  - first:
+      213: -8319357477777195220
+    second: Building sprites_391
+  - first:
+      213: -2065236088702270095
+    second: Building sprites_392
+  - first:
+      213: -2161138907685412832
+    second: Building sprites_393
+  - first:
+      213: 7642873393181072177
+    second: Building sprites_394
+  - first:
+      213: -7237967505567092000
+    second: Building sprites_395
+  - first:
+      213: 6625386196484447893
+    second: Building sprites_396
+  - first:
+      213: -2917761087069383251
+    second: Building sprites_397
+  - first:
+      213: 671737631231836338
+    second: Building sprites_398
+  - first:
+      213: 8525684248718229029
+    second: Building sprites_399
+  - first:
+      213: -4962395650024130554
+    second: Building sprites_400
+  - first:
+      213: -1272997244724805712
+    second: Building sprites_401
+  - first:
+      213: 9084500024099864838
+    second: Building sprites_402
+  - first:
+      213: -7582716709953249418
+    second: Building sprites_403
+  - first:
+      213: -4205211440340507035
+    second: Building sprites_404
+  - first:
+      213: -6966320148277865274
+    second: Building sprites_405
+  - first:
+      213: -8467851572822859385
+    second: Building sprites_406
+  - first:
+      213: 706169208979504157
+    second: Building sprites_407
+  - first:
+      213: -4477064544441653052
+    second: Building sprites_408
+  - first:
+      213: 4333773918713235696
+    second: Building sprites_409
+  - first:
+      213: -7342467407702866553
+    second: Building sprites_410
+  - first:
+      213: 1398276374565533243
+    second: Building sprites_411
+  - first:
+      213: 4409133847920747794
+    second: Building sprites_412
+  - first:
+      213: -1038983273640890093
+    second: Building sprites_413
+  - first:
+      213: 6248977061979336601
+    second: Building sprites_414
+  - first:
+      213: -6769910748695750676
+    second: Building sprites_415
+  - first:
+      213: 4650019077723380847
+    second: Building sprites_416
+  - first:
+      213: -1597736230311550628
+    second: Building sprites_417
+  - first:
+      213: -1862588405827003189
+    second: Building sprites_418
+  - first:
+      213: 1488339315075450420
+    second: Building sprites_419
+  - first:
+      213: -9158568645345427762
+    second: Building sprites_420
+  - first:
+      213: 879397903689484601
+    second: Building sprites_421
+  - first:
+      213: -8684658943185666730
+    second: Building sprites_422
+  - first:
+      213: -698774150459810368
+    second: Building sprites_423
+  - first:
+      213: 1406895035203760574
+    second: Building sprites_424
+  - first:
+      213: 5110126602802862047
+    second: Building sprites_425
+  - first:
+      213: -6377991288439011235
+    second: Building sprites_426
+  - first:
+      213: 1541796516248522233
+    second: Building sprites_427
+  - first:
+      213: 1837075523315613433
+    second: Building sprites_428
+  - first:
+      213: 7779580733900829725
+    second: Building sprites_429
+  - first:
+      213: 3555421466333053321
+    second: Building sprites_430
+  - first:
+      213: -5168908478808767099
+    second: Building sprites_431
+  - first:
+      213: 8747339285918862549
+    second: Building sprites_432
+  - first:
+      213: 2119639731317294188
+    second: Building sprites_433
+  - first:
+      213: 6138611380879910259
+    second: Building sprites_434
+  - first:
+      213: 8530935925178169866
+    second: Building sprites_435
+  - first:
+      213: -1155758945804492832
+    second: Building sprites_436
+  - first:
+      213: -1935544807719385507
+    second: Building sprites_437
+  - first:
+      213: -2291671280855377141
+    second: Building sprites_438
+  - first:
+      213: 6733166398668838478
+    second: Building sprites_439
+  - first:
+      213: 8647345364369718640
+    second: Building sprites_440
+  - first:
+      213: 4182198888407021830
+    second: Building sprites_441
+  - first:
+      213: 8459494884989725967
+    second: Building sprites_442
+  - first:
+      213: 4775889064509642704
+    second: Building sprites_443
+  - first:
+      213: -4087872297214144976
+    second: Building sprites_444
+  - first:
+      213: -5156756377532722931
+    second: Building sprites_445
+  - first:
+      213: 7135417695025572586
+    second: Building sprites_446
+  - first:
+      213: 7089949637824542237
+    second: Building sprites_447
+  - first:
+      213: -2616601319878821208
+    second: Building sprites_448
+  - first:
+      213: -8497463309979451154
+    second: Building sprites_449
+  - first:
+      213: 1139507573231777418
+    second: Building sprites_450
+  - first:
+      213: -3737831582416783117
+    second: Building sprites_451
+  - first:
+      213: 3016299151292290845
+    second: Building sprites_452
+  - first:
+      213: 11527660252954967
+    second: Building sprites_453
+  - first:
+      213: -4987961019935951089
+    second: Building sprites_454
+  - first:
+      213: 4849137269127204254
+    second: Building sprites_455
+  - first:
+      213: 7247418121811880858
+    second: Building sprites_456
+  - first:
+      213: 6402279482994573409
+    second: Building sprites_457
+  - first:
+      213: 2230849056215563297
+    second: Building sprites_458
+  - first:
+      213: 5453842189235166432
+    second: Building sprites_459
+  - first:
+      213: 1631965876244468128
+    second: Building sprites_460
+  - first:
+      213: 3398226645412929466
+    second: Building sprites_461
+  - first:
+      213: 8125656763466308425
+    second: Building sprites_462
+  - first:
+      213: -407764511545402180
+    second: Building sprites_463
+  - first:
+      213: 4207374548516240671
+    second: Building sprites_464
+  - first:
+      213: 8258446072324955726
+    second: Building sprites_465
+  - first:
+      213: 4139716782607706682
+    second: Building sprites_466
+  - first:
+      213: -7336449457370730196
+    second: Building sprites_467
+  - first:
+      213: -2880080719143625097
+    second: Building sprites_468
+  - first:
+      213: 6273570347065373223
+    second: Building sprites_469
+  - first:
+      213: 292002432906245842
+    second: Building sprites_470
+  - first:
+      213: -4484338587927162399
+    second: Building sprites_471
+  - first:
+      213: -6077071267330209132
+    second: Building sprites_472
+  - first:
+      213: -9086398954570389579
+    second: Building sprites_473
+  - first:
+      213: 1106493400001468254
+    second: Building sprites_474
+  - first:
+      213: 489301538247942126
+    second: Building sprites_475
+  - first:
+      213: 7216785976909646168
+    second: Building sprites_476
+  - first:
+      213: 5684004494337319576
+    second: Building sprites_477
+  - first:
+      213: -5006356729543597709
+    second: Building sprites_478
+  - first:
+      213: 4704343663721110758
+    second: Building sprites_479
+  - first:
+      213: 4135301869703776944
+    second: Building sprites_480
+  - first:
+      213: 5267598362246155892
+    second: Building sprites_481
+  - first:
+      213: -2477307767998493179
+    second: Building sprites_482
+  - first:
+      213: 4364340688374533509
+    second: Building sprites_483
+  - first:
+      213: 5159462821753534225
+    second: Building sprites_484
+  - first:
+      213: -486334629340749291
+    second: Building sprites_485
+  - first:
+      213: 2462353238634479483
+    second: Building sprites_486
+  - first:
+      213: 5600147942738429674
+    second: Building sprites_487
+  - first:
+      213: 5407053504771979662
+    second: Building sprites_488
+  - first:
+      213: 2379861546674867267
+    second: Building sprites_489
+  - first:
+      213: 3393399862559858229
+    second: Building sprites_490
+  - first:
+      213: -7637539025329653502
+    second: Building sprites_491
+  - first:
+      213: -6540693676923173849
+    second: Building sprites_492
+  - first:
+      213: -1430211371533324077
+    second: Building sprites_493
+  - first:
+      213: 2394370925372896311
+    second: Building sprites_494
+  - first:
+      213: -7872446250797905883
+    second: Building sprites_495
+  - first:
+      213: 6914272178981586761
+    second: Building sprites_496
+  - first:
+      213: 7618047965163651376
+    second: Building sprites_497
+  - first:
+      213: -8213191957747509910
+    second: Building sprites_498
+  - first:
+      213: -7097672061047402160
+    second: Building sprites_499
+  - first:
+      213: 768873322300342597
+    second: Building sprites_500
+  - first:
+      213: 596944866425519649
+    second: Building sprites_501
+  - first:
+      213: -2566123710748402305
+    second: Building sprites_502
+  - first:
+      213: 2595912994295985940
+    second: Building sprites_503
+  - first:
+      213: -2490470711403435840
+    second: Building sprites_504
+  - first:
+      213: -7917252806778787552
+    second: Building sprites_505
+  - first:
+      213: -7933297152499333974
+    second: Building sprites_506
+  - first:
+      213: 1027242623212597084
+    second: Building sprites_507
+  - first:
+      213: 4835943504127232371
+    second: Building sprites_508
+  - first:
+      213: -3572630608961878158
+    second: Building sprites_509
+  - first:
+      213: 1007020771748955000
+    second: Building sprites_510
+  - first:
+      213: 5042325633065471996
+    second: Building sprites_511
+  - first:
+      213: 6002235323963284050
+    second: Building sprites_512
+  - first:
+      213: -5996895409239193524
+    second: Building sprites_513
+  - first:
+      213: -4240199921214140525
+    second: Building sprites_514
+  - first:
+      213: -4514208326477584634
+    second: Building sprites_515
+  - first:
+      213: -5243710000734501564
+    second: Building sprites_516
+  - first:
+      213: -6447413608307270729
+    second: Building sprites_517
+  - first:
+      213: 2752622546590139443
+    second: Building sprites_518
+  - first:
+      213: 7404838357446082278
+    second: Building sprites_519
+  - first:
+      213: 4489274371831392467
+    second: Building sprites_520
+  - first:
+      213: -6558750946608388807
+    second: Building sprites_521
+  - first:
+      213: 8403582915768427660
+    second: Building sprites_522
+  - first:
+      213: 1727663740897133170
+    second: Building sprites_523
+  - first:
+      213: -5885232698899227643
+    second: Building sprites_524
+  - first:
+      213: -8499225509056218030
+    second: Building sprites_525
+  - first:
+      213: -2092587132862157959
+    second: Building sprites_526
+  - first:
+      213: 2907987952952374185
+    second: Building sprites_527
+  - first:
+      213: -3019864834873478751
+    second: Building sprites_528
+  - first:
+      213: -3601748278752516625
+    second: Building sprites_529
+  - first:
+      213: -1270867903267449358
+    second: Building sprites_530
+  - first:
+      213: 4616536481460193450
+    second: Building sprites_531
+  - first:
+      213: 332896343294327537
+    second: Building sprites_532
+  - first:
+      213: -5047698869767689444
+    second: Building sprites_533
+  - first:
+      213: 5911705444544344087
+    second: Building sprites_534
+  - first:
+      213: 5184890163074473271
+    second: Building sprites_535
+  - first:
+      213: -7068270947689616945
+    second: Building sprites_536
+  - first:
+      213: 2363959101981040718
+    second: Building sprites_537
+  - first:
+      213: -6469711088631003458
+    second: Building sprites_538
+  - first:
+      213: 8229634919643487481
+    second: Building sprites_539
+  - first:
+      213: 228580790431847549
+    second: Building sprites_540
+  - first:
+      213: -7079299173115236475
+    second: Building sprites_541
+  - first:
+      213: -7092861436749078582
+    second: Building sprites_542
+  - first:
+      213: -6379810961678773180
+    second: Building sprites_543
+  - first:
+      213: 1496814499810720548
+    second: Building sprites_544
+  - first:
+      213: 5669871573936068616
+    second: Building sprites_545
+  - first:
+      213: 741443355580164290
+    second: Building sprites_546
+  - first:
+      213: 1309932201625516871
+    second: Building sprites_547
+  - first:
+      213: 3411442464990904086
+    second: Building sprites_548
+  - first:
+      213: 4811685462743525167
+    second: Building sprites_549
+  - first:
+      213: -2239021830407860360
+    second: Building sprites_550
+  - first:
+      213: -315289015036074041
+    second: Building sprites_551
+  - first:
+      213: 4188812408267215742
+    second: Building sprites_552
+  - first:
+      213: -8590432141562744418
+    second: Building sprites_553
+  - first:
+      213: 1082189334625464378
+    second: Building sprites_554
+  - first:
+      213: 4370164736996991759
+    second: Building sprites_555
+  - first:
+      213: -5748659486887419730
+    second: Building sprites_556
+  - first:
+      213: -4760550916806239101
+    second: Building sprites_557
+  - first:
+      213: -5330873999601339552
+    second: Building sprites_558
+  - first:
+      213: 3036250872898349962
+    second: Building sprites_559
+  - first:
+      213: -7630167342685243077
+    second: Building sprites_560
+  - first:
+      213: 5161867850103885676
+    second: Building sprites_561
+  - first:
+      213: 3513706736443821533
+    second: Building sprites_562
+  - first:
+      213: -8700592833188345272
+    second: Building sprites_563
+  - first:
+      213: 637165784486867818
+    second: Building sprites_564
+  - first:
+      213: 4148449558853814514
+    second: Building sprites_565
+  - first:
+      213: 3675732542709063655
+    second: Building sprites_566
+  - first:
+      213: -2243591809448998620
+    second: Building sprites_567
+  - first:
+      213: 5288686100955140728
+    second: Building sprites_568
+  - first:
+      213: -5873335690691968963
+    second: Building sprites_569
+  - first:
+      213: 3609580657983278389
+    second: Building sprites_570
+  - first:
+      213: 3081252231638448404
+    second: Building sprites_571
+  - first:
+      213: -7637151508688878559
+    second: Building sprites_572
+  - first:
+      213: -5787753294559948185
+    second: Building sprites_573
+  - first:
+      213: -355354954691093717
+    second: Building sprites_574
+  - first:
+      213: 6669013402811640582
+    second: Building sprites_575
+  - first:
+      213: 3793976909233506317
+    second: Building sprites_576
+  - first:
+      213: -191028257938761046
+    second: Building sprites_577
+  - first:
+      213: 1667657665560277197
+    second: Building sprites_578
+  - first:
+      213: -3764371738573874141
+    second: Building sprites_579
+  - first:
+      213: 1975689721932030480
+    second: Building sprites_580
+  - first:
+      213: -5764627316569393293
+    second: Building sprites_581
+  - first:
+      213: 6414695497083727955
+    second: Building sprites_582
+  - first:
+      213: 7729036362523597111
+    second: Building sprites_583
+  - first:
+      213: 8093233935602509579
+    second: Building sprites_584
+  - first:
+      213: 932629045443247561
+    second: Building sprites_585
+  - first:
+      213: 2830367822481175298
+    second: Building sprites_586
+  - first:
+      213: -2204264841967711881
+    second: Building sprites_587
+  - first:
+      213: -9190741904582840374
+    second: Building sprites_588
+  - first:
+      213: 5710635781824619554
+    second: Building sprites_589
+  - first:
+      213: 3533961732519836519
+    second: Building sprites_590
+  - first:
+      213: 6454088513457772494
+    second: Building sprites_591
+  - first:
+      213: -4607323503233888072
+    second: Building sprites_592
+  - first:
+      213: 317927251170422953
+    second: Building sprites_593
+  - first:
+      213: -7702497468109493342
+    second: Building sprites_594
+  - first:
+      213: 1329858254399963874
+    second: Building sprites_595
+  - first:
+      213: -9114168150942948662
+    second: Building sprites_596
+  - first:
+      213: 1566149892935043367
+    second: Building sprites_597
+  - first:
+      213: -8587655948827133107
+    second: Building sprites_598
+  - first:
+      213: 9022025826925327138
+    second: Building sprites_599
+  - first:
+      213: 7151369805074734271
+    second: Building sprites_600
+  - first:
+      213: 3009332121362980273
+    second: Building sprites_601
+  - first:
+      213: 613571016366328843
+    second: Building sprites_602
+  - first:
+      213: -4853947073979729613
+    second: Building sprites_603
+  - first:
+      213: -1974144710602360970
+    second: Building sprites_604
+  - first:
+      213: -5691634260208096263
+    second: Building sprites_605
+  - first:
+      213: -4021696925209221429
+    second: Building sprites_606
+  - first:
+      213: -819680240531457263
+    second: Building sprites_607
+  - first:
+      213: -7429113981267941916
+    second: Building sprites_608
+  - first:
+      213: 7567182209077948989
+    second: Building sprites_609
+  - first:
+      213: 6829545005551042757
+    second: Building sprites_610
+  - first:
+      213: 4182734202723341724
+    second: Building sprites_611
+  - first:
+      213: -3838550967370866602
+    second: Building sprites_612
+  - first:
+      213: -264204532652403955
+    second: Building sprites_613
+  - first:
+      213: -8681300783705329571
+    second: Building sprites_614
+  - first:
+      213: -232715783344063737
+    second: Building sprites_615
+  - first:
+      213: -3445088059082595868
+    second: Building sprites_616
+  - first:
+      213: 4288879736333904210
+    second: Building sprites_617
+  - first:
+      213: 767390437452675137
+    second: Building sprites_618
+  - first:
+      213: 4773767576465213143
+    second: Building sprites_619
+  - first:
+      213: 1737006211026953148
+    second: Building sprites_620
+  - first:
+      213: -7250304325796579848
+    second: Building sprites_621
+  - first:
+      213: -4118426514275590013
+    second: Building sprites_622
+  - first:
+      213: -3662018608541546329
+    second: Building sprites_623
+  - first:
+      213: 6081578915403288206
+    second: Building sprites_624
+  - first:
+      213: 1612590366754352162
+    second: Building sprites_625
+  - first:
+      213: -7016209807855840946
+    second: Building sprites_626
+  - first:
+      213: 4248731810824151055
+    second: Building sprites_627
+  - first:
+      213: 2043217531935328701
+    second: Building sprites_628
+  - first:
+      213: 5518915488631949593
+    second: Building sprites_629
+  - first:
+      213: 755823141400362453
+    second: Building sprites_630
+  - first:
+      213: -3447503208865223179
+    second: Building sprites_631
+  - first:
+      213: -6858974968993176734
+    second: Building sprites_632
+  - first:
+      213: -3964115055403645819
+    second: Building sprites_633
+  - first:
+      213: 5835026051325291792
+    second: Building sprites_634
+  - first:
+      213: -6912285691868686087
+    second: Building sprites_635
+  - first:
+      213: -7716131515270768514
+    second: Building sprites_636
+  - first:
+      213: -883036222660224031
+    second: Building sprites_637
+  - first:
+      213: -2241243012246668930
+    second: Building sprites_638
+  - first:
+      213: 2658685649118519439
+    second: Building sprites_639
+  - first:
+      213: -244965044580439656
+    second: Building sprites_640
+  - first:
+      213: -7223449006627682206
+    second: Building sprites_641
+  - first:
+      213: -2180898545751763483
+    second: Building sprites_642
+  - first:
+      213: 4803891666953858943
+    second: Building sprites_643
+  - first:
+      213: 6171965858946057314
+    second: Building sprites_644
+  - first:
+      213: -384738069480773722
+    second: Building sprites_645
+  - first:
+      213: -3038000952697459574
+    second: Building sprites_646
+  - first:
+      213: -5041171819769604724
+    second: Building sprites_647
+  - first:
+      213: -2805469047842532243
+    second: Building sprites_648
+  - first:
+      213: -989284154873678318
+    second: Building sprites_649
+  - first:
+      213: -5714022076157950598
+    second: Building sprites_650
+  - first:
+      213: -2397452493738971893
+    second: Building sprites_651
+  - first:
+      213: -5937246808704484943
+    second: Building sprites_652
+  - first:
+      213: 6668169612361847100
+    second: Building sprites_653
+  - first:
+      213: 3847123868588719028
+    second: Building sprites_654
+  - first:
+      213: 1194675747658156826
+    second: Building sprites_655
+  - first:
+      213: 6541133851968324730
+    second: Building sprites_656
+  - first:
+      213: -3217096201031261012
+    second: Building sprites_657
+  - first:
+      213: -4421554727884737317
+    second: Building sprites_658
+  - first:
+      213: 374680895223391092
+    second: Building sprites_659
+  - first:
+      213: -1677006061458527306
+    second: Building sprites_660
+  - first:
+      213: -246221385745391175
+    second: Building sprites_661
+  - first:
+      213: 6004989150776963780
+    second: Building sprites_662
+  - first:
+      213: -753008027447378886
+    second: Building sprites_663
+  - first:
+      213: 5361240395075081137
+    second: Building sprites_664
+  - first:
+      213: 8289319243021751303
+    second: Building sprites_665
+  - first:
+      213: 2739864152296418604
+    second: Building sprites_666
+  - first:
+      213: -8394508095538920482
+    second: Building sprites_667
+  - first:
+      213: -6234934459924525923
+    second: Building sprites_668
+  - first:
+      213: 5650529236703865835
+    second: Building sprites_669
+  - first:
+      213: 696162881987521956
+    second: Building sprites_670
+  - first:
+      213: 537511675037727695
+    second: Building sprites_671
+  - first:
+      213: -6836175385853755897
+    second: Building sprites_672
+  - first:
+      213: 6674187400660340242
+    second: Building sprites_673
+  - first:
+      213: 5890750345970765638
+    second: Building sprites_674
+  - first:
+      213: 6971380394746622805
+    second: Building sprites_675
+  - first:
+      213: -1231392177085737200
+    second: Building sprites_676
+  - first:
+      213: -1285914593002696225
+    second: Building sprites_677
+  - first:
+      213: 402259506249926241
+    second: Building sprites_678
+  - first:
+      213: -811842722076758663
+    second: Building sprites_679
+  - first:
+      213: 4774861657327310007
+    second: Building sprites_680
+  - first:
+      213: 3937787106563441457
+    second: Building sprites_681
+  - first:
+      213: 7209201359359720009
+    second: Building sprites_682
+  - first:
+      213: 8398462039350185245
+    second: Building sprites_683
+  - first:
+      213: 1222018897186321733
+    second: Building sprites_684
+  - first:
+      213: -462379550891452776
+    second: Building sprites_685
+  - first:
+      213: -7482833479896102426
+    second: Building sprites_686
+  - first:
+      213: 1479807133655175697
+    second: Building sprites_687
+  - first:
+      213: -577466938010080581
+    second: Building sprites_688
+  - first:
+      213: -8223603782448201715
+    second: Building sprites_689
+  - first:
+      213: 1250218956017850166
+    second: Building sprites_690
+  - first:
+      213: -4451612324814873780
+    second: Building sprites_691
+  - first:
+      213: -975447360222368353
+    second: Building sprites_692
+  - first:
+      213: 3788603240397824394
+    second: Building sprites_693
+  - first:
+      213: -8647960878414920358
+    second: Building sprites_694
+  - first:
+      213: -3273166591327287174
+    second: Building sprites_695
+  - first:
+      213: 3017348908374771938
+    second: Building sprites_696
+  - first:
+      213: 1384774875324302059
+    second: Building sprites_697
+  - first:
+      213: -8751223952416632832
+    second: Building sprites_698
+  - first:
+      213: 7267061059874113788
+    second: Building sprites_699
+  - first:
+      213: 3253436369587841417
+    second: Building sprites_700
+  - first:
+      213: 205990805300707601
+    second: Building sprites_701
+  - first:
+      213: 8719573107858812029
+    second: Building sprites_702
+  - first:
+      213: 8712143399858805520
+    second: Building sprites_703
+  - first:
+      213: 8997166878609325740
+    second: Building sprites_704
+  - first:
+      213: -7010210944835586321
+    second: Building sprites_705
+  - first:
+      213: 5563990104093739762
+    second: Building sprites_706
+  - first:
+      213: 5785392139565369329
+    second: Building sprites_707
+  - first:
+      213: 5013938579712803947
+    second: Building sprites_708
+  - first:
+      213: 9025878964006461277
+    second: Building sprites_709
+  - first:
+      213: -6996317220484311428
+    second: Building sprites_710
+  - first:
+      213: -3375267333766642775
+    second: Building sprites_711
+  - first:
+      213: -9082629449044073624
+    second: Building sprites_712
+  - first:
+      213: -1377985573650199476
+    second: Building sprites_713
+  - first:
+      213: -1755914719349354745
+    second: Building sprites_714
+  - first:
+      213: 4086734477312154896
+    second: Building sprites_715
+  - first:
+      213: 1884794638116843810
+    second: Building sprites_716
+  - first:
+      213: -6212542783169835939
+    second: Building sprites_717
+  - first:
+      213: -3039730615843086693
+    second: Building sprites_718
+  - first:
+      213: 847664719829881047
+    second: Building sprites_719
+  - first:
+      213: 1371332971331380112
+    second: Building sprites_720
+  - first:
+      213: 5353310335235433394
+    second: Building sprites_721
+  - first:
+      213: 9135565544560590877
+    second: Building sprites_722
+  - first:
+      213: 1057651150433963837
+    second: Building sprites_723
+  - first:
+      213: 7862793383122713510
+    second: Building sprites_724
+  - first:
+      213: -7820078794217889986
+    second: Building sprites_725
+  - first:
+      213: 3250366592766873709
+    second: Building sprites_726
+  - first:
+      213: 8833911177075516488
+    second: Building sprites_727
+  - first:
+      213: -1234903679345823305
+    second: Building sprites_728
+  - first:
+      213: -5787347426811886411
+    second: Building sprites_729
+  - first:
+      213: -1535085119653883499
+    second: Building sprites_730
+  - first:
+      213: 1614362158553670572
+    second: Building sprites_731
+  - first:
+      213: 3259044240266173546
+    second: Building sprites_732
+  - first:
+      213: -6281104901021882354
+    second: Building sprites_733
+  - first:
+      213: -6194092812263388381
+    second: Building sprites_734
+  - first:
+      213: -6211289508889739041
+    second: Building sprites_735
+  - first:
+      213: 4811721657377874908
+    second: Building sprites_736
+  - first:
+      213: -391484375891180764
+    second: Building sprites_737
+  - first:
+      213: 199832795949751273
+    second: Building sprites_738
+  - first:
+      213: 8056737235119993051
+    second: Building sprites_739
+  - first:
+      213: -3541484975046815215
+    second: Building sprites_740
+  - first:
+      213: -4697972603042273324
+    second: Building sprites_741
+  - first:
+      213: 1731501447749820764
+    second: Building sprites_742
+  - first:
+      213: 5078340124581099346
+    second: Building sprites_743
+  - first:
+      213: -2421881031793130870
+    second: Building sprites_744
+  - first:
+      213: 5870305387160984255
+    second: Building sprites_745
+  - first:
+      213: -4320153069259406197
+    second: Building sprites_746
+  - first:
+      213: -3365493928272565559
+    second: Building sprites_747
+  - first:
+      213: 1850265730898707128
+    second: Building sprites_748
+  - first:
+      213: -498935801092194330
+    second: Building sprites_749
+  - first:
+      213: -5415911358606914056
+    second: Building sprites_750
+  - first:
+      213: 8337411533186709969
+    second: Building sprites_751
+  - first:
+      213: 592025284165839618
+    second: Building sprites_752
+  - first:
+      213: -3368273539586344250
+    second: Building sprites_753
+  - first:
+      213: -5991186240923494714
+    second: Building sprites_754
+  - first:
+      213: 4387940969963807747
+    second: Building sprites_755
+  - first:
+      213: 728876501038728861
+    second: Building sprites_756
+  - first:
+      213: 7010893401390673857
+    second: Building sprites_757
+  - first:
+      213: -3309507259552812547
+    second: Building sprites_758
+  - first:
+      213: 786704659617485943
+    second: Building sprites_759
+  - first:
+      213: -2503779476971001382
+    second: Building sprites_760
+  - first:
+      213: -1221862396968630218
+    second: Building sprites_761
+  - first:
+      213: 4716725578798995952
+    second: Building sprites_762
+  - first:
+      213: 7830909441433641730
+    second: Building sprites_763
+  - first:
+      213: 8194838597253005255
+    second: Building sprites_764
+  - first:
+      213: 577080132414322344
+    second: Building sprites_765
+  - first:
+      213: 5181999501368884813
+    second: Building sprites_766
+  - first:
+      213: 369179381951691755
+    second: Building sprites_767
+  - first:
+      213: -7658931568056911244
+    second: Building sprites_768
+  - first:
+      213: 6961058748295284349
+    second: Building sprites_769
+  - first:
+      213: -5509510048385351544
+    second: Building sprites_770
+  - first:
+      213: 8324099466125555374
+    second: Building sprites_771
+  - first:
+      213: 9196627882990750420
+    second: Building sprites_772
+  - first:
+      213: -879948371868904312
+    second: Building sprites_773
+  - first:
+      213: -4697230269678894822
+    second: Building sprites_774
+  - first:
+      213: -2414599088784667071
+    second: Building sprites_775
+  - first:
+      213: 1337012084071293995
+    second: Building sprites_776
+  - first:
+      213: -200974883642274236
+    second: Building sprites_777
+  - first:
+      213: 4956032937790426324
+    second: Building sprites_778
+  - first:
+      213: 7109088236495819504
+    second: Building sprites_779
+  - first:
+      213: -6384703204349751580
+    second: Building sprites_780
+  - first:
+      213: -3276018889835566751
+    second: Building sprites_781
+  - first:
+      213: -2193970196557088647
+    second: Building sprites_782
+  - first:
+      213: -4359642566902655758
+    second: Building sprites_783
+  - first:
+      213: -4226927906586912081
+    second: Building sprites_784
+  - first:
+      213: 5194730997204143674
+    second: Building sprites_785
+  - first:
+      213: -3761763862138716448
+    second: Building sprites_786
+  - first:
+      213: -293334976177830723
+    second: Building sprites_787
+  - first:
+      213: -8877205090180000235
+    second: Building sprites_788
+  - first:
+      213: 6961235661228720157
+    second: Building sprites_789
+  - first:
+      213: -5309931693095083579
+    second: Building sprites_790
+  - first:
+      213: -8284116460864501492
+    second: Building sprites_791
+  - first:
+      213: -784873975002261834
+    second: Building sprites_792
+  - first:
+      213: 3410119265692064013
+    second: Building sprites_793
+  - first:
+      213: -6423643614677936401
+    second: Building sprites_794
+  - first:
+      213: -1626602957839836926
+    second: Building sprites_795
+  - first:
+      213: -8715254434666102364
+    second: Building sprites_796
+  - first:
+      213: 5423435603782532793
+    second: Building sprites_797
+  - first:
+      213: -1785967790871271482
+    second: Building sprites_798
+  - first:
+      213: 2595063585421389291
+    second: Building sprites_799
+  - first:
+      213: 5610898876834626275
+    second: Building sprites_800
+  - first:
+      213: -5847105999465046713
+    second: Building sprites_801
+  - first:
+      213: -3835531004948212384
+    second: Building sprites_802
+  - first:
+      213: 2263711584957272142
+    second: Building sprites_803
+  - first:
+      213: -967229953717055666
+    second: Building sprites_804
+  - first:
+      213: -5295461673456229564
+    second: Building sprites_805
+  - first:
+      213: -8138103861921988745
+    second: Building sprites_806
+  - first:
+      213: -2844487890809017527
+    second: Building sprites_807
+  - first:
+      213: -3179505363299367832
+    second: Building sprites_808
+  - first:
+      213: -4662574194418499762
+    second: Building sprites_809
+  - first:
+      213: -2662220494103406502
+    second: Building sprites_810
+  - first:
+      213: -6345033524908995666
+    second: Building sprites_811
+  - first:
+      213: -5850548139162034632
+    second: Building sprites_812
+  - first:
+      213: -6346148496636581693
+    second: Building sprites_813
+  - first:
+      213: -6652417434883602080
+    second: Building sprites_814
+  - first:
+      213: -213015313819930614
+    second: Building sprites_815
+  - first:
+      213: 8397557725840515951
+    second: Building sprites_816
+  - first:
+      213: 2070957951305971706
+    second: Building sprites_817
+  - first:
+      213: -5379044116213165263
+    second: Building sprites_818
+  - first:
+      213: 7394758184929813493
+    second: Building sprites_819
+  - first:
+      213: 5258853239617244256
+    second: Building sprites_820
+  - first:
+      213: -4754137024670285677
+    second: Building sprites_821
+  - first:
+      213: 5467079735698552329
+    second: Building sprites_822
+  - first:
+      213: -2624892577107758027
+    second: Building sprites_823
+  - first:
+      213: -7753699832741618200
+    second: Building sprites_824
+  - first:
+      213: 4284320255995030766
+    second: Building sprites_825
+  - first:
+      213: 9070672680237126523
+    second: Building sprites_826
+  - first:
+      213: 6000487327452522844
+    second: Building sprites_827
+  - first:
+      213: 1156847962283816667
+    second: Building sprites_828
+  - first:
+      213: -5520313554336866059
+    second: Building sprites_829
+  - first:
+      213: -873395552926328595
+    second: Building sprites_830
+  - first:
+      213: -3975567575177704233
+    second: Building sprites_831
+  - first:
+      213: 8315284354500469593
+    second: Building sprites_832
+  - first:
+      213: -3419352914038307781
+    second: Building sprites_833
+  - first:
+      213: -8440263112669300442
+    second: Building sprites_834
+  - first:
+      213: 8103762179069858753
+    second: Building sprites_835
+  - first:
+      213: -8741167106357307846
+    second: Building sprites_836
+  - first:
+      213: 5855895281996365630
+    second: Building sprites_837
+  - first:
+      213: 8715301703270190636
+    second: Building sprites_838
+  - first:
+      213: -5648756820412443096
+    second: Building sprites_839
+  - first:
+      213: 878788017253790299
+    second: Building sprites_840
+  - first:
+      213: -3355717537929086626
+    second: Building sprites_841
+  - first:
+      213: 4027341396689795233
+    second: Building sprites_842
+  - first:
+      213: -3022916143823387206
+    second: Building sprites_843
+  - first:
+      213: 8539079002183688303
+    second: Building sprites_844
+  - first:
+      213: 309770068620110076
+    second: Building sprites_845
+  - first:
+      213: 8467077458888477294
+    second: Building sprites_846
+  - first:
+      213: -496705808037454534
+    second: Building sprites_847
+  - first:
+      213: -354066990731427548
+    second: Building sprites_848
+  - first:
+      213: 853040586772579109
+    second: Building sprites_849
+  - first:
+      213: 3742598399339184802
+    second: Building sprites_850
+  - first:
+      213: -6815360395533173082
+    second: Building sprites_851
+  - first:
+      213: -8191307036712150790
+    second: Building sprites_852
+  - first:
+      213: 2395254974648786199
+    second: Building sprites_853
+  - first:
+      213: -4774911825402451577
+    second: Building sprites_854
+  - first:
+      213: -7407975233604277717
+    second: Building sprites_855
+  - first:
+      213: 4656759439407951846
+    second: Building sprites_856
+  - first:
+      213: 181675141173510584
+    second: Building sprites_857
+  - first:
+      213: 1252244173241349816
+    second: Building sprites_858
+  - first:
+      213: 7899137152734829491
+    second: Building sprites_859
+  - first:
+      213: 2037282669304354730
+    second: Building sprites_860
+  - first:
+      213: 7461174275043539347
+    second: Building sprites_861
+  - first:
+      213: -6981644353637210895
+    second: Building sprites_862
+  - first:
+      213: -7175861092688246388
+    second: Building sprites_863
+  - first:
+      213: 2458634867511248945
+    second: Building sprites_864
+  - first:
+      213: 2621979343628476606
+    second: Building sprites_865
+  - first:
+      213: -6228111187200011729
+    second: Building sprites_866
+  - first:
+      213: -7682280836082406237
+    second: Building sprites_867
+  - first:
+      213: -7053349651506289797
+    second: Building sprites_868
+  - first:
+      213: 550913435090086942
+    second: Building sprites_869
+  - first:
+      213: -7708069516551473035
+    second: Building sprites_870
+  - first:
+      213: 5213222193276934126
+    second: Building sprites_871
+  - first:
+      213: -7100582647492328967
+    second: Building sprites_872
+  - first:
+      213: -2497404087178152854
+    second: Building sprites_873
+  - first:
+      213: 4144074295735594368
+    second: Building sprites_874
+  - first:
+      213: 4265374964863202518
+    second: Building sprites_875
+  - first:
+      213: -1538923008969734869
+    second: Building sprites_876
+  - first:
+      213: 2252384120224546086
+    second: Building sprites_877
+  - first:
+      213: 1799257722164415897
+    second: Building sprites_878
+  - first:
+      213: -8708292926259024637
+    second: Building sprites_879
+  - first:
+      213: -1031146657520094255
+    second: Building sprites_880
+  - first:
+      213: -8713144284817544336
+    second: Building sprites_881
+  - first:
+      213: 2470360717274683384
+    second: Building sprites_882
+  - first:
+      213: -2792958525602421461
+    second: Building sprites_883
+  - first:
+      213: -4437839654408707343
+    second: Building sprites_884
+  - first:
+      213: -429033512310276047
+    second: Building sprites_885
+  - first:
+      213: 3828143167633220854
+    second: Building sprites_886
+  - first:
+      213: -4790899885384253789
+    second: Building sprites_887
+  - first:
+      213: -7787347448605471728
+    second: Building sprites_888
+  - first:
+      213: 123155501680328360
+    second: Building sprites_889
+  - first:
+      213: -8205661306263362139
+    second: Building sprites_890
+  - first:
+      213: 2301629181876102502
+    second: Building sprites_891
+  - first:
+      213: 3417714623193105554
+    second: Building sprites_892
+  - first:
+      213: -3466645345606485742
+    second: Building sprites_893
+  - first:
+      213: 5173565391779748796
+    second: Building sprites_894
+  - first:
+      213: 305204582499533235
+    second: Building sprites_895
+  - first:
+      213: 7495200973595631840
+    second: Building sprites_896
+  - first:
+      213: 4346111813228158609
+    second: Building sprites_897
+  - first:
+      213: -5727768497060105650
+    second: Building sprites_898
+  - first:
+      213: 314184344537589650
+    second: Building sprites_899
+  - first:
+      213: 8632160910907856203
+    second: Building sprites_900
+  - first:
+      213: 7322378362656469057
+    second: Building sprites_901
+  - first:
+      213: 5008304790952672965
+    second: Building sprites_902
+  - first:
+      213: 999607548739988584
+    second: Building sprites_903
+  - first:
+      213: 5155833112420297864
+    second: Building sprites_904
+  - first:
+      213: -5875324001970117980
+    second: Building sprites_905
+  - first:
+      213: 1289322625163182986
+    second: Building sprites_906
+  - first:
+      213: 4269044901343291351
+    second: Building sprites_907
+  - first:
+      213: -3116006768472756084
+    second: Building sprites_908
+  - first:
+      213: 5897479977787657243
+    second: Building sprites_909
+  - first:
+      213: 1761543009519670632
+    second: Building sprites_910
+  - first:
+      213: -6109311261883754489
+    second: Building sprites_911
+  - first:
+      213: 7344796224875035940
+    second: Building sprites_912
+  - first:
+      213: -461007195499133921
+    second: Building sprites_913
+  - first:
+      213: 5350239552182871986
+    second: Building sprites_914
+  - first:
+      213: 1224403022285792276
+    second: Building sprites_915
+  - first:
+      213: 1128317911717504921
+    second: Building sprites_916
+  - first:
+      213: 6692792936069569886
+    second: Building sprites_917
+  - first:
+      213: -6113314082515491060
+    second: Building sprites_918
+  - first:
+      213: 4146786275975570651
+    second: Building sprites_919
+  - first:
+      213: 8342212786025544133
+    second: Building sprites_920
+  - first:
+      213: -7285563123205749579
+    second: Building sprites_921
+  - first:
+      213: -5185761631899035031
+    second: Building sprites_922
+  - first:
+      213: 8917467081337651919
+    second: Building sprites_923
+  - first:
+      213: -3432132090254703560
+    second: Building sprites_924
+  - first:
+      213: 2842807104497978138
+    second: Building sprites_925
+  - first:
+      213: -4120168235251675369
+    second: Building sprites_926
+  - first:
+      213: -4986673825183692916
+    second: Building sprites_927
+  - first:
+      213: -6588889632474409182
+    second: Building sprites_928
+  - first:
+      213: -8050853640490244216
+    second: Building sprites_929
+  - first:
+      213: 6427688753629935139
+    second: Building sprites_930
+  - first:
+      213: 5597054683679585486
+    second: Building sprites_931
+  - first:
+      213: -8433083863696537139
+    second: Building sprites_932
+  - first:
+      213: 7789897183853207247
+    second: Building sprites_933
+  - first:
+      213: 1245768863102497559
+    second: Building sprites_934
+  - first:
+      213: -5170853336777475120
+    second: Building sprites_935
+  - first:
+      213: 9085582523408445349
+    second: Building sprites_936
+  - first:
+      213: 6241051314545027220
+    second: Building sprites_937
+  - first:
+      213: 8465693338970831699
+    second: Building sprites_938
+  - first:
+      213: -8378598402666000167
+    second: Building sprites_939
+  - first:
+      213: 7118859918812798629
+    second: Building sprites_940
+  - first:
+      213: 5517493050574971865
+    second: Building sprites_941
+  - first:
+      213: 8466562867001575298
+    second: Building sprites_942
+  - first:
+      213: 4509126072111792186
+    second: Building sprites_943
+  - first:
+      213: -3131944293888025749
+    second: Building sprites_944
+  - first:
+      213: 8023055182350320917
+    second: Building sprites_945
+  - first:
+      213: 6511091008216005446
+    second: Building sprites_946
+  - first:
+      213: -5655246439685543307
+    second: Building sprites_947
+  - first:
+      213: -2541761209156341766
+    second: Building sprites_948
+  - first:
+      213: -4991632344606531205
+    second: Building sprites_949
+  - first:
+      213: -375511354456071913
+    second: Building sprites_950
+  - first:
+      213: 6607910003411133824
+    second: Building sprites_951
+  - first:
+      213: 8864414460903048330
+    second: Building sprites_952
+  - first:
+      213: -2744400262008326802
+    second: Building sprites_953
+  - first:
+      213: 6457952464959491585
+    second: Building sprites_954
+  - first:
+      213: 2226297656111229883
+    second: Building sprites_955
+  - first:
+      213: -845279453088515745
+    second: Building sprites_956
+  - first:
+      213: -3665290800597576470
+    second: Building sprites_957
+  - first:
+      213: -3250767496051145890
+    second: Building sprites_958
+  - first:
+      213: -1790515436480826848
+    second: Building sprites_959
+  - first:
+      213: -1933990618191861474
+    second: Building sprites_960
+  - first:
+      213: -1525853918143536532
+    second: Building sprites_961
+  - first:
+      213: 3706299793623836522
+    second: Building sprites_962
+  - first:
+      213: -6017421758064027555
+    second: Building sprites_963
+  - first:
+      213: 3330873311302563523
+    second: Building sprites_29
+  - first:
+      213: 6865559450099080568
+    second: Building sprites_30
+  - first:
+      213: 2831085927729608613
+    second: Building sprites_31
+  - first:
+      213: 680004504091555882
+    second: Building sprites_32
+  - first:
+      213: 8391663417680638404
+    second: Building sprites_33
+  - first:
+      213: 8059680782233654092
+    second: Building sprites_34
+  - first:
+      213: 1129673958612966971
+    second: Building sprites_35
+  - first:
+      213: 4940150389333814520
+    second: Building sprites_36
+  - first:
+      213: -5831556965544903897
+    second: Building sprites_37
+  - first:
+      213: 7844998974200972555
+    second: Building sprites_38
+  - first:
+      213: 8022991433570110562
+    second: Building sprites_39
+  - first:
+      213: 4714146377796904401
+    second: Building sprites_40
+  - first:
+      213: 4669312034211682901
+    second: Building sprites_41
+  - first:
+      213: 6644298192180655310
+    second: Building sprites_42
+  - first:
+      213: 6243477430065014807
+    second: Building sprites_43
+  - first:
+      213: 7763684299345646350
+    second: Building sprites_44
+  - first:
+      213: -9125264286361085832
+    second: Building sprites_45
+  - first:
+      213: -5616635362535071759
+    second: Building sprites_46
+  - first:
+      213: 731556651573395062
+    second: Building sprites_47
+  - first:
+      213: 3477960277627253509
+    second: Building sprites_48
+  - first:
+      213: -5720534548440034357
+    second: Building sprites_49
+  - first:
+      213: 3432216083113139166
+    second: Building sprites_50
+  - first:
+      213: -7585537951063446639
+    second: Building sprites_51
+  - first:
+      213: 983436620531473067
+    second: Building sprites_52
+  - first:
+      213: -3166117487012731082
+    second: Building sprites_53
+  - first:
+      213: 2778597430902153802
+    second: Building sprites_54
+  - first:
+      213: -8506152525810531219
+    second: Building sprites_55
+  - first:
+      213: -5889147715148650426
+    second: Building sprites_56
+  - first:
+      213: 8429506452814818687
+    second: Building sprites_57
+  - first:
+      213: -1071676084046008871
+    second: Building sprites_58
+  - first:
+      213: -110643602050686569
+    second: Building sprites_59
+  - first:
+      213: -6257057256721849853
+    second: Building sprites_60
+  - first:
+      213: -3629151647058231842
+    second: Building sprites_61
+  - first:
+      213: -6603597213857099583
+    second: Building sprites_62
+  - first:
+      213: -310406749310847014
+    second: Building sprites_63
+  - first:
+      213: -3124965909522536946
+    second: Building sprites_64
+  - first:
+      213: 8759495951941701972
+    second: Building sprites_65
+  - first:
+      213: 2789525872153288108
+    second: Building sprites_66
+  - first:
+      213: 734665399219593069
+    second: Building sprites_67
+  - first:
+      213: -4620615069104812116
+    second: Building sprites_68
+  - first:
+      213: 3160224733902593938
+    second: Building sprites_69
+  - first:
+      213: -2926183974361621976
+    second: Building sprites_70
+  - first:
+      213: 5802279569237601822
+    second: Building sprites_71
+  - first:
+      213: 8222878098314799881
+    second: Building sprites_72
+  - first:
+      213: -4555274874620553398
+    second: Building sprites_73
+  - first:
+      213: -5237443983670727815
+    second: Building sprites_74
+  - first:
+      213: 634815493511036622
+    second: Building sprites_75
+  - first:
+      213: -2478088156544433820
+    second: Building sprites_76
+  - first:
+      213: 5637543878354469042
+    second: Building sprites_77
+  - first:
+      213: 5508514874866791945
+    second: Building sprites_78
+  - first:
+      213: 8859113035523735865
+    second: Building sprites_79
+  - first:
+      213: 4418296801075843867
+    second: Building sprites_80
+  - first:
+      213: -4955802438261609444
+    second: Building sprites_81
+  - first:
+      213: 5765258190630392467
+    second: Building sprites_82
+  - first:
+      213: 4032060579565375448
+    second: Building sprites_83
+  - first:
+      213: 4958660772081795042
+    second: Building sprites_84
+  - first:
+      213: -5996550047249575516
+    second: Building sprites_85
+  - first:
+      213: -3199030729803209031
+    second: Building sprites_86
+  - first:
+      213: -5518179416272018684
+    second: Building sprites_87
+  - first:
+      213: 3690993970144316127
+    second: Building sprites_88
+  - first:
+      213: 9000126576625351471
+    second: Building sprites_89
+  - first:
+      213: -4045950167626526925
+    second: Building sprites_90
+  - first:
+      213: -8222544533910490553
+    second: Building sprites_91
+  - first:
+      213: 8145887684342991476
+    second: Building sprites_92
+  - first:
+      213: -3740990713027177088
+    second: Building sprites_93
+  - first:
+      213: 2312245212762378104
+    second: Building sprites_94
+  - first:
+      213: 7911880602973595010
+    second: Building sprites_95
+  - first:
+      213: -3249835344152472160
+    second: Building sprites_96
+  - first:
+      213: -1709281737779742623
+    second: Building sprites_97
+  - first:
+      213: -5654134216706573387
+    second: Building sprites_98
+  - first:
+      213: 3040196947643620958
+    second: Building sprites_99
+  - first:
+      213: 1533412015994626858
+    second: Building sprites_100
+  - first:
+      213: -7201888513282517905
+    second: Building sprites_101
+  - first:
+      213: 1596285316083153939
+    second: Building sprites_102
+  - first:
+      213: 244788446381675246
+    second: Building sprites_103
+  - first:
+      213: 5247807820362036262
+    second: Building sprites_104
+  - first:
+      213: 3430025475958121091
+    second: Building sprites_105
+  - first:
+      213: 10184606031657254
+    second: Building sprites_106
+  - first:
+      213: -1274256087559825264
+    second: Building sprites_107
+  - first:
+      213: 4972571880295435760
+    second: Building sprites_108
+  - first:
+      213: -7827851780050715113
+    second: Building sprites_109
+  - first:
+      213: -7205420262201900621
+    second: Building sprites_110
+  - first:
+      213: 6675138339442525774
+    second: Building sprites_111
+  - first:
+      213: -8279336876412351949
+    second: Building sprites_112
+  - first:
+      213: 594192175782161753
+    second: Building sprites_113
+  - first:
+      213: -7643176430097809105
+    second: Building sprites_114
+  - first:
+      213: -6742008488194305876
+    second: Building sprites_115
+  - first:
+      213: -2005544591447782330
+    second: Building sprites_116
+  - first:
+      213: -6095714068836717601
+    second: Building sprites_117
+  - first:
+      213: 5111161177140505509
+    second: Building sprites_118
+  - first:
+      213: -1726831581331105855
+    second: Building sprites_119
+  - first:
+      213: -1878440254782260146
+    second: Building sprites_120
+  - first:
+      213: -4001160135198262847
+    second: Building sprites_121
+  - first:
+      213: 600174473954760881
+    second: Building sprites_122
+  - first:
+      213: -8769219772529980047
+    second: Building sprites_123
+  - first:
+      213: -8203737684263623636
+    second: Building sprites_124
+  - first:
+      213: 3292342219460622553
+    second: Building sprites_125
+  - first:
+      213: 6366750203632772871
+    second: Building sprites_126
+  - first:
+      213: 5344067898449106468
+    second: Building sprites_127
+  - first:
+      213: -1136096712033445236
+    second: Building sprites_128
+  - first:
+      213: -5282088950470294211
+    second: Building sprites_129
+  - first:
+      213: 6052696108562897159
+    second: Building sprites_130
+  - first:
+      213: 4538776111400412716
+    second: Building sprites_131
+  - first:
+      213: 202285856720407976
+    second: Building sprites_132
+  - first:
+      213: -8743653614373520563
+    second: Building sprites_133
+  - first:
+      213: -500328469991200808
+    second: Building sprites_134
+  - first:
+      213: -2681907713435324923
+    second: Building sprites_135
+  - first:
+      213: -277219799595717473
+    second: Building sprites_136
+  - first:
+      213: 4615140529269837463
+    second: Building sprites_137
+  - first:
+      213: -3568232205768331863
+    second: Building sprites_138
+  - first:
+      213: 6944514916046553879
+    second: Building sprites_139
+  - first:
+      213: -3842649579049800737
+    second: Building sprites_140
+  - first:
+      213: -7132391022665007975
+    second: Building sprites_141
+  - first:
+      213: -2297198742131146949
+    second: Building sprites_142
+  - first:
+      213: -2685668127179757412
+    second: Building sprites_143
+  - first:
+      213: -5132495118238353903
+    second: Building sprites_144
+  - first:
+      213: -6698265438564929626
+    second: Building sprites_145
+  - first:
+      213: -619346356791300776
+    second: Building sprites_146
+  - first:
+      213: 8592669193509383331
+    second: Building sprites_147
+  - first:
+      213: 5411815373966239261
+    second: Building sprites_148
+  - first:
+      213: -5836673995236184967
+    second: Building sprites_149
+  - first:
+      213: 866401001395964300
+    second: Building sprites_150
+  - first:
+      213: -4658871491697327338
+    second: Building sprites_151
+  - first:
+      213: -6448780568027025492
+    second: Building sprites_152
+  - first:
+      213: -2041225215512094822
+    second: Building sprites_153
+  - first:
+      213: 7382882920091665979
+    second: Building sprites_154
+  - first:
+      213: -1164531234698902148
+    second: Building sprites_155
+  - first:
+      213: 5145200376173700227
+    second: Building sprites_156
+  - first:
+      213: 2727277157554015525
+    second: Building sprites_157
+  - first:
+      213: 6273754481275280452
+    second: Building sprites_158
+  - first:
+      213: -5493870536851891035
+    second: Building sprites_159
+  - first:
+      213: 8943999261292638527
+    second: Building sprites_160
+  - first:
+      213: -4569868306144925857
+    second: Building sprites_161
+  - first:
+      213: 8770284926337277605
+    second: Building sprites_162
+  - first:
+      213: 3815797699916278894
+    second: Building sprites_163
+  - first:
+      213: -9022098553215800794
+    second: Building sprites_164
+  - first:
+      213: 1411376986887049913
+    second: Building sprites_165
+  - first:
+      213: -2092924417373132657
+    second: Building sprites_166
+  - first:
+      213: -5261621141212928931
+    second: Building sprites_167
+  - first:
+      213: -2117011595802472927
+    second: Building sprites_168
+  - first:
+      213: 6805668858382080390
+    second: Building sprites_169
+  - first:
+      213: -2849015677210311945
+    second: Building sprites_170
+  - first:
+      213: 5577204534477718320
+    second: Building sprites_171
+  - first:
+      213: 6919327535354982678
+    second: Building sprites_172
+  - first:
+      213: 7946106787948249207
+    second: Building sprites_173
+  - first:
+      213: 8543237575618530577
+    second: Building sprites_174
+  - first:
+      213: 6078581833978652700
+    second: Building sprites_175
+  - first:
+      213: -6917663768522312194
+    second: Building sprites_176
+  - first:
+      213: 72031285714868744
+    second: Building sprites_177
+  - first:
+      213: 2410738070958530334
+    second: Building sprites_178
+  - first:
+      213: -2431841958139964417
+    second: Building sprites_179
+  - first:
+      213: -4871241999907031624
+    second: Building sprites_180
+  - first:
+      213: -3591650781278436669
+    second: Building sprites_181
+  - first:
+      213: 8813463016869221903
+    second: Building sprites_182
+  - first:
+      213: 7980825587970114173
+    second: Building sprites_183
+  - first:
+      213: 5547573082686448037
+    second: Building sprites_184
+  - first:
+      213: -1598574828464693279
+    second: Building sprites_185
+  - first:
+      213: -251016321653693269
+    second: Building sprites_186
+  - first:
+      213: 1448865399721080944
+    second: Building sprites_187
+  - first:
+      213: 8718574903317459217
+    second: Building sprites_188
+  - first:
+      213: -6989147058651218094
+    second: Building sprites_189
+  - first:
+      213: -4330142170655000632
+    second: Building sprites_190
+  - first:
+      213: 1998861171210491142
+    second: Building sprites_191
+  - first:
+      213: 4888198258259156821
+    second: Building sprites_192
+  - first:
+      213: 73845130554625236
+    second: Building sprites_193
+  - first:
+      213: -5563832608896544499
+    second: Building sprites_194
+  - first:
+      213: -1720736491900380613
+    second: Building sprites_195
+  - first:
+      213: -6794818116071739672
+    second: Building sprites_196
+  - first:
+      213: 7441439093795864900
+    second: Building sprites_197
+  - first:
+      213: -6190686159165065484
+    second: Building sprites_198
+  - first:
+      213: 3657628347512771445
+    second: Building sprites_199
+  - first:
+      213: 3310459736211421250
+    second: Building sprites_200
+  - first:
+      213: -6887709225553209629
+    second: Building sprites_201
+  - first:
+      213: -1278478950247567771
+    second: Building sprites_202
+  - first:
+      213: 3907596924702677919
+    second: Building sprites_203
+  - first:
+      213: -2877270435831551013
+    second: Building sprites_204
+  - first:
+      213: -1988199307344840991
+    second: Building sprites_205
+  - first:
+      213: -4583826032786912773
+    second: Building sprites_206
+  - first:
+      213: 4041313385800479326
+    second: Building sprites_207
+  - first:
+      213: -2173019608463714677
+    second: Building sprites_208
+  - first:
+      213: -2782346959604139984
+    second: Building sprites_209
+  - first:
+      213: -5093336833571691953
+    second: Building sprites_210
+  - first:
+      213: -1352343165083803259
+    second: Building sprites_211
+  - first:
+      213: -3732579913623219112
+    second: Building sprites_212
+  - first:
+      213: 4413471897927807043
+    second: Building sprites_213
+  - first:
+      213: -7635496825433464314
+    second: Building sprites_214
+  - first:
+      213: -348601007880352605
+    second: Building sprites_215
+  - first:
+      213: -562789224038459253
+    second: Building sprites_216
+  - first:
+      213: -8639670896390882436
+    second: Building sprites_217
+  - first:
+      213: 1634601011376182738
+    second: Building sprites_218
+  - first:
+      213: -4417484527709182672
+    second: Building sprites_219
+  - first:
+      213: 1784806229973671840
+    second: Building sprites_220
+  - first:
+      213: -7648620930418271299
+    second: Building sprites_221
+  - first:
+      213: -1171656677888409215
+    second: Building sprites_222
+  - first:
+      213: 880094336957227538
+    second: Building sprites_223
+  - first:
+      213: 526169490967079089
+    second: Building sprites_224
+  - first:
+      213: 2209660880184884058
+    second: Building sprites_225
+  - first:
+      213: 8217411476120410729
+    second: Building sprites_226
+  - first:
+      213: -4053333146170252586
+    second: Building sprites_227
+  - first:
+      213: 3234573395813797104
+    second: Building sprites_228
+  - first:
+      213: 2802243515484990640
+    second: Building sprites_229
+  - first:
+      213: -8583199129408480374
+    second: Building sprites_230
+  - first:
+      213: -5959986557105680321
+    second: Building sprites_231
+  - first:
+      213: -1901045177875492436
+    second: Building sprites_232
+  - first:
+      213: 6366754984894048674
+    second: Building sprites_233
+  - first:
+      213: 5879384229466139423
+    second: Building sprites_234
+  - first:
+      213: 4509482779620411170
+    second: Building sprites_235
+  - first:
+      213: -6857993700034762151
+    second: Building sprites_236
+  - first:
+      213: 2329269351790533187
+    second: Building sprites_237
+  - first:
+      213: -7135928039623668332
+    second: Building sprites_238
+  - first:
+      213: -2808298832238254250
+    second: Building sprites_239
+  - first:
+      213: -297015230879763165
+    second: Building sprites_240
+  - first:
+      213: 7505056223611198517
+    second: Building sprites_241
+  - first:
+      213: 2863872085136842249
+    second: Building sprites_242
+  - first:
+      213: -5812169642370188217
+    second: Building sprites_243
+  - first:
+      213: 6187715559738484122
+    second: Building sprites_244
+  - first:
+      213: -69830973686169930
+    second: Building sprites_245
+  - first:
+      213: -8731787904699429240
+    second: Building sprites_246
+  - first:
+      213: -7382883128247460056
+    second: Building sprites_247
+  - first:
+      213: -2248296361108892863
+    second: Building sprites_248
+  - first:
+      213: -4030297935826516361
+    second: Building sprites_249
+  - first:
+      213: 7917841781025750780
+    second: Building sprites_250
+  - first:
+      213: 1860492134083135833
+    second: Building sprites_251
+  - first:
+      213: -127782532502179476
+    second: Building sprites_252
+  - first:
+      213: -7489749101255225838
+    second: Building sprites_253
+  - first:
+      213: 6824570564615931015
+    second: Building sprites_254
+  - first:
+      213: 4546984107122648558
+    second: Building sprites_255
+  - first:
+      213: -871377178518397449
+    second: Building sprites_256
+  - first:
+      213: 1936733080781593570
+    second: Building sprites_257
+  - first:
+      213: -5438542745374893030
+    second: Building sprites_258
+  - first:
+      213: -5953150469853926593
+    second: Building sprites_259
+  - first:
+      213: 2268015926685117277
+    second: Building sprites_260
+  - first:
+      213: -4284084564569491921
+    second: Building sprites_261
+  - first:
+      213: 96543710344187295
+    second: Building sprites_262
+  - first:
+      213: 5860233989491445979
+    second: Building sprites_263
+  - first:
+      213: 7458517332189818111
+    second: Building sprites_264
+  - first:
+      213: 1132723477629587422
+    second: Building sprites_265
+  - first:
+      213: -1970149926598923078
+    second: Building sprites_266
+  - first:
+      213: 4470469288170385851
+    second: Building sprites_267
+  - first:
+      213: -7327109073845857166
+    second: Building sprites_268
+  - first:
+      213: -3476104319326272366
+    second: Building sprites_269
+  - first:
+      213: 3245039596400631016
+    second: Building sprites_270
+  - first:
+      213: -2465932863560360754
+    second: Building sprites_271
+  - first:
+      213: 1479408006524407099
+    second: Building sprites_272
+  - first:
+      213: 7058881665855696676
+    second: Building sprites_273
+  - first:
+      213: -7468412408175803800
+    second: Building sprites_274
+  - first:
+      213: 7796547906768577052
+    second: Building sprites_275
+  - first:
+      213: -8060318322485725712
+    second: Building sprites_276
+  - first:
+      213: 4245254787016576638
+    second: Building sprites_277
+  - first:
+      213: 3898422662714292114
+    second: Building sprites_278
+  - first:
+      213: -2735064128949715002
+    second: Building sprites_279
+  - first:
+      213: -264294357632794350
+    second: Building sprites_280
+  - first:
+      213: -8898810503647075431
+    second: Building sprites_281
+  - first:
+      213: -6602770677388006876
+    second: Building sprites_282
+  - first:
+      213: -8189872697609066347
+    second: Building sprites_283
+  - first:
+      213: -4868354237068660759
+    second: Building sprites_284
+  - first:
+      213: -756559412230514273
+    second: Building sprites_285
+  - first:
+      213: 8370974102699560183
+    second: Building sprites_286
+  - first:
+      213: -4883948681641885193
+    second: Building sprites_287
+  - first:
+      213: -4536978179910732715
+    second: Building sprites_288
+  - first:
+      213: -6240320941549028618
+    second: Building sprites_289
+  - first:
+      213: -8775397958192374490
+    second: Building sprites_290
+  - first:
+      213: 3028021049774924083
+    second: Building sprites_291
+  - first:
+      213: -87954192985219007
+    second: Building sprites_292
+  - first:
+      213: 8191254823733514511
+    second: Building sprites_293
+  - first:
+      213: -1321339367102483038
+    second: Building sprites_294
+  - first:
+      213: -2488158355684350305
+    second: Building sprites_295
+  - first:
+      213: -1970720896807057955
+    second: Building sprites_296
+  - first:
+      213: 3812193222850103912
+    second: Building sprites_297
+  - first:
+      213: -7046182140107727246
+    second: Building sprites_298
+  - first:
+      213: -6531913697385331320
+    second: Building sprites_299
+  - first:
+      213: 6968668656585761045
+    second: Building sprites_300
+  - first:
+      213: -4058282348275399250
+    second: Building sprites_301
+  - first:
+      213: -1870997520167870599
+    second: Building sprites_302
+  - first:
+      213: -8321525196846918618
+    second: Building sprites_303
+  - first:
+      213: 1117424873512823889
+    second: Building sprites_304
+  - first:
+      213: 6412983325782465035
+    second: Building sprites_305
+  - first:
+      213: -6610449945908498478
+    second: Building sprites_306
+  - first:
+      213: 1656698958208751385
+    second: Building sprites_307
+  - first:
+      213: -25164610625382733
+    second: Building sprites_308
+  - first:
+      213: 6748097536331123889
+    second: Building sprites_309
+  - first:
+      213: 7452252823745983843
+    second: Building sprites_310
+  - first:
+      213: -1663094308652724128
+    second: Building sprites_311
+  - first:
+      213: -1049317219277440396
+    second: Building sprites_312
+  - first:
+      213: -2314417434758337958
+    second: Building sprites_313
+  - first:
+      213: -1321157111883894384
+    second: Building sprites_314
+  - first:
+      213: -5019311424719530350
+    second: Building sprites_315
+  - first:
+      213: -4757267915635468289
+    second: Building sprites_316
+  - first:
+      213: -6778194451767317717
+    second: Building sprites_317
+  - first:
+      213: 3752909467448317236
+    second: Building sprites_318
+  - first:
+      213: 7647002472507708627
+    second: Building sprites_319
+  - first:
+      213: -8973286026156623720
+    second: Building sprites_320
+  - first:
+      213: -6271201040546831532
+    second: Building sprites_321
+  - first:
+      213: 2117736354877813179
+    second: Building sprites_322
+  - first:
+      213: 1575979783110077299
+    second: Building sprites_323
+  - first:
+      213: 3051379096791364303
+    second: Building sprites_324
+  - first:
+      213: -4797681286280921950
+    second: Building sprites_325
+  - first:
+      213: -7952855866488730734
+    second: Building sprites_326
+  - first:
+      213: -5700761453446814636
+    second: Building sprites_327
+  - first:
+      213: 7889001508142091841
+    second: Building sprites_328
+  - first:
+      213: -4514603580960315477
+    second: Building sprites_329
+  - first:
+      213: -918963239726222061
+    second: Building sprites_330
+  - first:
+      213: -4665586370154611427
+    second: Building sprites_331
+  - first:
+      213: 102658555055466394
+    second: Building sprites_332
+  - first:
+      213: 3732581748238797554
+    second: Building sprites_333
+  - first:
+      213: 2725196902201020922
+    second: Building sprites_334
+  - first:
+      213: -2637841926728778359
+    second: Building sprites_335
+  - first:
+      213: 4550593506897116592
+    second: Building sprites_336
+  - first:
+      213: 5103040420466982301
+    second: Building sprites_337
+  - first:
+      213: 1907556680961315679
+    second: Building sprites_338
+  - first:
+      213: -3981668083841267810
+    second: Building sprites_339
+  - first:
+      213: 604300477688890091
+    second: Building sprites_340
+  - first:
+      213: -1654886996657246514
+    second: Building sprites_341
+  - first:
+      213: 1233042908644888602
+    second: Building sprites_342
+  - first:
+      213: -4623307745246496473
+    second: Building sprites_343
+  - first:
+      213: -5742158280456308557
+    second: Building sprites_344
+  - first:
+      213: 7662066444305761989
+    second: Building sprites_345
+  - first:
+      213: -2573266071035785622
+    second: Building sprites_346
+  - first:
+      213: -7573261535156880355
+    second: Building sprites_347
+  - first:
+      213: 7192343628306955382
+    second: Building sprites_348
+  - first:
+      213: -1893143076951656301
+    second: Building sprites_349
+  - first:
+      213: -551389221094191326
+    second: Building sprites_350
+  - first:
+      213: -4188702737143135915
+    second: Building sprites_351
+  - first:
+      213: -8367801892543792086
+    second: Building sprites_352
+  - first:
+      213: 5192295257198644757
+    second: Building sprites_353
+  - first:
+      213: -5333435284307196946
+    second: Building sprites_354
+  - first:
+      213: -882953530977921948
+    second: Building sprites_355
+  - first:
+      213: 258653013604584907
+    second: Building sprites_356
+  - first:
+      213: -4880240560043686776
+    second: Building sprites_357
+  - first:
+      213: 162291404584637337
+    second: Building sprites_358
+  - first:
+      213: -7524055854195315380
+    second: Building sprites_359
+  - first:
+      213: -1067120926587184410
+    second: Building sprites_360
+  - first:
+      213: 650235509648428409
+    second: Building sprites_361
+  - first:
+      213: -73920718944518657
+    second: Building sprites_362
+  - first:
+      213: 4836819851735642107
+    second: Building sprites_363
+  - first:
+      213: -5534460901873089067
+    second: Building sprites_364
+  - first:
+      213: 3999521808704804632
+    second: Building sprites_365
+  - first:
+      213: 8603093176003631861
+    second: Building sprites_366
+  - first:
+      213: 269763023841823696
+    second: Building sprites_367
+  - first:
+      213: -2012623318805836685
+    second: Building sprites_368
+  - first:
+      213: -8822808164863370657
+    second: Building sprites_369
+  - first:
+      213: 4044628209381795048
+    second: Building sprites_370
+  - first:
+      213: -5749303139390762396
+    second: Building sprites_371
+  - first:
+      213: -4215429188008853599
+    second: Building sprites_372
+  - first:
+      213: -3584203871936648557
+    second: Building sprites_373
+  - first:
+      213: 8279520374978616264
+    second: Building sprites_374
+  - first:
+      213: -1734625767227068037
+    second: Building sprites_375
+  - first:
+      213: 582770488942225294
+    second: Building sprites_376
+  - first:
+      213: 3934586519173444542
+    second: Building sprites_377
+  - first:
+      213: -8506897192863059561
+    second: Building sprites_378
+  - first:
+      213: -5228845830568045190
+    second: Building sprites_379
+  - first:
+      213: -1208679037432030069
+    second: Building sprites_380
+  - first:
+      213: -2332725858728125738
+    second: Building sprites_381
+  - first:
+      213: 6488986551000873544
+    second: Building sprites_382
+  - first:
+      213: 6784114624167736761
+    second: Building sprites_383
+  - first:
+      213: 8168921725824976486
+    second: Building sprites_384
+  - first:
+      213: -8135915293826269504
+    second: Building sprites_385
+  - first:
+      213: 7268089684959712085
+    second: Building sprites_386
+  - first:
+      213: -8837352873839174296
+    second: Building sprites_387
+  - first:
+      213: 9125516792313311125
+    second: Building sprites_388
+  - first:
+      213: -2930548189781617299
+    second: Building sprites_389
+  - first:
+      213: 3358300584234457779
+    second: Building sprites_390
+  - first:
+      213: 2045832851634994777
+    second: Building sprites_391
+  - first:
+      213: -6080127404622452947
+    second: Building sprites_392
+  - first:
+      213: 8515092309390444117
+    second: Building sprites_393
+  - first:
+      213: 3686457065953696386
+    second: Building sprites_394
+  - first:
+      213: -5504007105407489206
+    second: Building sprites_395
+  - first:
+      213: 5342539679767425734
+    second: Building sprites_396
+  - first:
+      213: -5342283128250091121
+    second: Building sprites_397
+  - first:
+      213: 80804804937430356
+    second: Building sprites_398
+  - first:
+      213: 9091550032437355104
+    second: Building sprites_399
+  - first:
+      213: -7752246545538313780
+    second: Building sprites_400
+  - first:
+      213: 9116247025973838216
+    second: Building sprites_401
+  - first:
+      213: -4060026665895273072
+    second: Building sprites_402
+  - first:
+      213: 4614159255797964533
+    second: Building sprites_403
+  - first:
+      213: 4230531504502781727
+    second: Building sprites_404
+  - first:
+      213: -6913795067648749212
+    second: Building sprites_405
+  - first:
+      213: 8498671196058316265
+    second: Building sprites_406
+  - first:
+      213: -5397089562889782637
+    second: Building sprites_407
+  - first:
+      213: -9052685356041169860
+    second: Building sprites_408
+  - first:
+      213: -5316295562276972325
+    second: Building sprites_409
+  - first:
+      213: 7062739477873698124
+    second: Building sprites_410
+  - first:
+      213: 4359353954711907086
+    second: Building sprites_411
+  - first:
+      213: -142327407038107544
+    second: Building sprites_412
+  - first:
+      213: -6564330720708155371
+    second: Building sprites_413
+  - first:
+      213: 233049004940954272
+    second: Building sprites_414
+  - first:
+      213: -4027240927483790631
+    second: Building sprites_415
+  - first:
+      213: -3111196789965047498
+    second: Building sprites_416
+  - first:
+      213: -4378523573297468883
+    second: Building sprites_417
+  - first:
+      213: 7907913372720155897
+    second: Building sprites_418
+  - first:
+      213: -2807940520668973404
+    second: Building sprites_419
+  - first:
+      213: -4192243149795666040
+    second: Building sprites_420
+  - first:
+      213: 4463488571366306715
+    second: Building sprites_421
+  - first:
+      213: 3682560885874825343
+    second: Building sprites_422
+  - first:
+      213: 7684736198085045845
+    second: Building sprites_423
+  - first:
+      213: -7606265888150877057
+    second: Building sprites_424
+  - first:
+      213: -5035017039591529867
+    second: Building sprites_425
+  - first:
+      213: -2613664469620504021
+    second: Building sprites_426
+  - first:
+      213: -7802147834597264234
+    second: Building sprites_427
+  - first:
+      213: 7380290546030377328
+    second: Building sprites_428
+  - first:
+      213: 8819106467851639255
+    second: Building sprites_429
+  - first:
+      213: 756848112150482681
+    second: Building sprites_430
+  - first:
+      213: 4786835161945395453
+    second: Building sprites_431
+  - first:
+      213: -2039784623209062538
+    second: Building sprites_432
+  - first:
+      213: 3186761764817920968
+    second: Building sprites_433
+  - first:
+      213: -2295298022018720627
+    second: Building sprites_434
+  - first:
+      213: -8447380851622935016
+    second: Building sprites_435
+  - first:
+      213: -1017165978861232250
+    second: Building sprites_436
+  - first:
+      213: -2351224187133123405
+    second: Building sprites_437
+  - first:
+      213: -1401265231161717429
+    second: Building sprites_438
+  - first:
+      213: 1570916538973755078
+    second: Building sprites_439
+  - first:
+      213: 4797452478960976277
+    second: Building sprites_440
+  - first:
+      213: -4120790591871809865
+    second: Building sprites_441
+  - first:
+      213: -1217132405943616401
+    second: Building sprites_442
+  - first:
+      213: 6446824978879112884
+    second: Building sprites_443
+  - first:
+      213: -7266675060899770350
+    second: Building sprites_444
+  - first:
+      213: 3405723913720937975
+    second: Building sprites_445
+  - first:
+      213: 7398598540711658526
+    second: Building sprites_446
+  - first:
+      213: -1518109148175991064
+    second: Building sprites_447
+  - first:
+      213: -240833813600012065
+    second: Building sprites_448
+  - first:
+      213: -3368832192139154000
+    second: Building sprites_449
+  - first:
+      213: 2584350080601293597
+    second: Building sprites_450
+  - first:
+      213: 5360709879069503645
+    second: Building sprites_451
+  - first:
+      213: 7037940923058040486
+    second: Building sprites_452
+  - first:
+      213: -5327667650199469957
+    second: Building sprites_453
+  - first:
+      213: 7494221984276694249
+    second: Building sprites_454
+  - first:
+      213: 6568790837927479531
+    second: Building sprites_455
+  - first:
+      213: 325692234278088909
+    second: Building sprites_456
+  - first:
+      213: 7564842554768435849
+    second: Building sprites_457
+  - first:
+      213: -521034765286986453
+    second: Building sprites_458
+  - first:
+      213: 5529538614175439850
+    second: Building sprites_459
+  - first:
+      213: 5851171349220208258
+    second: Building sprites_460
+  - first:
+      213: 8979797875474468987
+    second: Building sprites_461
+  - first:
+      213: 3001435891838303596
+    second: Building sprites_462
+  - first:
+      213: -5442406891904492960
+    second: Building sprites_463
+  - first:
+      213: -126417379882715476
+    second: Building sprites_464
+  - first:
+      213: 2051900492058690018
+    second: Building sprites_465
+  - first:
+      213: -8576599400296553551
+    second: Building sprites_466
+  - first:
+      213: 3815578048920469131
+    second: Building sprites_467
+  - first:
+      213: -1450260229825819043
+    second: Building sprites_468
+  - first:
+      213: 1584666522517199447
+    second: Building sprites_469
+  - first:
+      213: -8567021839286358260
+    second: Building sprites_470
+  - first:
+      213: -5163521327127402515
+    second: Building sprites_471
+  - first:
+      213: 5389524043575819487
+    second: Building sprites_472
+  - first:
+      213: 2276853028025729528
+    second: Building sprites_473
+  - first:
+      213: 1833165124229168210
+    second: Building sprites_474
+  - first:
+      213: 6587002971133865892
+    second: Building sprites_475
+  - first:
+      213: 2043452148034032707
+    second: Building sprites_476
+  - first:
+      213: 5339888659347901886
+    second: Building sprites_477
+  - first:
+      213: -2962052997376152078
+    second: Building sprites_478
+  - first:
+      213: -6887201442851772135
+    second: Building sprites_479
+  - first:
+      213: -6846296098923884931
+    second: Building sprites_480
+  - first:
+      213: -3097693280899345281
+    second: Building sprites_481
+  - first:
+      213: 518681018074284143
+    second: Building sprites_482
+  - first:
+      213: 3807650192919946661
+    second: Building sprites_483
+  - first:
+      213: 5064491836260654627
+    second: Building sprites_484
+  - first:
+      213: -8013353085669946514
+    second: Building sprites_485
+  - first:
+      213: 2723057657425732670
+    second: Building sprites_486
+  - first:
+      213: 8835232513738539092
+    second: Building sprites_487
+  - first:
+      213: 3847451155961387508
+    second: Building sprites_488
+  - first:
+      213: 9148957574171991297
+    second: Building sprites_489
+  - first:
+      213: -4035163837121865261
+    second: Building sprites_490
+  - first:
+      213: -5248752270064098892
+    second: Building sprites_491
+  - first:
+      213: -7643483986061508099
+    second: Building sprites_492
+  - first:
+      213: -9172709089265152708
+    second: Building sprites_493
+  - first:
+      213: -1784463983274624645
+    second: Building sprites_494
+  - first:
+      213: -5071932117397763917
+    second: Building sprites_495
+  - first:
+      213: 4965261328051771043
+    second: Building sprites_496
+  - first:
+      213: 4693023744683340901
+    second: Building sprites_497
+  - first:
+      213: 8374030776472009475
+    second: Building sprites_498
+  - first:
+      213: 3155601736326008062
+    second: Building sprites_499
+  - first:
+      213: -1354115689955458960
+    second: Building sprites_500
+  - first:
+      213: 187761138044014289
+    second: Building sprites_501
+  - first:
+      213: 2292574477690398040
+    second: Building sprites_502
+  - first:
+      213: -5571766288049732891
+    second: Building sprites_503
+  - first:
+      213: 936236541567997861
+    second: Building sprites_504
+  - first:
+      213: -3457854553633842778
+    second: Building sprites_505
+  - first:
+      213: 1381266249571299767
+    second: Building sprites_506
+  - first:
+      213: 8374190673238217465
+    second: Building sprites_507
+  - first:
+      213: -4053455506077398106
+    second: Building sprites_508
+  - first:
+      213: 1902498739181714707
+    second: Building sprites_509
+  - first:
+      213: -4243252888079620762
+    second: Building sprites_510
+  - first:
+      213: -2707253631376155818
+    second: Building sprites_511
+  - first:
+      213: 2383867157108326957
+    second: Building sprites_512
+  - first:
+      213: -3938832327338609513
+    second: Building sprites_513
+  - first:
+      213: -2538418758389931681
+    second: Building sprites_514
+  - first:
+      213: -6863369662878718903
+    second: Building sprites_515
+  - first:
+      213: 6084330732362620453
+    second: Building sprites_516
+  - first:
+      213: 5798154129254839614
+    second: Building sprites_517
+  - first:
+      213: -4354103686779137812
+    second: Building sprites_518
+  - first:
+      213: 3832307017916127594
+    second: Building sprites_519
+  - first:
+      213: -1286291944483955042
+    second: Building sprites_520
+  - first:
+      213: 6307864635695119995
+    second: Building sprites_521
+  - first:
+      213: -1479196064975128889
+    second: Building sprites_522
+  - first:
+      213: -2484093237280779655
+    second: Building sprites_523
+  - first:
+      213: 1136241542076149444
+    second: Building sprites_524
+  - first:
+      213: -3258691348996580721
+    second: Building sprites_525
+  - first:
+      213: 8150710964655708702
+    second: Building sprites_526
+  - first:
+      213: 5706672190137155562
+    second: Building sprites_527
+  - first:
+      213: 2269547884803717413
+    second: Building sprites_528
+  - first:
+      213: -5796450211892484486
+    second: Building sprites_529
+  - first:
+      213: 3316006360791304796
+    second: Building sprites_530
+  - first:
+      213: 4903787645571534982
+    second: Building sprites_531
+  - first:
+      213: 6422626433695443407
+    second: Building sprites_532
+  - first:
+      213: -4715558105871550827
+    second: Building sprites_533
+  - first:
+      213: -4587516362776807068
+    second: Building sprites_534
+  - first:
+      213: -4952512750708546011
+    second: Building sprites_535
+  - first:
+      213: 7488096276020122422
+    second: Building sprites_536
+  - first:
+      213: 7180856705936102158
+    second: Building sprites_537
+  - first:
+      213: -5927662053984112937
+    second: Building sprites_538
+  - first:
+      213: -1472521134199795967
+    second: Building sprites_539
+  - first:
+      213: -1272669008687004563
+    second: Building sprites_540
+  - first:
+      213: 5780773226358343757
+    second: Building sprites_541
+  - first:
+      213: 8076086274958380839
+    second: Building sprites_542
+  - first:
+      213: -8444941036118427537
+    second: Building sprites_543
+  - first:
+      213: -7861385473603375882
+    second: Building sprites_544
+  - first:
+      213: 4321679847312878158
+    second: Building sprites_545
+  - first:
+      213: -877501631451170774
+    second: Building sprites_546
+  - first:
+      213: -8765484325930609252
+    second: Building sprites_547
+  - first:
+      213: 1853759947081342760
+    second: Building sprites_548
+  - first:
+      213: 620920452392918847
+    second: Building sprites_549
+  - first:
+      213: -1414174298777803525
+    second: Building sprites_550
+  - first:
+      213: 5020207987465185240
+    second: Building sprites_551
+  - first:
+      213: 8672895005200119699
+    second: Building sprites_552
+  - first:
+      213: -5972171515530283589
+    second: Building sprites_553
+  - first:
+      213: -7697062371056096366
+    second: Building sprites_554
+  - first:
+      213: -4143597507998937328
+    second: Building sprites_555
+  - first:
+      213: -2017912142091296603
+    second: Building sprites_556
+  - first:
+      213: -6178738442039053879
+    second: Building sprites_557
+  - first:
+      213: -8991830114757899134
+    second: Building sprites_558
+  - first:
+      213: 8323470830680533170
+    second: Building sprites_559
+  - first:
+      213: -7884478185070042719
+    second: Building sprites_560
+  - first:
+      213: -3537683767037721497
+    second: Building sprites_561
+  - first:
+      213: 6414080854609457542
+    second: Building sprites_562
+  - first:
+      213: 2744638991244891138
+    second: Building sprites_563
+  - first:
+      213: 2582288925231966375
+    second: Building sprites_564
+  - first:
+      213: -774840055778393678
+    second: Building sprites_565
+  - first:
+      213: -7126616612635331150
+    second: Building sprites_566
+  - first:
+      213: -3856119948974060656
+    second: Building sprites_567
+  - first:
+      213: -3817904434774148072
+    second: Building sprites_568
+  - first:
+      213: 6532174030003788822
+    second: Building sprites_569
+  - first:
+      213: -2868997527601469684
+    second: Building sprites_570
+  - first:
+      213: -7997523815084827203
+    second: Building sprites_571
+  - first:
+      213: 4717900775085016655
+    second: Building sprites_572
+  - first:
+      213: 7346937589878454158
+    second: Building sprites_573
+  - first:
+      213: -1882122690858867286
+    second: Building sprites_574
+  - first:
+      213: -4128570691908005659
+    second: Building sprites_575
+  - first:
+      213: -1171819986324448906
+    second: Building sprites_576
+  - first:
+      213: -6725379953748602358
+    second: Building sprites_577
+  - first:
+      213: -3390568935184268390
+    second: Building sprites_578
+  - first:
+      213: 7528676291954579515
+    second: Building sprites_579
+  - first:
+      213: -4995298401182785945
+    second: Building sprites_580
+  - first:
+      213: 7723907123952902284
+    second: Building sprites_581
+  - first:
+      213: 3087887405306790005
+    second: Building sprites_582
+  - first:
+      213: 913865907114162173
+    second: Building sprites_583
+  - first:
+      213: -469304588996949174
+    second: Building sprites_584
+  - first:
+      213: 1993689664443546539
+    second: Building sprites_585
+  - first:
+      213: 7681434843639684270
+    second: Building sprites_586
+  - first:
+      213: -7631360928541999873
+    second: Building sprites_587
+  - first:
+      213: -6784169790887014801
+    second: Building sprites_588
+  - first:
+      213: 702641920513695429
+    second: Building sprites_589
+  - first:
+      213: -282398711178852252
+    second: Building sprites_590
+  - first:
+      213: -8037020836020297569
+    second: Building sprites_591
+  - first:
+      213: 5298334737418604550
+    second: Building sprites_592
+  - first:
+      213: 1029287275304644658
+    second: Building sprites_593
+  - first:
+      213: -5253369840919636583
+    second: Building sprites_594
+  - first:
+      213: -4806619319048813088
+    second: Building sprites_595
+  - first:
+      213: -2130562326668216131
+    second: Building sprites_596
+  - first:
+      213: 7902426009428820527
+    second: Building sprites_597
+  - first:
+      213: 6959328934687014521
+    second: Building sprites_598
+  - first:
+      213: -3318852077570029945
+    second: Building sprites_599
+  - first:
+      213: 4489217663073831472
+    second: Building sprites_600
+  - first:
+      213: 8820493223708542053
+    second: Building sprites_601
+  - first:
+      213: -5405135533802445947
+    second: Building sprites_602
+  - first:
+      213: 2560624431942615343
+    second: Building sprites_603
+  - first:
+      213: -1787995464235254021
+    second: Building sprites_604
+  - first:
+      213: -2708902779722783112
+    second: Building sprites_605
+  - first:
+      213: -4631957785640500497
+    second: Building sprites_606
+  - first:
+      213: 3169606850647403847
+    second: Building sprites_607
+  - first:
+      213: -6074040374743344805
+    second: Building sprites_608
+  - first:
+      213: -7268343882722568941
+    second: Building sprites_609
+  - first:
+      213: -8634692118519778982
+    second: Building sprites_610
+  - first:
+      213: 6567019297165886210
+    second: Building sprites_611
+  - first:
+      213: -4486094121770206190
+    second: Building sprites_612
+  - first:
+      213: -2127116672673135419
+    second: Building sprites_613
+  - first:
+      213: -5209966686679691483
+    second: Building sprites_614
+  - first:
+      213: 947653955454884598
+    second: Building sprites_615
+  - first:
+      213: -2204437386107620100
+    second: Building sprites_616
+  - first:
+      213: 3972801204318481006
+    second: Building sprites_617
+  - first:
+      213: 8033662436666513850
+    second: Building sprites_618
+  - first:
+      213: 8018738303923001402
+    second: Building sprites_619
+  - first:
+      213: 6334844342322397625
+    second: Building sprites_620
+  - first:
+      213: 865661904252850985
+    second: Building sprites_621
+  - first:
+      213: -6006907059503686217
+    second: Building sprites_622
+  - first:
+      213: -4422106603399053746
+    second: Building sprites_623
+  - first:
+      213: 3663932583069611460
+    second: Building sprites_624
+  - first:
+      213: -2956996132295545955
+    second: Building sprites_625
+  - first:
+      213: 2612873376773513343
+    second: Building sprites_626
+  - first:
+      213: -819060483316010915
+    second: Building sprites_627
+  - first:
+      213: -8595364279316877966
+    second: Building sprites_628
+  - first:
+      213: -8907877129742083351
+    second: Building sprites_629
+  - first:
+      213: -4184762012961471000
+    second: Building sprites_630
+  - first:
+      213: -8493383294616947422
+    second: Building sprites_631
+  - first:
+      213: 7898762920447298186
+    second: Building sprites_632
+  - first:
+      213: -2590947496444447262
+    second: Building sprites_633
+  - first:
+      213: 1386069163745382459
+    second: Building sprites_634
+  - first:
+      213: -3885268121338573305
+    second: Building sprites_635
+  - first:
+      213: 3256372857598157722
+    second: Building sprites_636
+  - first:
+      213: 6040150359858706959
+    second: Building sprites_637
+  - first:
+      213: -6138053219652429235
+    second: Building sprites_638
+  - first:
+      213: 3592536293760303835
+    second: Building sprites_639
+  - first:
+      213: 4423186425892631387
+    second: Building sprites_640
+  - first:
+      213: -6527472272608608453
+    second: Building sprites_641
+  - first:
+      213: -6986080015536734280
+    second: Building sprites_642
+  - first:
+      213: 5695112087550976869
+    second: Building sprites_643
+  - first:
+      213: -8830212879821378622
+    second: Building sprites_644
+  - first:
+      213: 122703987054544815
+    second: Building sprites_645
+  - first:
+      213: -2883721590975929010
+    second: Building sprites_646
+  - first:
+      213: 1536122956046048375
+    second: Building sprites_647
+  - first:
+      213: 3791889740447135323
+    second: Building sprites_648
+  - first:
+      213: 1029606234385405213
+    second: Building sprites_649
+  - first:
+      213: -3250570001779764744
+    second: Building sprites_650
+  - first:
+      213: -6230136337990521099
+    second: Building sprites_651
+  - first:
+      213: 9144325119010455143
+    second: Building sprites_652
+  - first:
+      213: 1238918993263442951
+    second: Building sprites_653
+  - first:
+      213: 6594133048202622900
+    second: Building sprites_654
+  - first:
+      213: -8806024295163833181
+    second: Building sprites_655
+  - first:
+      213: -5394513068776934725
+    second: Building sprites_656
+  - first:
+      213: 6561317532554010995
+    second: Building sprites_657
+  - first:
+      213: 6868613831387103017
+    second: Building sprites_658
+  - first:
+      213: -4015317084905747444
+    second: Building sprites_659
+  - first:
+      213: -2726126708231965859
+    second: Building sprites_660
+  - first:
+      213: -2311020446096896355
+    second: Building sprites_661
+  - first:
+      213: 8467851458729649524
+    second: Building sprites_662
+  - first:
+      213: 4928056042860725382
+    second: Building sprites_663
+  - first:
+      213: 5380467979991304225
+    second: Building sprites_664
+  - first:
+      213: -1360230791204190893
+    second: Building sprites_665
+  - first:
+      213: -1874005761055890974
+    second: Building sprites_666
+  - first:
+      213: -7335768988930499268
+    second: Building sprites_667
+  - first:
+      213: -5483961900838734836
+    second: Building sprites_668
+  - first:
+      213: -7328136938949786014
+    second: Building sprites_669
+  - first:
+      213: 3964523314731549275
+    second: Building sprites_670
+  - first:
+      213: -303682627668959942
+    second: Building sprites_671
+  - first:
+      213: -9193142391363426732
+    second: Building sprites_672
+  - first:
+      213: -1416258789848129281
+    second: Building sprites_673
+  - first:
+      213: -3223590998617034037
+    second: Building sprites_674
+  - first:
+      213: -5947579266435791258
+    second: Building sprites_675
+  - first:
+      213: 7864451624270441108
+    second: Building sprites_676
+  - first:
+      213: 7357866431006041787
+    second: Building sprites_677
+  - first:
+      213: 7594343563008078965
+    second: Building sprites_678
+  - first:
+      213: 942892173696516076
+    second: Building sprites_679
+  - first:
+      213: -9058117215555204749
+    second: Building sprites_680
+  - first:
+      213: 128670518441012214
+    second: Building sprites_681
+  - first:
+      213: -3415126578296619168
+    second: Building sprites_682
+  - first:
+      213: 5219830601957334271
+    second: Building sprites_683
+  - first:
+      213: -1414524154637495446
+    second: Building sprites_684
+  - first:
+      213: 4712662787033814122
+    second: Building sprites_685
+  - first:
+      213: 6747231984475504575
+    second: Building sprites_686
+  - first:
+      213: -8358840183892762911
+    second: Building sprites_687
+  - first:
+      213: -3379747839308364645
+    second: Building sprites_688
+  - first:
+      213: -8152493986607223845
+    second: Building sprites_689
+  - first:
+      213: -4993104599477179839
+    second: Building sprites_690
+  - first:
+      213: -4674894390349810762
+    second: Building sprites_691
+  - first:
+      213: -5714225356037128410
+    second: Building sprites_692
+  - first:
+      213: -3696542108825778742
+    second: Building sprites_693
+  - first:
+      213: -6677570903888378820
+    second: Building sprites_694
+  - first:
+      213: -8351195828628699850
+    second: Building sprites_695
+  - first:
+      213: -6901586685520100189
+    second: Building sprites_696
+  - first:
+      213: 4709207083124769444
+    second: Building sprites_697
+  - first:
+      213: -8771487804486196527
+    second: Building sprites_698
+  - first:
+      213: 7273538528408280523
+    second: Building sprites_699
+  - first:
+      213: 8049990291648462989
+    second: Building sprites_700
+  - first:
+      213: -7963962495548276343
+    second: Building sprites_701
+  - first:
+      213: 6825925127041989011
+    second: Building sprites_702
+  - first:
+      213: -1421225602709519060
+    second: Building sprites_703
+  - first:
+      213: 7181693956398322896
+    second: Building sprites_704
+  - first:
+      213: 3540809995058316572
+    second: Building sprites_705
+  - first:
+      213: 2361783930604643017
+    second: Building sprites_706
+  - first:
+      213: -376411331569243090
+    second: Building sprites_707
+  - first:
+      213: -4846735968702225329
+    second: Building sprites_708
+  - first:
+      213: 4613959387917786024
+    second: Building sprites_709
+  - first:
+      213: -6012973838479056420
+    second: Building sprites_710
+  - first:
+      213: 8936753690479030941
+    second: Building sprites_711
+  - first:
+      213: -758738989458243204
+    second: Building sprites_712
+  - first:
+      213: -5769908786055817875
+    second: Building sprites_713
+  - first:
+      213: 2712644354404347483
+    second: Building sprites_714
+  - first:
+      213: -5389015226551405949
+    second: Building sprites_715
+  - first:
+      213: 6163824273580583271
+    second: Building sprites_716
+  - first:
+      213: -8842616263203803031
+    second: Building sprites_717
+  - first:
+      213: 5295567817170450350
+    second: Building sprites_718
+  - first:
+      213: 6112356309529931901
+    second: Building sprites_719
+  - first:
+      213: -4249848930042870837
+    second: Building sprites_720
+  - first:
+      213: 7643665895360471038
+    second: Building sprites_721
+  - first:
+      213: 5540852878675577172
+    second: Building sprites_722
+  - first:
+      213: -8130774836190114789
+    second: Building sprites_723
+  - first:
+      213: 8677284886522756979
+    second: Building sprites_724
+  - first:
+      213: 8898450954649821432
+    second: Building sprites_725
+  - first:
+      213: -2694922625377148987
+    second: Building sprites_726
+  - first:
+      213: -2665786988410762088
+    second: Building sprites_727
+  - first:
+      213: 1691083903010765581
+    second: Building sprites_728
+  - first:
+      213: 8864973622118034350
+    second: Building sprites_729
+  - first:
+      213: 1941602778324792390
+    second: Building sprites_730
+  - first:
+      213: 5132912973746175363
+    second: Building sprites_731
+  - first:
+      213: 236367952712160448
+    second: Building sprites_732
+  - first:
+      213: 3598351577566660008
+    second: Building sprites_733
+  - first:
+      213: -6523517731420638249
+    second: Building sprites_734
+  - first:
+      213: 6110910854510683428
+    second: Building sprites_735
+  - first:
+      213: -3469519143379619779
+    second: Building sprites_736
+  - first:
+      213: 6469825989436104791
+    second: Building sprites_737
+  - first:
+      213: 7736998462854526312
+    second: Building sprites_738
+  - first:
+      213: 3116266801396711425
+    second: Building sprites_739
+  - first:
+      213: 3120131641637902702
+    second: Building sprites_740
+  - first:
+      213: 730746612230381169
+    second: Building sprites_741
+  - first:
+      213: 6365146296892053643
+    second: Building sprites_742
+  - first:
+      213: 3791333709363358118
+    second: Building sprites_743
+  - first:
+      213: 7531167587734262580
+    second: Building sprites_744
+  - first:
+      213: -3734035757019542976
+    second: Building sprites_745
+  - first:
+      213: -2238302238960737038
+    second: Building sprites_746
+  - first:
+      213: -5279046840147543693
+    second: Building sprites_747
+  - first:
+      213: 4069386854844924355
+    second: Building sprites_748
+  - first:
+      213: 5636090819546699718
+    second: Building sprites_749
+  - first:
+      213: -9082199360919481240
+    second: Building sprites_750
+  - first:
+      213: -6148356704512195531
+    second: Building sprites_751
+  - first:
+      213: 152308617102310709
+    second: Building sprites_752
+  - first:
+      213: 506503446320982250
+    second: Building sprites_753
+  - first:
+      213: 6955110542660359877
+    second: Building sprites_754
+  - first:
+      213: 3044319861164508436
+    second: Building sprites_755
+  - first:
+      213: -8515446819009728441
+    second: Building sprites_756
+  - first:
+      213: 8864908798433350352
+    second: Building sprites_757
+  - first:
+      213: -8248959253907542144
+    second: Building sprites_758
+  - first:
+      213: -6314796505751667890
+    second: Building sprites_759
+  - first:
+      213: 7220134333058629173
+    second: Building sprites_760
+  - first:
+      213: 5303921426698843531
+    second: Building sprites_761
+  - first:
+      213: -1189006696710466588
+    second: Building sprites_762
+  - first:
+      213: -8742811750418697732
+    second: Building sprites_763
+  - first:
+      213: 5983780468958995571
+    second: Building sprites_764
+  - first:
+      213: -3575921690899315548
+    second: Building sprites_765
+  - first:
+      213: 6116097334166226374
+    second: Building sprites_766
+  - first:
+      213: 8553784752564970663
+    second: Building sprites_767
+  - first:
+      213: 2210259128331006997
+    second: Building sprites_768
+  - first:
+      213: -3290014583656530658
+    second: Building sprites_769
+  - first:
+      213: -3125094532085687903
+    second: Building sprites_770
+  - first:
+      213: -4151796415652580670
+    second: Building sprites_771
+  - first:
+      213: 1362805736756817138
+    second: Building sprites_772
+  - first:
+      213: 2517806273115687875
+    second: Building sprites_773
+  - first:
+      213: 5177061688029488350
+    second: Building sprites_774
+  - first:
+      213: 5582172089268629338
+    second: Building sprites_775
+  - first:
+      213: 4387540416817114773
+    second: Building sprites_776
+  - first:
+      213: -122976427729835132
+    second: Building sprites_777
+  - first:
+      213: -1139637722254335207
+    second: Building sprites_778
+  - first:
+      213: 3544356509192642033
+    second: Building sprites_779
+  - first:
+      213: -823901340894574267
+    second: Building sprites_780
+  - first:
+      213: -6860642028129732315
+    second: Building sprites_781
+  - first:
+      213: -948174247962767396
+    second: Building sprites_782
+  - first:
+      213: -4160556563265051425
+    second: Building sprites_783
+  - first:
+      213: 3566659850726713702
+    second: Building sprites_784
+  - first:
+      213: -1399250749380373989
+    second: Building sprites_785
+  - first:
+      213: -3761175997339605011
+    second: Building sprites_786
+  - first:
+      213: -8370576599622198125
+    second: Building sprites_787
+  - first:
+      213: -3922581318450275299
+    second: Building sprites_788
+  - first:
+      213: 6818978823194152413
+    second: Building sprites_789
+  - first:
+      213: -2572076935199117384
+    second: Building sprites_790
+  - first:
+      213: -8982335810912977643
+    second: Building sprites_791
+  - first:
+      213: 4757454828524891027
+    second: Building sprites_792
+  - first:
+      213: -7015615583970298510
+    second: Building sprites_793
+  - first:
+      213: 760532358269055775
+    second: Building sprites_794
+  - first:
+      213: 864823932956079689
+    second: Building sprites_795
+  - first:
+      213: 1472791819315342404
+    second: Building sprites_796
+  - first:
+      213: -2915007515947486345
+    second: Building sprites_797
+  - first:
+      213: 3287854784856824476
+    second: Building sprites_798
+  - first:
+      213: -1943226738237970210
+    second: Building sprites_799
+  - first:
+      213: 6852134156206146678
+    second: Building sprites_800
+  - first:
+      213: 7705518999148131940
+    second: Building sprites_801
+  - first:
+      213: -3649376148924827683
+    second: Building sprites_802
+  - first:
+      213: 4158309216060806764
+    second: Building sprites_803
+  - first:
+      213: -4636386856012591082
+    second: Building sprites_804
+  - first:
+      213: -2001797965529377391
+    second: Building sprites_805
+  - first:
+      213: -3886996899556329542
+    second: Building sprites_806
+  - first:
+      213: 1107026428388181575
+    second: Building sprites_807
+  - first:
+      213: -5300571317179144673
+    second: Building sprites_808
+  - first:
+      213: -746337546193982655
+    second: Building sprites_809
+  - first:
+      213: 2124002807745806020
+    second: Building sprites_810
+  - first:
+      213: -1272710095646982972
+    second: Building sprites_811
+  - first:
+      213: -58538410750426995
+    second: Building sprites_812
+  - first:
+      213: 4726787970905563533
+    second: Building sprites_813
+  - first:
+      213: 3174915036105139140
+    second: Building sprites_814
+  - first:
+      213: -8832468061373709055
+    second: Building sprites_815
+  - first:
+      213: -3173112667400122429
+    second: Building sprites_816
+  - first:
+      213: 5451204845070836843
+    second: Building sprites_817
+  - first:
+      213: 2152326199284579705
+    second: Building sprites_818
+  - first:
+      213: -6466179859769371204
+    second: Building sprites_819
+  - first:
+      213: 2112193186608410674
+    second: Building sprites_820
+  - first:
+      213: 703464352253181834
+    second: Building sprites_821
+  - first:
+      213: -5855520186391116861
+    second: Building sprites_822
+  - first:
+      213: -8041480126378165006
+    second: Building sprites_823
+  - first:
+      213: -2161813579958521132
+    second: Building sprites_824
+  - first:
+      213: 1195639191396678700
+    second: Building sprites_825
+  - first:
+      213: 8755693665827878598
+    second: Building sprites_826
+  - first:
+      213: -6212410672301153924
+    second: Building sprites_827
+  - first:
+      213: -6133003416453837471
+    second: Building sprites_828
+  - first:
+      213: 8227881396229081004
+    second: Building sprites_829
+  - first:
+      213: -5565225768752842625
+    second: Building sprites_830
+  - first:
+      213: 4168787222331483802
+    second: Building sprites_831
+  - first:
+      213: -1593307613240188879
+    second: Building sprites_832
+  - first:
+      213: -4578198804215577752
+    second: Building sprites_833
+  - first:
+      213: 4831478965598011957
+    second: Building sprites_834
+  - first:
+      213: -3179011377029754519
+    second: Building sprites_835
+  - first:
+      213: -5897511567015648596
+    second: Building sprites_836
+  - first:
+      213: 6316067580572995412
+    second: Building sprites_837
+  - first:
+      213: 1654558940034973751
+    second: Building sprites_838
+  - first:
+      213: 9206140701480613546
+    second: Building sprites_839
+  - first:
+      213: -869153229983140649
+    second: Building sprites_840
+  - first:
+      213: 2721407571095250900
+    second: Building sprites_841
+  - first:
+      213: 1739538926495866915
+    second: Building sprites_842
+  - first:
+      213: 4409826768322057015
+    second: Building sprites_843
+  - first:
+      213: 6036674930737412611
+    second: Building sprites_844
+  - first:
+      213: 2032453647031355468
+    second: Building sprites_845
+  - first:
+      213: 6789533197426057011
+    second: Building sprites_846
+  - first:
+      213: 4881888533239517718
+    second: Building sprites_847
+  - first:
+      213: 5271086637047255152
+    second: Building sprites_848
+  - first:
+      213: 2725186675172032180
+    second: Building sprites_849
+  - first:
+      213: -584134504292554955
+    second: Building sprites_850
+  - first:
+      213: -7937757435929577899
+    second: Building sprites_851
+  - first:
+      213: 8437282602605953962
+    second: Building sprites_852
+  - first:
+      213: 4161170852684992378
+    second: Building sprites_853
+  - first:
+      213: -1196057412803648865
+    second: Building sprites_854
+  - first:
+      213: 5932031492458190765
+    second: Building sprites_855
+  - first:
+      213: 2562912124624456808
+    second: Building sprites_856
+  - first:
+      213: 8910477720278651936
+    second: Building sprites_857
+  - first:
+      213: -3180793815984026365
+    second: Building sprites_858
+  - first:
+      213: -5959103801956151688
+    second: Building sprites_859
+  - first:
+      213: 221838736670314410
+    second: Building sprites_860
+  - first:
+      213: -6796764248373586940
+    second: Building sprites_861
+  - first:
+      213: -661946262521529783
+    second: Building sprites_862
+  - first:
+      213: -449066078817942435
+    second: Building sprites_863
+  - first:
+      213: 6822323809890516289
+    second: Building sprites_864
+  - first:
+      213: -6740345698094464149
+    second: Building sprites_865
+  - first:
+      213: 3760594597983638502
+    second: Building sprites_866
+  - first:
+      213: -5085508988188519019
+    second: Building sprites_867
+  - first:
+      213: 7531508693706146190
+    second: Building sprites_868
+  - first:
+      213: -8548409434163377494
+    second: Building sprites_869
+  - first:
+      213: 1431167904934155453
+    second: Building sprites_870
+  - first:
+      213: 3965510310986637573
+    second: Building sprites_871
+  - first:
+      213: 4929269054068891097
+    second: Building sprites_872
+  - first:
+      213: 1545209080819720582
+    second: Building sprites_873
+  - first:
+      213: -8794422540695565143
+    second: Building sprites_874
+  - first:
+      213: 2429243648124438001
+    second: Building sprites_875
+  - first:
+      213: -4828140057912658974
+    second: Building sprites_876
+  - first:
+      213: 1667336841018810691
+    second: Building sprites_877
+  - first:
+      213: 7180953817214636662
+    second: Building sprites_878
+  - first:
+      213: 7373693249111784567
+    second: Building sprites_879
+  - first:
+      213: -9109927658821901925
+    second: Building sprites_880
+  - first:
+      213: -1274062670550752769
+    second: Building sprites_881
+  - first:
+      213: -526925927024017045
+    second: Building sprites_882
+  - first:
+      213: 2954860289346029283
+    second: Building sprites_883
+  - first:
+      213: -8992363530896215291
+    second: Building sprites_884
+  - first:
+      213: -8703805707424330305
+    second: Building sprites_885
+  - first:
+      213: -2897788927265270002
+    second: Building sprites_886
+  - first:
+      213: 3893935565397224087
+    second: Building sprites_887
+  - first:
+      213: 7519194783805245835
+    second: Building sprites_888
+  - first:
+      213: -2396457153712287491
+    second: Building sprites_889
+  - first:
+      213: -3207289941544160896
+    second: Building sprites_890
+  - first:
+      213: 575586951033337601
+    second: Building sprites_891
+  - first:
+      213: -1476522226826822024
+    second: Building sprites_892
+  - first:
+      213: 1771727524472732284
+    second: Building sprites_893
+  - first:
+      213: -2102381069861585117
+    second: Building sprites_894
+  - first:
+      213: 1544326061944379728
+    second: Building sprites_895
+  - first:
+      213: 4796540100712389975
+    second: Building sprites_896
+  - first:
+      213: -7052991027591468081
+    second: Building sprites_897
+  - first:
+      213: -1570463594290267553
+    second: Building sprites_898
+  - first:
+      213: -371571904461105478
+    second: Building sprites_899
+  - first:
+      213: 1887879106545023815
+    second: Building sprites_900
+  - first:
+      213: -5454315426044881699
+    second: Building sprites_901
+  - first:
+      213: 423320451025278683
+    second: Building sprites_902
+  - first:
+      213: 5567606124184233861
+    second: Building sprites_903
+  - first:
+      213: -2332813862679034984
+    second: Building sprites_904
+  - first:
+      213: 5636293742836401152
+    second: Building sprites_905
+  - first:
+      213: -3971641013532358082
+    second: Building sprites_906
+  - first:
+      213: -8417184841276385138
+    second: Building sprites_907
+  - first:
+      213: -5219188307864470684
+    second: Building sprites_908
+  - first:
+      213: 1024763520524146940
+    second: Building sprites_909
+  - first:
+      213: 6072247300134582216
+    second: Building sprites_910
+  - first:
+      213: -4436548662136883497
+    second: Building sprites_911
+  - first:
+      213: 1165227695513182487
+    second: Building sprites_912
+  - first:
+      213: -1000255371033029539
+    second: Building sprites_913
+  - first:
+      213: -108305993719072435
+    second: Building sprites_914
+  - first:
+      213: 944925209631964312
+    second: Building sprites_915
+  - first:
+      213: -1397895477095349472
+    second: Building sprites_916
+  - first:
+      213: 6183193505150335650
+    second: Building sprites_917
+  - first:
+      213: -6085926065587302670
+    second: Building sprites_918
+  - first:
+      213: -8327377062088184613
+    second: Building sprites_919
+  - first:
+      213: -436073729393451332
+    second: Building sprites_920
+  - first:
+      213: -1208277124228738084
+    second: Building sprites_921
+  - first:
+      213: -7854881864365107592
+    second: Building sprites_922
+  - first:
+      213: 3388921837287707784
+    second: Building sprites_923
+  - first:
+      213: 8879716671787402180
+    second: Building sprites_924
+  - first:
+      213: -7896341453560939306
+    second: Building sprites_925
+  - first:
+      213: 1606015448497698286
+    second: Building sprites_926
+  - first:
+      213: -1757367499046638140
+    second: Building sprites_927
+  - first:
+      213: -748875163272276648
+    second: Building sprites_928
+  - first:
+      213: 5814901124683029357
+    second: Building sprites_929
+  - first:
+      213: -7172333486486933972
+    second: Building sprites_930
+  - first:
+      213: -8186233816307086473
+    second: Building sprites_931
+  - first:
+      213: -1385269298508658849
+    second: Building sprites_932
+  - first:
+      213: -8719243605190814727
+    second: Building sprites_933
+  - first:
+      213: -4436096039206528265
+    second: Building sprites_934
+  - first:
+      213: 6238972996210718843
+    second: Building sprites_935
+  - first:
+      213: -8552415190794560026
+    second: Building sprites_936
+  - first:
+      213: -7200164972464080471
+    second: Building sprites_937
+  - first:
+      213: 1699648793312959167
+    second: Building sprites_938
+  - first:
+      213: 615203362155039452
+    second: Building sprites_939
+  - first:
+      213: 648346605422896409
+    second: Building sprites_940
+  - first:
+      213: 7655286884221161206
+    second: Building sprites_941
+  - first:
+      213: 4047224501512768879
+    second: Building sprites_942
+  - first:
+      213: 3859471255463880375
+    second: Building sprites_943
+  - first:
+      213: -3459838532454828289
+    second: Building sprites_944
+  - first:
+      213: 4813979652607942717
+    second: Building sprites_945
+  - first:
+      213: 1454928580641803496
+    second: Building sprites_946
+  - first:
+      213: -3184259655208436482
+    second: Building sprites_947
+  - first:
+      213: 7925867890519232140
+    second: Building sprites_948
+  - first:
+      213: -8428597849680747787
+    second: Building sprites_949
+  - first:
+      213: 676209046338549200
+    second: Building sprites_950
+  - first:
+      213: -5900120931419203643
+    second: Building sprites_951
+  - first:
+      213: -3466774451108941859
+    second: Building sprites_952
+  - first:
+      213: -1180542825297232025
+    second: Building sprites_953
+  - first:
+      213: 3343117315640602228
+    second: Building sprites_954
+  - first:
+      213: 7085828615255036168
+    second: Building sprites_955
+  - first:
+      213: 2623393430940140264
+    second: Building sprites_956
+  - first:
+      213: 1257080940412339253
+    second: Building sprites_957
+  - first:
+      213: 3360572939117485636
+    second: Building sprites_958
+  - first:
+      213: 6593316155663885664
+    second: Building sprites_959
+  - first:
+      213: 1149069968561559734
+    second: Building sprites_960
+  - first:
+      213: 5117136999464628839
+    second: Building sprites_961
+  - first:
+      213: 1487458483753249405
+    second: Building sprites_962
+  - first:
+      213: 3943697207284424514
+    second: Building sprites_963
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,7 +5829,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,7 +5848,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -163,7 +5860,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -181,15 +5878,15 @@ TextureImporter:
         y: 435
         width: 80
         height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.125}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a50b94fa109e52820800000000000000
-      internalID: 2892974529100492890
+      spriteID: 7068f8f71dae24960800000000000000
+      internalID: 7584882907954513415
       vertices: []
       indices: 
       edges: []
@@ -202,15 +5899,15 @@ TextureImporter:
         y: 443
         width: 80
         height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99b6cbf26b7155700800000000000000
-      internalID: 528354602538265497
+      spriteID: 1e8c6e56e8fccd230800000000000000
+      internalID: 3665032407274670305
       vertices: []
       indices: 
       edges: []
@@ -223,15 +5920,15 @@ TextureImporter:
         y: 427
         width: 80
         height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9d10a6040688f560800000000000000
-      internalID: 7347770143904112031
+      spriteID: e77d0279b0f5c27f0800000000000000
+      internalID: -636028943981291650
       vertices: []
       indices: 
       edges: []
@@ -244,15 +5941,15 @@ TextureImporter:
         y: 442
         width: 80
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0115c7b30f6f8f280800000000000000
-      internalID: -9009179542904090352
+      spriteID: 0ad3a284c5386e370800000000000000
+      internalID: 8351506991376121248
       vertices: []
       indices: 
       edges: []
@@ -265,15 +5962,15 @@ TextureImporter:
         y: 441
         width: 96
         height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4c79198cc21e3e50800000000000000
-      internalID: 6790885957804063820
+      spriteID: 0eb3aeec4cc956580800000000000000
+      internalID: -8834482724918379552
       vertices: []
       indices: 
       edges: []
@@ -286,15 +5983,15 @@ TextureImporter:
         y: 433
         width: 64
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0.11111112}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f79f5aca8705e3580800000000000000
-      internalID: -8845544138886219393
+      spriteID: d9895d02633a82340800000000000000
+      internalID: 4839297252484028573
       vertices: []
       indices: 
       edges: []
@@ -307,15 +6004,15 @@ TextureImporter:
         y: 440
         width: 80
         height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16cec7b63045ae5e0800000000000000
-      internalID: -1879597520808776607
+      spriteID: a4609bcc438260d90800000000000000
+      internalID: -7131968752656513462
       vertices: []
       indices: 
       edges: []
@@ -328,15 +6025,15 @@ TextureImporter:
         y: 423
         width: 64
         height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8edeb355c6208cc0800000000000000
-      internalID: -3710923463997858166
+      spriteID: 90ae62a88aee6a0e0800000000000000
+      internalID: -2258855755440002551
       vertices: []
       indices: 
       edges: []
@@ -349,15 +6046,15 @@ TextureImporter:
         y: 151
         width: 112
         height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e0447fe33d28b6f0800000000000000
-      internalID: -668734843580563229
+      spriteID: a26b91ec2808e8220800000000000000
+      internalID: 2490068943274358314
       vertices: []
       indices: 
       edges: []
@@ -370,15 +6067,15 @@ TextureImporter:
         y: 232
         width: 142
         height: 165
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.2746479, y: 0.048484847}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85d8fa09564cfc840800000000000000
-      internalID: 5246628031408082264
+      spriteID: b7d9653ca80d0d680800000000000000
+      internalID: -8732250383070093957
       vertices: []
       indices: 
       edges: []
@@ -391,15 +6088,15 @@ TextureImporter:
         y: 271
         width: 112
         height: 124
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a70319903a198f340800000000000000
-      internalID: 4897824724191621242
+      spriteID: 33b20124d0788c5a0800000000000000
+      internalID: -6500797571096630477
       vertices: []
       indices: 
       edges: []
@@ -412,15 +6109,15 @@ TextureImporter:
         y: 313
         width: 15
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18d97e8d0aa7b79e0800000000000000
-      internalID: -1622568409484518015
+      spriteID: 1d47cd81df934a300800000000000000
+      internalID: 262398437500941521
       vertices: []
       indices: 
       edges: []
@@ -433,15 +6130,15 @@ TextureImporter:
         y: 312
         width: 96
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5833333, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7e7e6200d131b070800000000000000
-      internalID: 8120326372589469307
+      spriteID: a333f707057f31b10800000000000000
+      internalID: 1951174988438385466
       vertices: []
       indices: 
       edges: []
@@ -454,15 +6151,15 @@ TextureImporter:
         y: 308
         width: 160
         height: 78
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.07692308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bea3af37e2064ff0800000000000000
-      internalID: -52351153439789392
+      spriteID: 8523db7f2e218fe70800000000000000
+      internalID: 9149083409031443032
       vertices: []
       indices: 
       edges: []
@@ -475,15 +6172,15 @@ TextureImporter:
         y: 221
         width: 64
         height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.625, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26472397044b92e10800000000000000
-      internalID: 2173466484187231330
+      spriteID: e609dd89ab2d85a30800000000000000
+      internalID: 4204341951020765294
       vertices: []
       indices: 
       edges: []
@@ -496,15 +6193,15 @@ TextureImporter:
         y: 216
         width: 80
         height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d7eb8f8bc69f3000800000000000000
-      internalID: 17898724563609555
+      spriteID: c80c8b4a0e0d2d450800000000000000
+      internalID: 6112177307550007436
       vertices: []
       indices: 
       edges: []
@@ -517,15 +6214,15 @@ TextureImporter:
         y: 208
         width: 80
         height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.09859155}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46084c76759a7fe70800000000000000
-      internalID: 9148967360894632036
+      spriteID: b157fb56da2649be0800000000000000
+      internalID: -1471442681367399141
       vertices: []
       indices: 
       edges: []
@@ -538,15 +6235,15 @@ TextureImporter:
         y: 96
         width: 12
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.40909094}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3ef451307a82b0c0800000000000000
-      internalID: -4561431258104267202
+      spriteID: fcde15fa1ee81f1e0800000000000000
+      internalID: -2165792845828330033
       vertices: []
       indices: 
       edges: []
@@ -559,15 +6256,15 @@ TextureImporter:
         y: 97
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 052261718d9c84aa0800000000000000
-      internalID: -6176464959001189808
+      spriteID: 275e06cb96c077cf0800000000000000
+      internalID: -254721205651577486
       vertices: []
       indices: 
       edges: []
@@ -580,15 +6277,15 @@ TextureImporter:
         y: 97
         width: 14
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e288b40ea9d07e910800000000000000
-      internalID: 1866475529407531054
+      spriteID: db3eab3a159697790800000000000000
+      internalID: -7531873102440242243
       vertices: []
       indices: 
       edges: []
@@ -601,15 +6298,15 @@ TextureImporter:
         y: 63
         width: 256
         height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34375, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91b4048d555751930800000000000000
-      internalID: 4113322846233578265
+      spriteID: c9a7a2134160c4dd0800000000000000
+      internalID: -2500617009303487844
       vertices: []
       indices: 
       edges: []
@@ -622,15 +6319,15 @@ TextureImporter:
         y: 106
         width: 80
         height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 091f66e3cbc2e2fb0800000000000000
-      internalID: -4670746576524217968
+      spriteID: 539075c00170db450800000000000000
+      internalID: 6106044435292162357
       vertices: []
       indices: 
       edges: []
@@ -640,18 +6337,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 528
-        y: 107
+        y: 108
         width: 112
         height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12d8e22c960afee00800000000000000
-      internalID: 1076255212054678817
+      spriteID: 341762c835b3f86d0800000000000000
+      internalID: -2986102797903695549
       vertices: []
       indices: 
       edges: []
@@ -664,15 +6361,15 @@ TextureImporter:
         y: 91
         width: 64
         height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df19cb18caf311570800000000000000
-      internalID: 8435593587185193469
+      spriteID: df9f3ecf0d0bba140800000000000000
+      internalID: 4732070245125323261
       vertices: []
       indices: 
       edges: []
@@ -685,15 +6382,15 @@ TextureImporter:
         y: 31
         width: 40
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee599a755c6488a10800000000000000
-      internalID: 1911855855212008942
+      spriteID: 42b19b481d3c181e0800000000000000
+      internalID: -2197259838537786588
       vertices: []
       indices: 
       edges: []
@@ -706,15 +6403,15 @@ TextureImporter:
         y: 31
         width: 40
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 940909b8f0a2c68a0800000000000000
-      internalID: -6310622731598524343
+      spriteID: f745ebe82db51ab80800000000000000
+      internalID: -8385320071291054977
       vertices: []
       indices: 
       edges: []
@@ -727,15 +6424,15 @@ TextureImporter:
         y: 31
         width: 40
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e1bb4435a4e0220800000000000000
-      internalID: 2453980568459353712
+      spriteID: c2eb6e34d424e0460800000000000000
+      internalID: 7209772953085853228
       vertices: []
       indices: 
       edges: []
@@ -748,15 +6445,15 @@ TextureImporter:
         y: 31
         width: 40
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 627d17805ad28cc00800000000000000
-      internalID: 921036310631798566
+      spriteID: 056e35c99f704b9a0800000000000000
+      internalID: -6218336416840817072
       vertices: []
       indices: 
       edges: []
@@ -769,15 +6466,15 @@ TextureImporter:
         y: 31
         width: 40
         height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 682949984125f3460800000000000000
-      internalID: 7223582575486603910
+      spriteID: 055e038c532d13250800000000000000
+      internalID: 5922746113402660176
       vertices: []
       indices: 
       edges: []

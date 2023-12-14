@@ -12,13 +12,20 @@ public class Racer_Script : MonoBehaviour
 
     public GameObject ghost;
 
+    public Animation Pulse;
+
     public GameObject sweat;
 
     public GameObject crown;
 
+    public Transform stepPos;
+
+    public GameObject stepSmoke;
+
     public event System.Action Event_Idle;
-    public event System.Action Event_Walk;
+    public event System.Action Event_Set;
     public event System.Action Event_Run;
+    public event System.Action Event_Walk;
     public event System.Action Event_HandKnees;
 
     public int stepsTaken = 0;
@@ -31,19 +38,22 @@ public class Racer_Script : MonoBehaviour
 
     public void Idle() => Event_Idle?.Invoke();
 
-    public void Walk() => Event_Walk?.Invoke();
+    public void Set() => Event_Set?.Invoke();
 
     public void Run() => Event_Run?.Invoke();
+
+    public void Walk() => Event_Walk?.Invoke();
 
     public void HandsKnees() => Event_HandKnees?.Invoke();
 
 
+    public void Go()
+    {
+        Event_Run?.Invoke();
+        StartCoroutine(StartPhase());
+    }
 
-    public void GetSet() => Event_Run?.Invoke();
-
-    public void GO() => StartCoroutine(StartPhase());
-
-    private Dictionary<RacerProfile.Stat, float> adjustedStats;
+    public Dictionary<RacerProfile.Stat, float> adjustedStats;
 
 
     public void AdjustStats(Dictionary<RacerProfile.Stat, float> baseStats)
@@ -99,13 +109,14 @@ public class Racer_Script : MonoBehaviour
 
     public void Step()
     {
+
         if (finished)
         {
             Deccelerate();
         }
         else if (GetComponent<Competitve_Edge>() != null && GetComponent<Competitve_Edge>().Conditon())
         {
-            
+
         }
         else if (stepsTaken == 0)
         {
@@ -126,7 +137,7 @@ public class Racer_Script : MonoBehaviour
         {
             DudStep();
 
-            if(adjustedStats[RacerProfile.Stat.COM] > 0)
+            if (adjustedStats[RacerProfile.Stat.COM] > 0)
                 adjustedStats[RacerProfile.Stat.COM] -= (adjustedStats[RacerProfile.Stat.COM] * 0.005f);
         }
 
@@ -154,7 +165,12 @@ public class Racer_Script : MonoBehaviour
         {
             current_speed += adjustedStats[RacerProfile.Stat.PWR];
 
-            GetComponent<GhostMaker>().MakeGhost(Color.blue, 1.5f);
+            //GetComponent<GhostMaker>().MakeGhost(Color.blue);
+
+            Pulse.Stop();
+            Pulse.Play();
+
+            Instantiate(stepSmoke, stepPos.position, stepPos.rotation);
 
             powerSteps++;
 
@@ -180,7 +196,12 @@ public class Racer_Script : MonoBehaviour
                 Event_Walk?.Invoke();
             }
 
-            GetComponent<GhostMaker>().MakeGhost(Color.red);
+            //GetComponent<GhostMaker>().MakeGhost(Color.red);
+
+            Pulse.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
+
+            Pulse.Stop();
+            Pulse.Play();
 
             dudSteps++;
 
