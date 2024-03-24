@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.UI;
-using System.IO;
-using System.Linq;
+
 
 public class SelectionManager : MonoBehaviour
 {
@@ -14,12 +11,12 @@ public class SelectionManager : MonoBehaviour
     public GameObject racerButtonPrefab;
 
     public int MAX_RACERS = 8;
-    private List<RacerProfile> selectedList = new List<RacerProfile>();
+    public List<RacerProfile> selectedList = new List<RacerProfile>();
 
-    public Transform listUI;
-    public GameObject listElement;
+    public Transform listUIContainer;
 
     public Button continueButton;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,12 +30,12 @@ public class SelectionManager : MonoBehaviour
 
         if (GameObject.Find("RacerList"))
         {
+            print("RacerList Found!");
+
             racerList = GameObject.Find("RacerList").GetComponent<RacerList>();
 
             if (racerList.maxRacers != MAX_RACERS)
-            {
                 racerList.racers.Clear();
-            }
         }
         else
         {
@@ -47,47 +44,41 @@ public class SelectionManager : MonoBehaviour
             racerList.maxRacers = MAX_RACERS;
         }
 
-        selectedList = racerList.racers;
-
-        UpdateUI();
-
         Object[] profiles = Resources.LoadAll(_FILEPATH);
-
-        //for (int i = 0; i < selectedList.Count(); i++)
-        //{
-        //    if (!File.Exists(_FILEPATH + selectedList[i] + ".asset"))          // Make sure Racer file exists
-        //    {
-        //        UpdateList(selectedList[i]);
-        //        i--;
-        //    }
-        //}
 
         foreach (Object racerAsset in profiles)
         {
+            if(((RacerProfile)Resources.Load(_FILEPATH + racerAsset.name, typeof(RacerProfile)))._name == "")
+            {
+                continue;
+            }
+
             Button button = Instantiate(racerButtonPrefab, transform).GetComponent<Button>();       // create button 
 
             RacerProfile racer_profile =  button.GetComponent<RacerSelect>().racer_profile = (RacerProfile)Resources.Load(_FILEPATH + racerAsset.name, typeof(RacerProfile));
 
-            button.transform.GetChild(0).GetComponent<Text>().text = racer_profile.name;                  // set button text to racer name
+            button.transform.GetChild(0).GetComponent<Text>().text = racer_profile._name;                  // set button text to racer name
 
-            if (selectedList.Contains(racer_profile))                                                // if racer already in selected list
-            {
-                button.GetComponent<RacerSelect>().UpdateColor(true);
-                button.GetComponent<RacerSelect>().selected = true;
-            }
+            if (racerList.racers.Contains(racer_profile))                                                // if racer already in selected list
+                button.GetComponent<RacerSelect>().Select();
         }
+
+
+        racerList.racers = selectedList;
     }
 
-    public bool UpdateList(RacerProfile racerName)
+    public bool UpdateList(RacerProfile racer)
     {
 
-        if (!selectedList.Contains(racerName))
+        if (!selectedList.Contains(racer))
         {
             if (selectedList.Count < MAX_RACERS)
             {
-                selectedList.Add(racerName);
+                selectedList.Add(racer);
 
-                UpdateUI();
+
+                if (selectedList.Count > 0)
+                    continueButton.interactable = true;
 
                 Debug.Log("Added");
                 return true;
@@ -100,36 +91,15 @@ public class SelectionManager : MonoBehaviour
         }
         else
         {
-            selectedList.Remove(racerName);
-
-            UpdateUI();
+            selectedList.Remove(racer);
 
             Debug.Log("Removed");
-            return true;
-        }
-    }
 
-    private void UpdateUI()
-    {
 
-        foreach (Transform child in listUI)
-        {
-            Destroy(child.gameObject);
-        }
+            if (selectedList.Count == 0)
+                continueButton.interactable = false;
 
-        if (selectedList.Count > 0)
-        {
-            for (int i = 0; i < selectedList.Count; i++)
-            {
-                Transform element = Instantiate(listElement, listUI).transform;
-                element.GetChild(0).GetComponent<Text>().text = selectedList[i].name;
-            }
-
-            continueButton.interactable = true;
-        }
-        else
-        {
-            continueButton.interactable = false;
+            return false;
         }
     }
 }

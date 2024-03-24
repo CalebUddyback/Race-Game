@@ -27,6 +27,7 @@ public class Racer_Script : MonoBehaviour
     public event System.Action Event_Run;
     public event System.Action Event_Walk;
     public event System.Action Event_HandKnees;
+    public event System.Action Event_Sit;
 
     public int stepsTaken = 0;
     public int powerSteps = 0;
@@ -45,6 +46,8 @@ public class Racer_Script : MonoBehaviour
     public void Walk() => Event_Walk?.Invoke();
 
     public void HandsKnees() => Event_HandKnees?.Invoke();
+
+    public void Sit() => Event_Sit?.Invoke();
 
 
     public void Go()
@@ -233,8 +236,9 @@ public class Racer_Script : MonoBehaviour
 
     public void Eliminate()
     {
-        GetComponent<GhostMaker>().MakeGhost(Color.white, 1.5f);
-        Destroy(gameObject);
+        Event_Sit?.Invoke();
+        //GetComponent<GhostMaker>().MakeGhost(Color.white, 1.5f);
+        //Destroy(gameObject);
     }
 
 }

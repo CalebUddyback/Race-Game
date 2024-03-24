@@ -10,7 +10,7 @@ public class Save : MonoBehaviour
 
     readonly string _FILEPATH = "Assets/Resources/Racer Profiles/";
 
-    public InputField newRacerName;
+    public InputField newRacerNameInput;
     public Text racerName;
 
     public Text points;
@@ -33,6 +33,11 @@ public class Save : MonoBehaviour
     public ColorSelect faceAddonColor;
 
 
+    private void Awake()
+    {
+        GetComponent<Button>().onClick.AddListener(() => CreateProfile3());
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,18 +48,103 @@ public class Save : MonoBehaviour
             Directory.CreateDirectory(Application.streamingAssetsPath + "/Racers/");   
     }
 
+    public void CreateProfile3()
+    {
+        string inputedName = "";
+
+        if (newRacerNameInput.gameObject.activeSelf)
+        {
+            if (newRacerNameInput.text == "")
+                return;
+
+            inputedName = newRacerNameInput.text;
+        }
+        else
+        {
+            inputedName = racerName.text;
+        }
+
+        RacerProfile racer = null;
+
+        Object[] profiles = Resources.LoadAll("Racer Profiles/");
+
+        /*Find existing racer */
+
+        for (int i = 0; i < profiles.Length; i++)
+        {
+            racer = (RacerProfile)profiles[i];
+
+            if (racer._name == inputedName)
+                break;
+            else if (i == profiles.Length - 1)
+            {
+                racer = null;
+            }
+
+        }
+
+        /* Find Open save slot */
+
+        if (racer == null)
+        {
+
+            for (int i = 0; i < profiles.Length; i++)
+            {
+                //racer = (RacerProfile)Resources.Load("Racer Profiles/" + profiles[i].name, typeof(RacerProfile));
+
+                racer = (RacerProfile)profiles[i];
+
+                if (racer._name == "")
+                    break;
+                else if (i == profiles.Length - 1)
+                {
+                    print("No More Player Slots Available");
+                }
+            }
+
+            racer._name = inputedName;
+
+        }
+
+        /* STATS */
+
+        racer.points = int.Parse(points.text);
+
+        //racer.start_Reaction = int.Parse(startReact.text);
+        racer.start_Speed = int.Parse(startSpeed.text);
+        racer.acceleration = int.Parse(acceleration.text);
+        racer.power = int.Parse(power.text);
+        racer.stamina = int.Parse(stamina.text);
+        racer.composure = int.Parse(composure.text);
+
+
+        /* Cosmetics */
+
+        racer.skin_Color = skinColor.currentButton.GetComponent<Button>().colors.normalColor;
+        racer.eye_Color = eyeColor.currentButton.GetComponent<Button>().colors.normalColor;
+        racer.shirt_Color = shirtColor.currentButton.GetComponent<Button>().colors.normalColor;
+        racer.pant_Color = pantsColor.currentButton.GetComponent<Button>().colors.normalColor;
+        racer.shoe_Color = shoeColor.currentButton.GetComponent<Button>().colors.normalColor;
+
+        racer.head_Addon = int.Parse(headAddon.text);
+        racer.head_Addon_Color = headAddonColor.currentButton.GetComponent<Button>().colors.normalColor;
+
+        racer.face_Addon = int.Parse(faceAddon.text);
+  
+    }
+
     public void CreateProfile2()
     {
         string _name = "";
 
-        if (newRacerName.gameObject.activeSelf)
+        if (newRacerNameInput.gameObject.activeSelf)
         {
-            if (newRacerName.text == "")
+            if (newRacerNameInput.text == "")
             {
                 return;
             }
 
-            _name = newRacerName.text;
+            _name = newRacerNameInput.text;
         }
         else
         {
@@ -92,11 +182,11 @@ public class Save : MonoBehaviour
 
         string path = _FILEPATH + _name + ".asset";
 
-        AssetDatabase.CreateAsset(racer, path);
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
-        EditorUtility.FocusProjectWindow();
-        Selection.activeObject = racer;
+        //AssetDatabase.CreateAsset(racer, path);
+        //AssetDatabase.SaveAssets();
+        //AssetDatabase.Refresh();
+        //EditorUtility.FocusProjectWindow();
+        //Selection.activeObject = racer;
     }
 
     public void CreateProfile()
@@ -104,14 +194,14 @@ public class Save : MonoBehaviour
 
         string _name = "";
 
-        if (newRacerName.gameObject.activeSelf)
+        if (newRacerNameInput.gameObject.activeSelf)
         {
-            if (newRacerName.text == "")
+            if (newRacerNameInput.text == "")
             {
                 return;
             }
 
-            _name = newRacerName.text;
+            _name = newRacerNameInput.text;
         }
         else
         {

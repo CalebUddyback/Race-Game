@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
             {
                 RacerPerformance racer = new RacerPerformance
                 {
-                    name = racersList[i].name,
+                    name = racersList[i]._name,
                     lane = i,
                     profile = racersList[i],
                     stats = racersList[i].GetBaseStats,
@@ -289,6 +289,8 @@ public class GameManager : MonoBehaviour
 
             Event_Go -= allRacers[i].instance.GetComponent<Racer_Script>().Go;
             Event_Set -= allRacers[i].instance.GetComponent<Racer_Script>().Set;
+
+            yield return new WaitWhile(() =>  allRacers[i].instance.GetComponent<Racer_Script>().current_speed > 0);
 
             allRacers[i].instance.GetComponent<Racer_Script>().Eliminate();
         }

@@ -222,3 +222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
+  racer_profile: {fileID: 0}
+  listElementPrefab: {fileID: 918545270818903022, guid: 27d6d3dd2adf31f409b0fd4f4f87a226,
+    type: 3}

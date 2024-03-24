@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -593,9 +593,7 @@ MonoBehaviour:
   racerButtonPrefab: {fileID: 8674152613874703027, guid: f9b87bce36a74d547b65750e6c910cee,
     type: 3}
   MAX_RACERS: 8
-  listUI: {fileID: 2114027740}
-  listElement: {fileID: 918545270818903022, guid: 27d6d3dd2adf31f409b0fd4f4f87a226,
-    type: 3}
+  listUIContainer: {fileID: 2114027740}
   continueButton: {fileID: 777908517}
 --- !u!1 &717139174
 GameObject:

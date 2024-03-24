@@ -19,12 +19,12 @@ public class LoadFromProfile : MonoBehaviour
     {
         racerProfile = profile;
 
-        gameObject.name = racerProfile.name;
+        gameObject.name = racerProfile._name;
 
         //RacerProfile racer = GetComponent<Racer_Script>().racer = (RacerProfile)AssetDatabase.LoadAssetAtPath(_FILEPATH + gameObject.name + ".asset", typeof(RacerProfile));
 
         if (transform.Find("Hud"))
-            transform.Find("Hud").GetComponent<Racer_UI>().racer_name.text = racerProfile.name;
+            transform.Find("Hud").GetComponent<Racer_UI>().racer_name.text = racerProfile._name;
 
         //Cosmetics
 

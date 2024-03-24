@@ -10,22 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b876f4e381d98f847b95c8e84bd5bb97, type: 3}
-  m_Name: Jaheed
+  m_Name: Racer 1
   m_EditorClassIdentifier: 
-  skin_Color: {r: 0.4528302, g: 0.2884426, b: 0.11747954, a: 1}
+  _name: Caleb
+  skin_Color: {r: 0.6320754, g: 0.46605524, b: 0.31305623, a: 1}
   eye_Color: {r: 0, g: 0, b: 0, a: 1}
-  shirt_Color: {r: 0.14901961, g: 0.6039216, b: 0.14117648, a: 1}
-  pant_Color: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
-  shoe_Color: {r: 0.14901961, g: 0.6039216, b: 0.14117648, a: 1}
-  head_Addon: 2
+  shirt_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+  pant_Color: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+  shoe_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+  head_Addon: 1
   head_Addon_Color: {r: 0, g: 0, b: 0, a: 1}
-  face_Addon: 1
+  face_Addon: 0
   points: 0
   start_Reaction: 0
-  start_Speed: 5
-  acceleration: 5
-  power: 5
-  stamina: 5
-  composure: 5
-  upgrades: 000000000000000000000000000000000000000000000000
+  start_Speed: 6
+  acceleration: 3
+  power: 3
+  stamina: 6
+  composure: 3
+  upgrades: 050000000500000005000000050000000500000002000000
   comp_edge: 

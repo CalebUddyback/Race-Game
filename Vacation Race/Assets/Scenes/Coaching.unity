@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5581,18 +5581,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 777908518}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 777908520}
-        m_MethodName: CreateProfile2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &777908518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5642,7 +5631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b9249897f41bd4aa5963efec54e648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newRacerName: {fileID: 1270077197}
+  newRacerNameInput: {fileID: 1270077197}
   racerName: {fileID: 1450941232}
   points: {fileID: 529154627}
   startReact: {fileID: 0}
@@ -9123,7 +9112,7 @@ GameObject:
   - component: {fileID: 1270077198}
   - component: {fileID: 1270077197}
   m_Layer: 5
-  m_Name: NameField
+  m_Name: NameInputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

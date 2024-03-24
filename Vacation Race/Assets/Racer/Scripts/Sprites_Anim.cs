@@ -15,6 +15,8 @@ public class Sprites_Anim : MonoBehaviour
 
     public bool canHaveGhost = true;
 
+    public string idle = "Idle", set = "Set", run = "Run", walk = "Walk", handKnees = "HandKnees", sit = "Sit";
+
 
     private void Awake()
     {
@@ -38,14 +40,22 @@ public class Sprites_Anim : MonoBehaviour
         racer_Script.Event_Set += Animation_Set;
         racer_Script.Event_Run += Animation_Run;
         racer_Script.Event_Walk += Animation_Walk;
-        racer_Script.Event_HandKnees += Animation_HandKnees;      
+        racer_Script.Event_HandKnees += Animation_HandKnees;
+        racer_Script.Event_Sit += Animation_Sit;
     }
 
-    public void Animation_Idle() => anim.SetTrigger("Idle");
-    public void Animation_Set() => anim.SetTrigger("Set");
-    public void Animation_Run() => anim.SetTrigger("Run");
-    public void Animation_Walk() => anim.SetTrigger("Walk");
-    public void Animation_HandKnees() => anim.SetTrigger("HandKnees");
+    public void Animation_Idle() => anim.SetTrigger(idle);
+    public void Animation_Set() => anim.SetTrigger(set);
+    public void Animation_Run() => anim.SetTrigger(run);
+    public void Animation_Walk() => anim.SetTrigger(walk);
+    public void Animation_HandKnees() => anim.SetTrigger(handKnees);
+    public void Animation_Sit()
+    {
+        if (sit == "")
+            Destroy(gameObject);
+        else 
+            anim.SetTrigger(sit);
+    }
 
     public void Step()
     {

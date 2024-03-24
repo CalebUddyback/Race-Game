@@ -198,6 +198,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   racer_Script: {fileID: 0}
   canHaveGhost: 0
+  idle: Idle
+  set: Set
+  run: Run
+  walk: Walk
+  handKnees: HandKnees
+  sit: 
 --- !u!1 &2880104634524179652
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +540,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.2}
+  m_Size: {x: 0.16, y: 0.21}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -573,6 +579,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   racer_Script: {fileID: 0}
   canHaveGhost: 1
+  idle: Idle
+  set: Set
+  run: Run
+  walk: Walk
+  handKnees: HandKnees
+  sit: Sit
 --- !u!1 &2986654685787621602
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +956,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   racer_Script: {fileID: 0}
   canHaveGhost: 1
+  idle: Idle
+  set: Set
+  run: Run
+  walk: Walk
+  handKnees: HandKnees
+  sit: Idle
 --- !u!1 &4625808947374415832
 GameObject:
   m_ObjectHideFlags: 0

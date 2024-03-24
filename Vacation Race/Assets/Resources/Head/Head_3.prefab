@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7611852121315724730}
   - component: {fileID: 7611852121315724731}
   m_Layer: 0
-  m_Name: Hair_3
+  m_Name: Head_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,4 +115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5482ecf8ee2e91d4885fc7a199c5ac06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  racer_Script: {fileID: 0}
   canHaveGhost: 1
+  idle: Idle
+  set: Set
+  run: Run
+  walk: Walk
+  handKnees: HandKnees
+  sit: Idle

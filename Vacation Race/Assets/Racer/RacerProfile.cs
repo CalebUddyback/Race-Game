@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-[CreateAssetMenu(fileName = "New Racer", menuName ="Racer")]
+[CreateAssetMenu(fileName = "Racer", menuName ="Racer")]
 public class RacerProfile : ScriptableObject
 {
+    public string _name;
+
     public Color skin_Color;
     public Color eye_Color;
     public Color shirt_Color;
@@ -15,6 +17,8 @@ public class RacerProfile : ScriptableObject
 
     public int face_Addon;
 
+
+    [Header("Stats")]
 
     public int points;
 

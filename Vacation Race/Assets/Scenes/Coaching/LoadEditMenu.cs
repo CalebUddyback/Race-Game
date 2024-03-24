@@ -56,14 +56,14 @@ public class LoadEditMenu : MonoBehaviour
 
             GameObject racerModel = GameObject.Find("Racer");
 
-            racerModel.name = racerList.racers[0].name;
+            racerModel.name = racerList.racers[0]._name;
 
             yield return StartCoroutine(racerModel.GetComponent<LoadFromProfile>().Loading(racerList.racers[0]));
 
             racerModel.name = "Racer";
 
             nameText.gameObject.SetActive(true);
-            nameText.text = racerList.racers[0].name;
+            nameText.text = racerList.racers[0]._name;
 
             /*STATS*/
 
