@@ -14,16 +14,11 @@ public class GhostMaker : MonoBehaviour
 
     public void MakeGhost(Color col)
     {
-        StartCoroutine(MakingGhost(col, ghost_deathSpeed));
-    }
-
-    public void MakeGhost(Color col, float timer)
-    {
-        StartCoroutine(MakingGhost(col, timer));
+        StartCoroutine(MakeGhost(col, ghost_deathSpeed));
     }
 
 
-    private IEnumerator MakingGhost(Color col, float timer)
+    public IEnumerator MakeGhost(Color col, float timer)
     {
         yield return new WaitForEndOfFrame();
 

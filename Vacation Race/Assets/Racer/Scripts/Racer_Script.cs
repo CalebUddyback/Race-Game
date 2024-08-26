@@ -236,9 +236,8 @@ public class Racer_Script : MonoBehaviour
 
     public void Eliminate()
     {
-        Event_Sit?.Invoke();
-        //GetComponent<GhostMaker>().MakeGhost(Color.white, 1.5f);
-        //Destroy(gameObject);
+        crown.SetActive(false);
+        gameObject.SetActive(false);
     }
 
 }

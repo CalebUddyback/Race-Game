@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     public Text roundEndCountdown;
     private float roundEndCountDownTime = 10;
 
+    public Animation RacerStages;
+
     private int roundNum = 0;
 
     public GameObject miniLeaderboard;
@@ -201,19 +203,44 @@ public class GameManager : MonoBehaviour
 
     IEnumerator RoundStart()
     {
-        Debug.Log("Racers On Your Mark...");
+        RacerStages.gameObject.SetActive(true);
+
+        RacerStages.Play("Grow Bar");
 
         yield return new WaitForSeconds(1);
 
-        Debug.Log("Get Set...");
+        RacerStages.Play("Ready Slide");
+
+        yield return new WaitForSeconds(1);
+
+        RacerStages.transform.GetChild(1).GetChild(2).GetComponent<Text>().color = new Color(0.5f, 0.5f, 0.5f);
+
+        RacerStages.Play("Set Slide");
+
+        yield return new WaitForSeconds(0.417f);
 
         Event_Set?.Invoke();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.583f);
 
-        Debug.Log("GO!");
+        RacerStages.transform.GetChild(1).GetChild(1).GetComponent<Text>().color = new Color(0.5f, 0.5f, 0.5f);
+
+        RacerStages.Play("Go Slide");
+
+        yield return new WaitForSeconds(0.417f);
 
         Event_Go?.Invoke();
+
+        yield return new WaitForSeconds(0.583f);
+
+        RacerStages.Play("Shrink Bar");
+
+        //yield return new WaitForSeconds(0.167f);
+
+        //RacerStages.gameObject.SetActive(false);
+
+        RacerStages.transform.GetChild(1).localPosition = new Vector3(0, -50, -1730);
+        RacerStages.transform.GetChild(1).GetChild(0).GetComponent<Text>().color = new Color(0.5f, 0.5f, 0.5f);
     }
 
     IEnumerator RoundInProgress()
@@ -292,7 +319,12 @@ public class GameManager : MonoBehaviour
 
             yield return new WaitWhile(() =>  allRacers[i].instance.GetComponent<Racer_Script>().current_speed > 0);
 
+            StartCoroutine(allRacers[i].instance.GetComponent<GhostMaker>().MakeGhost(Color.white, 1.5f));
             allRacers[i].instance.GetComponent<Racer_Script>().Eliminate();
+            yield return null;
+            allRacers[i].instance.transform.position = transform.GetChild(0).GetChild(allRacers[i].lane).position + new Vector3(0, 2, 0);
+            allRacers[i].instance.gameObject.SetActive(true);
+            allRacers[i].instance.GetComponent<Racer_Script>().Sit();
         }
     }
 
